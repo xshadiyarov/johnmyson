@@ -1,0 +1,107 @@
+{
+    "data": {
+        "state": "create", // Статус по умолчанию до совершения платежа, на будущее
+        "id": { // Идентификация перевода
+            "token": "some-hash", // Идентификатор
+            "ttl": 300, // Время жихники платежа в памяти
+            "ttl_at": 1737440164 // Время начала отсчета
+        },
+        "sender": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV XASAN",
+            "pan": "860057******0117"
+        },
+        "receiver": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV X.",
+            "pan": "860057******0117"
+        },
+        "additional": [ // Рендеринг деталей на сервере
+            {
+                "key": "",
+                "value": "21.01.2025",
+                "name": "Дата",
+                "action": ""
+            },
+            {
+                "key": "",
+                "value": "**** 7495",
+                "name": "С карты",
+                "action": ""
+            },
+            {
+                "key": "",
+                "value": "**** 6616",
+                "name": "На карту",
+                "action": ""
+            },
+            {
+                "key": "",
+                "value": "XASAN SHADIYAROV",
+                "name": "Получатель",
+                "action": ""
+            },
+            {
+                "key": "",
+                "value": "1 000.00 UZS",
+                "name": "Сумма к получению",
+                "action": ""
+            },
+            {
+                "key": "",
+                "value": "900 UZS",
+                "name": "Комиссия с собственных средств",
+                "action": ""
+            },
+            {
+                "key": "",
+                "value": "4 500 UZS",
+                "name": "Комиссия с кредитных средств",
+                "action": ""
+            }
+        ],
+        "self": { // Контроль автоматических действий
+            "card": true, // Карта своя или нет
+            "confirm": { // Информация о OTP
+                "phone": "99897*****17",
+                "code": "678850",
+                "ttl": 60, // Истечение OTP
+                "ttl_at": 1737440164 // Время отсчета
+            },
+            "transfer": true // Стоит ли пропустить экран претрансфера
+        },
+        "commission": { // Объект комиссии
+            "state": "own_credit",
+            "currency": "UZS",
+            "total": {
+                "amount": 202000,
+                "send": 200000,
+                "fee": 2000
+            },
+            "funds": {
+                "own": {
+                    "amount": 100000,
+                    "percent": 0.5,
+                    "fee": 500
+                },
+                "credit": {
+                    "amount": 200000,
+                    "percent": 1.5,
+                    "fee": 1500
+                }
+            },
+            "limit": {
+                "state": "part_used",
+                "period_type": "month",
+                "period_count": 1,
+                "type": "sum",
+                "min": null,
+                "max": 1000000000,
+                "used": 500000000
+            }
+        },
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

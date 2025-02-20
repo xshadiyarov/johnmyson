@@ -1,0 +1,148 @@
+// As component
+{
+    "data": {},
+    "state": "error", // error, success
+    "error_text": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct во вкладке Услуги (ID: 1s32z61t1)",
+    "actions": [
+        {
+            "key": "please_try_vd_2_transfer",
+            "type": "modal-forward",
+            "title": "Visa Direct",
+            "subtitle": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct",
+            "is_enabled": true,
+            "is_on": true,
+            "icon": {
+                "id": "601",
+                "name": "button_payments.icon",
+                "type": "card",
+                "links": {
+                    "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                    "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png"
+                }
+            },
+            "action": {
+                "type": "deeplink",
+                "value": "iym://services/39"
+            }
+        }
+    ],
+    "code": 100
+}
+// As widget
+// Создаем таблиц ALT_ACTIONS
+//                code
+//                target
+// modal_transfers_me, modal_transfers_ms
+// iym://transfers/me, iym://transfers/ms из таблицы DEEPLINK
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct во вкладке Услуги (ID: 1s32z61t1)",
+    "actions": [
+        {
+            "key": "alt-vd",
+            "type": "modal",
+            "components": [
+                {
+                    "key": "modal-text-vd",
+                    "type": "modal-text",
+                    "title": "Visa Direct",
+                    "subtitle": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct",
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": {
+                        "id": "601",
+                        "name": "isom_particle_transfer_vd",
+                        "type": "banking_services",
+                        "links": {
+                            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                            "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png"
+                        }
+                    },
+                    "action": null
+                },
+                {
+                    "key": "button_modal_back",
+                    "type": "button",
+                    "title": "Вернуться",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_secondary_button",
+                        "style": "Regular",
+                        "priority": "Secondary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": null
+                },
+                {
+                    "key": "button_modal_go_vd",
+                    "type": "button",
+                    "title": "Перейти",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_primary_button",
+                        "style": "Accent",
+                        "priority": "Primary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": {
+                        "type": "deeplink",
+                        "value": "iym://transfers/vd"
+                    }
+                }
+            ]
+        }
+    ],
+    "code": 100
+}
+
+// Priority: primary, secondary, tertiary, border
+// Type: white, accent, warning, regular
+// Size: standard, component
+// Icon: left, right
+// State: active, disabled
+
+// btn-accent
+// Priority: primary
+// Type: accent
+// Size: standard
+// Icon: -
+// State: active
+
+btn-accent
+btn-accent-secondary
+btn-accent-tertiary
+btn-accent-disabled
+btn-accent-secondary-disabled
+btn-accent-tertiary-disabled
+
+btn-warning
+btn-warning-secondary
+btn-warning-tertiary
+btn-warning-disabled
+btn-warning-secondary-disabled
+btn-warning-tertiary-disabled
+
+btn
+btn-secondary
+btn-disabled
+btn-secondary-disabled
+
+btn-white
+btn-white-tertiary
+btn-white-disabled
+btn-white-tertiary-disabled
+
+btn-{type}-{priority}-{right}-{disabled}
+
+btn-accent-primary-right-disabled

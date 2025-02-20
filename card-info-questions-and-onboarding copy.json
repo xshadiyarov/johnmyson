@@ -1,0 +1,116 @@
+// Вопросы
+    // Кнопка
+{
+    "data": {
+        "type": "card_info",
+        "sections": [
+            // ...
+            {
+                "key": "secondary",
+                "header": null,
+                "widgets": [
+                    // ...
+                    {
+                        "key": "card_actions",
+                        "type": "list_actions",
+                        "components": [
+                            // ...
+                            {
+                                "key": "row_action_credit_card_info",
+                                "type": "row_action",
+                                "title": "Информация",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": {
+                                    "id": "605",
+                                    "name": "row_action_card_info.icon",
+                                    "type": "card",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1667ac42a11bf6.png",
+                                        "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/d_1667ac42a1b637.png"
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "credit_card_info"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+    // Наложение
+{
+    "overlays": {
+        "credit_card_info": {
+            "key": "credit_card_info",
+            "type": "bottom_menu",
+            "header": null,
+            "sections": [
+                {
+                    "key": "credit_card_info_default",
+                    "header": null,
+                    "widgets": [
+                        {
+                            "key": "credit_card_info_hero_block",
+                            "type": "hero_block",
+                            "components": [
+                                {
+                                    "key": "credit_card_info_pair_text",
+                                    "type": "pair_text",
+                                    "title": "Кредитная карта",
+                                    "subtitle": "Это карта позволяющая тратить деньги Банка, а потом возвращать и если соблюсти условия льготного периода, то абсолютно без процентов.",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": { // Адаптировать под варианты в дизайне
+                                        "key": "pair_text_hero",
+                                        "style": "Center",
+                                        "priority": "Primary",
+                                        "size": "H1",
+                                        "color": null,
+                                        "background_color": null
+                                    },
+                                    "icon": null,
+                                    "action": null
+                                },
+                                {
+                                    "key": "credit_card_info_icon",
+                                    "type": "icon_box",
+                                    "title": "",
+                                    "subtitle": "",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "icon_box_4x3_transparent",
+                                        "style": "Solid",
+                                        "priority": "Primary",
+                                        "size": "4x3",
+                                        "color": null,
+                                        "background_color": null
+                                    },
+                                    "icon": {
+                                        "id": "609",
+                                        "name": "isom_credit_card",
+                                        "type": "card",
+                                        "links": {
+                                            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                                            "dark": null
+                                        }
+                                    },
+                                    "action": null
+                                }
+                            ]
+                        },
+                        {
+                            // Виджеты под вопросы
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+// Онбординг

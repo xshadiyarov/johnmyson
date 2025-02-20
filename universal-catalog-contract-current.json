@@ -1,0 +1,3003 @@
+{
+    "data": {
+      "type": "card_product_catalog",
+      "sections": [
+        {
+          "key": "card_product_catalog_section_primary",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_catalog_widget_primary",
+              "type": "filter_carousel",
+              "meta": [],
+              "components": [
+                {
+                  "key": "filter_button_all",
+                  "type": "button",
+                  "title": "\u0412\u0441\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "filter",
+                    "value": "9"
+                  }
+                },
+                {
+                  "key": "filter_button_credit",
+                  "type": "button",
+                  "title": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                  "is_enabled": true,
+                  "is_on": false,
+                  "action": {
+                    "type": "filter",
+                    "value": "23"
+                  }
+                },
+                {
+                  "key": "filter_button_debit",
+                  "type": "button",
+                  "title": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                  "is_enabled": true,
+                  "is_on": false,
+                  "action": {
+                    "type": "filter",
+                    "value": "22"
+                  }
+                },
+                {
+                  "key": "filter_button_international",
+                  "type": "button",
+                  "title": "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f",
+                  "is_enabled": true,
+                  "is_on": false,
+                  "action": {
+                    "type": "filter",
+                    "value": "17"
+                  }
+                },
+                {
+                  "key": "filter_button_settings",
+                  "type": "button",
+                  "title": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+                  "is_enabled": true,
+                  "is_on": false,
+                  "icon": {
+                    "id": "742",
+                    "name": "card_catalog.filter",
+                    "type": "card_catalog",
+                    "links": {
+                      "light": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/icons\/filter.png",
+                      "dark": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/icons\/filter.png"
+                    }
+                  },
+                  "action": {
+                    "type": "overlay",
+                    "value": "card_product_catalog_filter"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_catalog_section_secondary",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": { // TODO: Нужно все уложить в объект product и определить для него универсальный контракт
+                "product": {
+                  "id": 1,
+                  "product_code": "030",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/background_virtual_fccy.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": true,
+                  "sort_order": 100,
+                  "currency": "USD",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_virtual_card_image.png",
+                  "background_color": "Spectre",
+                  "meta": {
+                    "id": "1",
+                    "title": "VISA Virtual",
+                    "short": "\u0414\u043b\u044f \u043e\u043d\u043b\u0430\u0439\u043d \u043f\u043e\u043a\u0443\u043f\u043e\u043a",
+                    "description": "VISA Virtual - \u0432\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 VISA, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0434\u0430\u0451\u0442 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044c \u0441\u043e\u0432\u0435\u0440\u0448\u0430\u0442\u044c \u043e\u043d\u043b\u0430\u0439\u043d \u043f\u043b\u0430\u0442\u0435\u0436\u0438"
+                  }
+                }, // Универсальный объект продукта
+                "tags": [
+                  {
+                    "id": "6",
+                    "background_color": "LightGreen",
+                    "font_color": "White 100",
+                    "border_color": "LightGreen",
+                    "name": "tag_virtual",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ], // Связь через TAG_RELATION
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 12,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "VISA",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 26,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1800,
+                    "type": "filter"
+                  }
+                ] // Связь через TAG_RELATION
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 2,
+                  "product_code": "871",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/background_humo_virtual_nl.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/humo_tpl.png",
+                  "is_virtual": true,
+                  "sort_order": 200,
+                  "currency": "UZS",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/humo_virtual_card_image.png",
+                  "background_color": "Casino Royale",
+                  "meta": {
+                    "id": "4",
+                    "title": "HUMO Virtual",
+                    "short": "\u0411\u044b\u0441\u0440\u0438\u0439 \u0441\u0442\u0430\u0440\u0442. \u041e\u0442\u043a\u0440\u044b\u0442\u0438\u0435 \u043a\u0430\u0440\u0442\u044b \u0434\u043e 5 \u043c\u0438\u043d\u0443\u0442",
+                    "description": "HUMO Virtual \u2013 \u0432\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 HUMO, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u0441\u043e\u0432\u0435\u0440\u0448\u0430\u0442\u044c \u0431\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u044b\u0435 \u043f\u043b\u0430\u0442\u0435\u0436\u0438 \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438 NFC. \u041a\u0430\u0440\u0442\u0430 \u0443\u0434\u043e\u0431\u043d\u0430 \u0442\u0435\u043c, \u0447\u0442\u043e \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u0435 \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043c\u0438\u043d\u0443\u0442 \u0438 \u0432\u043f\u043e\u043b\u043d\u0435 \u0437\u0430\u043c\u0435\u043d\u044f\u0435\u0442 \u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0443\u044e. "
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "6",
+                    "background_color": "LightGreen",
+                    "font_color": "White 100",
+                    "border_color": "LightGreen",
+                    "name": "tag_virtual",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 11,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Humo",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 16,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UZS",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 800,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 26,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1800,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 3,
+                  "product_code": "068",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/mastercard_virtual_1116x704.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": true,
+                  "sort_order": 300,
+                  "currency": "USD",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/mastercard_virtual_card_image.png",
+                  "background_color": "Moonraker",
+                  "meta": {
+                    "id": "7",
+                    "title": "Mastercard Virtual",
+                    "short": "\u0414\u043b\u044f \u043b\u044e\u0431\u0438\u0442\u0435\u043b\u0435\u0439 \u0448\u043e\u043f\u043f\u0438\u043d\u0433\u0430",
+                    "description": "Mastercard Virtual - \u0432\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 Mastercard, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0434\u0430\u0451\u0442 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044c \u0441\u043e\u0432\u0435\u0440\u0448\u0430\u0442\u044c \u043e\u043d\u043b\u0430\u0439\u043d \u043f\u043b\u0430\u0442\u0435\u0436\u0438"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "6",
+                    "background_color": "LightGreen",
+                    "font_color": "White 100",
+                    "border_color": "LightGreen",
+                    "name": "tag_virtual",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 13,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "MasterCard",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 26,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1800,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 4,
+                  "product_code": "201",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/images\/cardissue\/credit_lime_3.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 400,
+                  "currency": "UZS",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_sum_card_image.png",
+                  "background_color": "Thunderball",
+                  "meta": {
+                    "id": "10",
+                    "title": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439",
+                    "short": "\u041a\u0430\u0440\u0442\u0430 \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e",
+                    "description": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439 \u2014 \u044d\u0442\u043e \u0443\u0434\u043e\u0431\u043d\u044b\u0439 \u0441\u043f\u043e\u0441\u043e\u0431 \u0432\u043e\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043c\u0438 \u0431\u0430\u043d\u043a\u0430 \u043d\u0430 \u0433\u0438\u0431\u043a\u0438\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445. \u041a\u0430\u0440\u0442\u0430 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043e\u043f\u043b\u0430\u0447\u0438\u0432\u0430\u0442\u044c \u0442\u043e\u0432\u0430\u0440\u044b \u0438 \u0443\u0441\u043b\u0443\u0433\u0438 \u0432 \u043b\u044e\u0431\u043e\u0439 \u0442\u043e\u0447\u043a\u0435 \u043c\u0438\u0440\u0430, \u0430 \u043f\u0440\u0438 \u0441\u0432\u043e\u0435\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u043c \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u0438\u0438 \u043a\u0440\u0435\u0434\u0438\u0442\u0430 \u2014 \u0434\u0435\u043b\u0430\u0442\u044c \u044d\u0442\u043e \u0431\u0435\u0437 \u043f\u0440\u043e\u0446\u0435\u043d\u0442\u043e\u0432. \u0421 \u043f\u043e\u043b\u043d\u044b\u043c \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435\u043c \u0442\u0430\u0440\u0438\u0444\u0430 \u043f\u043e \u043a\u0430\u0440\u0442\u0435 \u043c\u043e\u0436\u043d\u043e \u043e\u0437\u043d\u0430\u043a\u043e\u043c\u0438\u0442\u044c\u0441\u044f \u0432 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 \u0442\u0430\u0440\u0438\u0444\u044b \u043d\u0430 \u0441\u0430\u0439\u0442\u0435 \u0431\u0430\u043d\u043a\u0430"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "1",
+                    "background_color": "Warning",
+                    "font_color": "White 100",
+                    "border_color": "Warning",
+                    "name": "\u0421\u043a\u043e\u0440\u043e",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0422\u0438\u043f \u043a\u0430\u0440\u0442\u044b",
+                    "value": "\u0420\u0430\u0441\u0441\u0440\u043e\u0447\u043a\u0430",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u041b\u0438\u043c\u0438\u0442",
+                    "value": "\u0414\u043e 100 \u043c\u043b\u043d. \u0441\u0443\u043c",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 12,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "VISA",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 16,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UZS",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 800,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 5,
+                  "product_code": "200",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/Visa_green_cl.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 500,
+                  "currency": "UZS",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_sum_card_image.png",
+                  "background_color": "Quantum of Sloace",
+                  "meta": {
+                    "id": "13",
+                    "title": "VISA START SUM",
+                    "short": "\u0411\u043e\u043c\u0431\u0435\u0437\u043d\u0430\u044f \u0437\u0435\u043b\u0435\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430, \u0432\u044b\u0433\u043e\u0434\u0430 \u04453",
+                    "description": "VISA START SUM - \u0441\u0430\u043c\u0430\u044f \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u0430\u044f \u043f\u043b\u0430\u0441\u0442\u0438\u043a\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u0438\u0437 \u0441\u0435\u043c\u0435\u0439\u0441\u0442\u0432\u0430 Visa. \u041d\u0435\u0441\u043c\u043e\u0442\u0440\u044f \u043d\u0430 \u0441\u0432\u043e\u044e \u043f\u0440\u043e\u0441\u0442\u043e\u0442\u0443 - \u043a\u0430\u0440\u0442\u0430 \u0438\u043c\u0435\u0435\u0442 \u0432\u0441\u0435 \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430, \u043f\u0440\u0438\u0441\u0443\u0449\u0438\u0435 \u043a\u0430\u0440\u0442\u0430\u043c Visa. \u0421 \u043f\u043e\u043b\u043d\u044b\u043c \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435\u043c \u0442\u0430\u0440\u0438\u0444\u0430 \u043f\u043e \u043a\u0430\u0440\u0442\u0435 \u043c\u043e\u0436\u043d\u043e \u043e\u0437\u043d\u0430\u043a\u043e\u043c\u0438\u0442\u044c\u0441\u044f \u0432 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 \u0442\u0430\u0440\u0438\u0444\u044b \u043d\u0430 \u0441\u0430\u0439\u0442\u0435 \u0431\u0430\u043d\u043a\u0430"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": 2,
+                    "background_color": "White 100",
+                    "font_color": "Warning",
+                    "border_color": "Warning",
+                    "name": "\u041d\u043e\u0432\u044b\u0439",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  },
+                  {
+                    "id": 3,
+                    "background_color": "White 100",
+                    "font_color": "Purple",
+                    "border_color": "Purple",
+                    "name": "\u0412\u044b\u0433\u043e\u0434\u0430 x3",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 200,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 12,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "VISA",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 16,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UZS",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 800,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 6,
+                  "product_code": "861",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/Uzcard-MIR.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/uzcard_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 600,
+                  "currency": "UZS",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/uzcard_image.png",
+                  "background_color": "Goldfinger",
+                  "meta": {
+                    "id": "16",
+                    "title": "Uzcard Duo",
+                    "short": "\u042d\u0432\u043e\u043b\u044e\u0446\u0438\u044f \u0432 \u0441\u0435\u043c\u0435\u0439\u0441\u0442\u0432\u0435 Uzcard",
+                    "description": "\u0411\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u043f\u0440\u0438\u043e\u0431\u0440\u0435\u0442\u0430\u0435\u0442 \u0432\u0441\u0435 \u0431\u043e\u043b\u044c\u0448\u0443\u044e \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u043e\u0441\u0442\u044c, \u0432 \u0441\u0432\u044f\u0437\u0438 \u0441 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435\u043c \u043f\u043b\u0430\u0442\u0435\u0436\u043d\u044b\u0445 \u0441\u0435\u0440\u0432\u0438\u0441\u043e\u0432 \u0438 \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u044c\u043d\u043e\u0439 \u0441\u0435\u0442\u0438 Uzcard. \u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u043f\u0440\u0435\u0434\u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0430 \u0412\u0430\u043c \u0438 \u0447\u043b\u0435\u043d\u0430\u043c \u0412\u0430\u0448\u0435\u0439 \u0441\u0435\u043c\u044c\u0438. \u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b Uzcard \u043c\u043e\u0436\u0435\u0442 \u043e\u043f\u043b\u0430\u0447\u0438\u0432\u0430\u0442\u044c, \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u0431\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u043e, \u0437\u0430 \u0442\u043e\u0432\u0430\u0440\u044b \u0438 \u0443\u0441\u043b\u0443\u0433\u0438 \u0432 \u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0439 \u0432\u0430\u043b\u044e\u0442\u0435 \u043f\u043e\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043e\u043c \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u043e\u0432, \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u0442\u044c\u0441\u044f \u0432 \u0431\u0430\u043d\u043a\u043e\u043c\u0430\u0442\u0430\u0445 \u0438 \u0438\u043d\u0444\u043e\u043a\u0438\u043e\u0441\u043a\u043e\u0432, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0442\u044c \u043f\u043b\u0430\u0442\u0435\u0436\u0438 \u0447\u0435\u0440\u0435\u0437 \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0438 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442 \u0441\u0430\u0439\u0442\u044b \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0445 \u0442\u043e\u0440\u0433\u043e\u0432\u043e-\u0441\u0435\u0440\u0432\u0438\u0441\u043d\u044b\u0445 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439, \u043f\u043b\u0430\u0442\u0435\u0436\u043d\u044b\u0445 \u0430\u0433\u0435\u043d\u0442\u043e\u0432, \u0431\u0430\u043d\u043a\u043e\u0432"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "5",
+                    "background_color": "White 100",
+                    "font_color": "Accent",
+                    "border_color": "Accent",
+                    "name": "\u0411\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0430\u044f \u043e\u043f\u043b\u0430\u0442\u0430",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 10,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Uzcard",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 200,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 16,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UZS",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 800,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 7,
+                  "product_code": "870",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/humo.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/humo_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 700,
+                  "currency": "UZS",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/humo_image.png",
+                  "background_color": "Skyfall",
+                  "meta": {
+                    "id": "19",
+                    "title": "HUMO",
+                    "short": "\u0411\u0435\u0437 \u043a\u043e\u043c\u0438\u0441\u0441\u0438\u043e\u043d\u043d\u044b\u0435 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u044b \u043c\u0435\u0434\u0443 HUMO",
+                    "description": "\u041f\u0440\u043e\u0441\u0442\u043e \u043f\u0440\u0438\u043a\u043e\u0441\u043d\u0438\u0442\u0435\u0441\u044c \u0431\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u043e\u0439 Humo \u0438 \u0432\u0430\u0448\u0430 \u043f\u043e\u043a\u0443\u043f\u043a\u0430 \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u0430. \u0412\u044b \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0438\u0440\u0443\u0435\u0442\u0435 \u0432\u0435\u0441\u044c \u043f\u0440\u043e\u0446\u0435\u0441\u0441, \u0442\u0430\u043a \u043a\u0430\u043a \u043d\u0435 \u043f\u0435\u0440\u0435\u0434\u0430\u0435\u0442\u0435 \u043a\u0430\u0440\u0442\u0443 \u043a\u0430\u0441\u0441\u0438\u0440\u0443 \u0438 \u0441\u0430\u043c\u0438 \u0432\u0432\u043e\u0434\u0438\u0442\u0435 \u041f\u0418\u041d-\u043a\u043e\u0434. \u041f\u0440\u0435\u0434\u0443\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u0430 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u044f, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0438\u0441\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u043b\u044e\u0431\u0443\u044e \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044c \u043f\u043e\u0432\u0442\u043e\u0440\u043d\u043e\u0433\u043e \u0441\u043f\u0438\u0441\u0430\u043d\u0438\u044f \u0434\u0435\u043d\u0435\u0436\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432, \u0442\u0430\u043a \u043a\u0430\u043a \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u0438\u044f \u043e\u043f\u043b\u0430\u0442\u044b \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b \u043d\u0430 \u043a\u0430\u0441\u0441\u0435 \u043f\u043e\u0434\u0430\u0435\u0442 \u0437\u0432\u0443\u043a\u043e\u0432\u043e\u0439 \u0441\u0438\u0433\u043d\u0430\u043b \u0438 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043e\u0442\u043a\u043b\u044e\u0447\u0430\u0435\u0442\u0441\u044f"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "5",
+                    "background_color": "White 100",
+                    "font_color": "Accent",
+                    "border_color": "Accent",
+                    "name": "\u0411\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0430\u044f \u043e\u043f\u043b\u0430\u0442\u0430",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  },
+                  {
+                    "type": "text",
+                    "name": "card_product_indesign_title",
+                    "value": "card_product_indesign_value",
+                    "color": ""
+                  },
+                  {
+                    "type": "icon",
+                    "name": "card_product_card_icon",
+                    "value": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/icons\/info.png",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 11,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Humo",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 16,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UZS",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 800,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 8,
+                  "product_code": "031",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/Visa_green_cl.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 800,
+                  "currency": "USD",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_start_image.png",
+                  "background_color": "Quantum of Sloace",
+                  "meta": {
+                    "id": "22",
+                    "title": "VISA Start",
+                    "short": "\u041a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0434\u0435\u0431\u0435\u0442\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430",
+                    "description": "\u0412\u044b \u0445\u043e\u0442\u0438\u0442\u0435 \u043f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u043a\u0430\u0440\u0442\u0443? VISA Start - \u0441\u0430\u043c\u0430\u044f \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u0430\u044f \u043f\u043b\u0430\u0441\u0442\u0438\u043a\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u0438\u0437 \u0441\u0435\u043c\u0435\u0439\u0441\u0442\u0432\u0430 VISA \u0441 \u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u043c \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u044b\u043c \u0434\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u043c. \u041d\u0435\u0441\u043c\u043e\u0442\u0440\u044f \u043d\u0430 \u0441\u0432\u043e\u044e \u043f\u0440\u043e\u0441\u0442\u043e\u0442\u0443- \u043a\u0430\u0440\u0442\u0430 \u0438\u043c\u0435\u0435\u0442 \u0432\u0441\u0435 \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430, \u043f\u0440\u0438\u0441\u0443\u0449\u0438\u0435 \u043a\u0430\u0440\u0442\u0430\u043c VISA"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "7",
+                    "background_color": "White 100",
+                    "font_color": "Yellow",
+                    "border_color": "Yellow",
+                    "name": "1+1",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  },
+                  {
+                    "type": "text",
+                    "name": "card_product_indesign_title",
+                    "value": "card_product_indesign_value",
+                    "color": ""
+                  },
+                  {
+                    "type": "icon",
+                    "name": "card_product_card_icon",
+                    "value": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/icons\/info.png",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 12,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "VISA",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 9,
+                  "product_code": "032",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/Visa_light.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 900,
+                  "currency": "USD",
+                  "price": 3750000,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_platinum_image.png",
+                  "background_color": "The World Is Not Enough",
+                  "meta": {
+                    "id": "25",
+                    "title": "VISA Platinum",
+                    "short": "\u041a\u0430\u0440\u0442\u0430 \u0434\u043b\u044f \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0439",
+                    "description": "\u041d\u0438\u043a\u043e\u0433\u0434\u0430 \u0432 \u0438\u0441\u0442\u043e\u0440\u0438\u0438 \u0431\u0430\u043d\u043a\u0430, \u043a\u0430\u0440\u0442\u044b \u043f\u0440\u0435\u043c\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043a\u043b\u0430\u0441\u0441\u0430 \u043d\u0435 \u0431\u044b\u043b\u0438 \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b! \u041f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u044f \u0438 \u043a\u043e\u043c\u0430\u043d\u0434\u0438\u0440\u043e\u0432\u043a\u0438 \u0441 \u043a\u0430\u0440\u0442\u043e\u0439 Visa Platinum \u0441\u0442\u0430\u043d\u0443\u0442 \u043d\u0430\u043c\u043d\u043e\u0433\u043e \u043a\u043e\u043c\u0444\u043e\u0440\u0442\u043d\u0435\u0435 \u0438 \u0443\u0434\u043e\u0431\u043d\u0435\u0435. \u041f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u044d\u0442\u043e\u0439 \u041a\u0430\u0440\u0442\u044b, \u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0434\u0438\u0441\u043a\u043e\u043d\u0442\u044b \u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0443, \u0447\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u0435\u0442 \u0412\u0430\u0448\u0435 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435 \u043b\u0435\u0433\u043a\u0438\u043c \u043a\u0430\u043a \u0438 \u0441\u0430\u043c\u0430 \u043a\u0430\u0440\u0442\u0430. \u041e\u0437\u043d\u0430\u043a\u043e\u043c\u044c\u0442\u0435\u0441\u044c \u0441 \u0434\u0438\u0441\u043a\u043e\u043d\u0442\u0430\u043c\u0438 \u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u043e\u0439 \u043f\u0440\u044f\u043c\u043e \u0441\u0435\u0439\u0447\u0430\u0441"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "7",
+                    "background_color": "White 100",
+                    "font_color": "Yellow",
+                    "border_color": "Yellow",
+                    "name": "1+1",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "3 750 000 \u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "card_product_indesign_title",
+                    "value": "card_product_indesign_value",
+                    "color": ""
+                  },
+                  {
+                    "type": "icon",
+                    "name": "card_product_card_icon",
+                    "value": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/icons\/info.png",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 12,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "VISA",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 20,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1200,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 10,
+                  "product_code": "034",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/infinite_visa_background.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 1000,
+                  "currency": "USD",
+                  "price": 18750000,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_infinite_image.png",
+                  "background_color": "Dr No",
+                  "meta": {
+                    "id": "28",
+                    "title": "Visa Infinite",
+                    "short": "\u041b\u044e\u043a\u0441\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430, \u0434\u043b\u044f \u0442\u0435\u0445 \u043a\u0442\u043e \u0445\u043e\u0447\u0435\u0442 \u043a\u043e\u043c\u0444\u043e\u0440\u0442\u0430",
+                    "description": "\u041f\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0439\u0442\u0435 \u043d\u043e\u0432\u0443\u044e \u043a\u0430\u0440\u0442\u0443 \u043f\u0440\u0435\u043c\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043a\u043b\u0430\u0441\u0441\u0430 \u0441 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u043c\u0438 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043c\u0438 \u043a\u043e\u043c\u0444\u043e\u0440\u0442\u0430 \u0438 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c \u043b\u043e\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u0438. \u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0439 \u043a\u043e\u043d\u0441\u044c\u0435\u0440\u0436, \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u043b\u0430\u0443\u043d\u0436 \u0437\u043e\u043d, \u0441\u043a\u0438\u0434\u043a\u0438 \u043f\u0440\u0438 \u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0438 \u043e\u0442\u0435\u043b\u0435\u0439, \u0440\u0430\u043d\u043d\u0438\u0439 \u0437\u0430\u0435\u0437\u0434 \u0438 \u043f\u043e\u0437\u0434\u043d\u0438\u0439 \u0432\u044b\u0435\u0437\u0434 \u0438 \u043c\u043d\u043e\u0433\u043e \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u0435\u0440\u0432\u0438\u0441\u043e\u0432, \u043f\u043e\u0434\u0447\u0435\u0440\u043a\u0438\u0432\u0430\u044e\u0449\u0438\u0445 \u0412\u0430\u0448\u0443 \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u044c"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "8",
+                    "background_color": "Black 100",
+                    "font_color": "White 100",
+                    "border_color": "Black 100",
+                    "name": "\u041f\u0440\u0435\u043c\u0438\u0443\u043c",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "18 750 000 \u0421\u0443\u043c",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 12,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "VISA",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 20,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1200,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 11,
+                  "product_code": "1",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/union_pay.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 1100,
+                  "currency": "USD",
+                  "price": 0,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/unionpay_image.png",
+                  "background_color": "Quantum of Sloace",
+                  "meta": {
+                    "id": "31",
+                    "title": "UnionPay Classic",
+                    "short": "\u0412\u044b\u0433\u043e\u0434\u043d\u0430\u044f \u0441\u043d\u044f\u0442\u0438\u0435 \u043d\u0430\u043b\u0438\u0447\u043d\u044b\u0445 \u0437\u0430\u0433\u0440\u0430\u043d\u0438\u0446\u0435\u0439",
+                    "description": "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 UnionPay Classic \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0442\u044c \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432\u0443\u044e \u0441\u0432\u043e\u0431\u043e\u0434\u0443 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u043f\u043e\u0435\u0437\u0434\u043e\u043a \u0437\u0430\u0433\u0440\u0430\u043d\u0438\u0446\u0443, \u0441\u043e\u0432\u0435\u0440\u0448\u0430\u0442\u044c \u043f\u043e\u043a\u0443\u043f\u043a\u0438 \u0438 \u043e\u043f\u043b\u0430\u0447\u0438\u0432\u0430\u0442\u044c \u0443\u0441\u043b\u0443\u0433\u0438 \u0431\u0435\u0437 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438 \u043e\u0431\u043c\u0435\u043d\u0438\u0432\u0430\u0442\u044c \u043d\u0430\u043b\u0438\u0447\u043d\u044b\u0435. \u0414\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u0438 \u043a\u0430\u0440\u0442 \u043f\u043e\u043b\u0443\u0447\u0430\u044e\u0442 \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0435 \u043f\u0440\u0438\u0432\u0438\u043b\u0435\u0433\u0438\u0438, \u0430 \u044d\u043c\u0438\u0441\u0441\u0438\u044f, \u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043f\u043e\u0437\u0438\u0442 \u0438 \u0433\u043e\u0434\u043e\u0432\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0431\u0430\u043d\u043a\u043e\u043c \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e. UnionPay Classic \u2013 \u044d\u0442\u043e \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u043b\u0430\u0442\u0435\u0436\u043d\u044b\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0438\u043c\u0435\u0435\u0442 \u0432\u044b\u0441\u043e\u043a\u0438\u0439 \u0443\u0440\u043e\u0432\u0435\u043d\u044c \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043d\u0435\u0437\u0430\u043c\u0435\u043d\u0438\u043c\u044b\u043c \u043f\u043e\u043c\u043e\u0449\u043d\u0438\u043a\u043e\u043c \u0432 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u044f\u0445 \u0441 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u043c\u0438 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044f\u043c\u0438 \u0434\u043b\u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "4",
+                    "background_color": "White 100",
+                    "font_color": "Purple",
+                    "border_color": "Purple",
+                    "name": "\u0412\u044b\u0433\u043e\u0434\u0430",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "\u0411\u0415\u0421\u041f\u041b\u0410\u0422\u041d\u041e",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 14,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UnionPay",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 20,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1200,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 12,
+                  "product_code": "2",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/uniop_pay_gold.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 1200,
+                  "currency": "USD",
+                  "price": 3750000,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/unionpay_gold_image.png",
+                  "background_color": "Golden Eye",
+                  "meta": {
+                    "id": "34",
+                    "title": "UnionPay Gold",
+                    "short": "\u041f\u043e\u043c\u043e\u0449\u043d\u0438\u043a \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043e\u043c",
+                    "description": "\u041a\u0430\u0440\u0442\u0430 UnionPay Gold \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u043c \u0432\u0430\u0448\u0435\u0433\u043e \u0443\u0441\u043f\u0435\u0445\u0430"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "4",
+                    "background_color": "White 100",
+                    "font_color": "Purple",
+                    "border_color": "Purple",
+                    "name": "\u0412\u044b\u0433\u043e\u0434\u0430",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "3 750 000 \u0421\u0443\u043c",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 14,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UnionPay",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 20,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1200,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "card_product_catalog_widget_secondary",
+              "type": "card_carousel",
+              "meta": {
+                "product": {
+                  "id": 13,
+                  "product_code": "040",
+                  "background": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/cardissue\/MasterCardLight.png",
+                  "logos_layer": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/visa_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": 1300,
+                  "currency": "USD",
+                  "price": 3750000,
+                  "custom_design_price": null,
+                  "card_image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/images\/master_card_platinum_image.png",
+                  "background_color": "The World Is Not Enough",
+                  "meta": {
+                    "id": "37",
+                    "title": "Mastercard Platinum",
+                    "short": "\u041a\u0430\u0440\u0442\u0430 \u043f\u0440\u0438\u0442\u044f\u0433\u0438\u0432\u0430\u044e\u0449\u0430\u044f \u0441\u043a\u0438\u0434\u043a\u0438",
+                    "description": "\u041e\u0442 \u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u044b\u0445 \u043f\u043e\u043a\u0443\u043f\u043e\u043a \u0434\u043e \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0439 \u043c\u0435\u0447\u0442\u044b, \u043a\u0430\u0440\u0442\u0430 Mastercard Platinum \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u0442 \u0443\u0434\u043e\u0431\u043d\u043e \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0441\u0432\u043e\u0438 \u0440\u0430\u0441\u0445\u043e\u0434\u044b"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": "5",
+                    "background_color": "White 100",
+                    "font_color": "Accent",
+                    "border_color": "Accent",
+                    "name": "\u0411\u0435\u0441\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u0430\u044f \u043e\u043f\u043b\u0430\u0442\u0430",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "value": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "\u0412\u044b\u043f\u0443\u0441\u043a",
+                    "value": "3 750 000 \u0421\u0443\u043c",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "card_product_indesign_title",
+                    "value": "card_product_indesign_value",
+                    "color": ""
+                  },
+                  {
+                    "type": "icon",
+                    "name": "card_product_card_icon",
+                    "value": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/icons\/info.png",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 13,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "MasterCard",
+                    "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "state": 1,
+                    "sort_order": 500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 17,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "USD",
+                    "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "state": 1,
+                    "sort_order": 900,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 20,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041f\u043b\u0430\u0442\u043d\u0430\u044f",
+                    "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "state": 1,
+                    "sort_order": 1200,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                    "group": "\u0422\u0438\u043f",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0412\u0441\u0435",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                    "group": "\u0412\u0438\u0434",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "button_card_more",
+                  "type": "button",
+                  "title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "details"
+                  }
+                },
+                {
+                  "key": "button_card_issue",
+                  "type": "button",
+                  "title": "\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "action": {
+                    "type": "navigation",
+                    "value": "issue"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overlays": { // TODO: Тут нужно пересобирать, эта реализация ту бэд
+        "card_product_catalog_filter": {
+          "key": "card_product_catalog_filter",
+          "type": "bottom_menu",
+          "header": null,
+          "sections": [
+            {
+              "key": "card_product_catalog_filter_section",
+              "header": null,
+              "widgets": [
+                {
+                  "key": "card_product_catalog_filter_widget",
+                  "type": "filter",
+                  "meta": {
+                    "widget_title": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                    "filters": [
+                      {
+                        "id": 9,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0412\u0441\u0435",
+                        "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                        "state": 1,
+                        "sort_order": 100,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 10,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "Uzcard",
+                        "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                        "state": 1,
+                        "sort_order": 200,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 11,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "Humo",
+                        "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                        "state": 1,
+                        "sort_order": 300,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 12,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "VISA",
+                        "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                        "state": 1,
+                        "sort_order": 400,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 13,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "MasterCard",
+                        "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                        "state": 1,
+                        "sort_order": 500,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 14,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "UnionPay",
+                        "group": "\u041f\u043b\u0430\u0442\u0435\u0436\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+                        "state": 1,
+                        "sort_order": 600,
+                        "type": "filter"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "card_product_catalog_filter_widget",
+                  "type": "filter",
+                  "meta": {
+                    "widget_title": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                    "filters": [
+                      {
+                        "id": 15,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0412\u0441\u0435",
+                        "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                        "state": 1,
+                        "sort_order": 700,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 16,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "UZS",
+                        "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                        "state": 1,
+                        "sort_order": 800,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 17,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "USD",
+                        "group": "\u0412\u0430\u043b\u044e\u0442\u0430",
+                        "state": 1,
+                        "sort_order": 900,
+                        "type": "filter"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "card_product_catalog_filter_widget",
+                  "type": "filter",
+                  "meta": {
+                    "widget_title": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                    "filters": [
+                      {
+                        "id": 18,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0412\u0441\u0435",
+                        "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                        "state": 1,
+                        "sort_order": 1000,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 19,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f",
+                        "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                        "state": 1,
+                        "sort_order": 1100,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 20,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u041f\u043b\u0430\u0442\u043d\u0430\u044f",
+                        "group": "\u0426\u0435\u043d\u0430 \u0432\u044b\u043f\u0443\u0441\u043a\u0430",
+                        "state": 1,
+                        "sort_order": 1200,
+                        "type": "filter"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "card_product_catalog_filter_widget",
+                  "type": "filter",
+                  "meta": {
+                    "widget_title": "\u0422\u0438\u043f",
+                    "filters": [
+                      {
+                        "id": 21,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0412\u0441\u0435",
+                        "group": "\u0422\u0438\u043f",
+                        "state": 1,
+                        "sort_order": 1300,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 22,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0414\u0435\u0431\u0438\u0442\u043e\u0432\u0430\u044f",
+                        "group": "\u0422\u0438\u043f",
+                        "state": 1,
+                        "sort_order": 1400,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 23,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u0430\u044f",
+                        "group": "\u0422\u0438\u043f",
+                        "state": 1,
+                        "sort_order": 1500,
+                        "type": "filter"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "card_product_catalog_filter_widget",
+                  "type": "filter",
+                  "meta": {
+                    "widget_title": "\u0412\u0438\u0434",
+                    "filters": [
+                      {
+                        "id": 24,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0412\u0441\u0435",
+                        "group": "\u0412\u0438\u0434",
+                        "state": 1,
+                        "sort_order": 1600,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 25,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f",
+                        "group": "\u0412\u0438\u0434",
+                        "state": 1,
+                        "sort_order": 1700,
+                        "type": "filter"
+                      },
+                      {
+                        "id": 26,
+                        "background_color": "",
+                        "font_color": "",
+                        "border_color": "",
+                        "name": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u0430\u044f",
+                        "group": "\u0412\u0438\u0434",
+                        "state": 1,
+                        "sort_order": 1800,
+                        "type": "filter"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+  }

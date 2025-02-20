@@ -1,0 +1,176 @@
+// card/byphone
+// REQUEST
+{
+    "phone": "998974446717"
+}
+// RESPONSE
+{
+    "data": [
+        {
+            "name": "Ipak Yuli Bank",
+            "logo": {
+                "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+            },
+            "cards": [
+                // 4161
+                // 7495
+                // 6616
+                // 1052
+                // 3272
+                // 2654
+                {
+                    "id": {
+                        "token": "some-hash-or-uuid",
+                        "ttl": 300,
+                        "ttl_at": 1738317761
+                    },
+                    "pan": "4161",
+                    "name": "SHADIYAROV X.",
+                    "vendor": {
+                        "name": "humo",
+                        "pattern": "humovirt",
+                        "logo": {
+                            "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                            "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+                        }
+                    },
+                    "cover": {
+                        "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/card_covers/31f18006b03e7f3c051cf7b205bd03de.png",
+                        "mini": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/card_covers/a5fa993c43e7f5ccde060f0c459ebea6.png"
+                    }
+                },
+                {
+                    "id": {
+                        "token": "some-hash-or-uuid",
+                        "ttl": 300,
+                        "ttl_at": 1738317761
+                    },
+                    "pan": "4161",
+                    "name": "SHADIYAROV X.",
+                    "vendor": {
+                        "name": "visa",
+                        "pattern": "visasum",
+                        "logo": {
+                            "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                            "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+                        }
+                    },
+                    "cover": {
+                        "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/card_covers/31f18006b03e7f3c051cf7b205bd03de.png",
+                        "mini": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/card_covers/a5fa993c43e7f5ccde060f0c459ebea6.png"
+                    }
+                }
+            ]
+        },
+    ],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+
+
+
+
+
+
+
+
+
+{
+    "data": [
+        {
+            "receiver": {
+                "card_id": null,
+                "name": "SHADIYAROV X.",
+                "pan": null
+            },
+            "cards": [
+                {
+                    "id": {
+                        "token": "some-hash-or-uuid",
+                        "ttl": 300,
+                        "ttl_at": 1738317761
+                    },
+                    "pan": "0117",
+                    "name": "SHADIYAROV X.",
+                    "vendor": {
+                        "name": "UZCARD",
+                        "pattern": "uzcard",
+                        "logo": {
+                            "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                            "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+                        }
+                    },
+                    "bank": {
+                        "name": "Ipak Yuli Bank",
+                        "logo": {
+                            "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                            "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+                        }
+                    },
+                    "cover": {
+                        "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/card_covers/31f18006b03e7f3c051cf7b205bd03de.png",
+                        "mini": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/card_covers/a5fa993c43e7f5ccde060f0c459ebea6.png"
+                    }
+                }
+            ]
+        },
+        {
+            "receiver": {
+                "card_id": null,
+                "name": "Shadiyerov X.",
+                "pan": null
+            },
+            "cards": [
+                // {
+                //     "bankName": "InfinBANK",
+                //     "maskedPan": "9439",
+                //     "cardId": "0fcb96b667d8489294262b41d923af51",
+                //     "cardType": "UZCARD",
+                //     "images": [
+                //       {
+                //         "type": "DARK_COLOUR_LINE_SMALL",
+                //         "url": "https://static.uzum.com/card-designs/colour-line-small/dark-theme/Uzcard-Infin-bank.png"
+                //       },
+                //       {
+                //         "type": "LIGHT_COLOUR_LINE_SMALL",
+                //         "url": "https://static.uzum.com/card-designs/colour-line-small/Uzcard_Infin_bank.png"
+                //       }
+                //     ]
+                // }
+                {
+                    "id": {
+                        "token": "some-hash-or-uuid",
+                        "ttl": 300,
+                        "ttl_at": 1738317761
+                    },
+                    "pan": "9439",
+                    "name": "Shadiyerov X.",
+                    "vendor": {
+                        "name": "UZCARD",
+                        "pattern": "uzcard",
+                        "logo": {
+                            "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                            "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+                        }
+                    },
+                    "bank": {
+                        "name": "Ipak Yuli Bank",
+                        "logo": {
+                            "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/231db5584f6c5ea3cb54cf66ec335262.png",
+                            "mini": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png"
+                        }
+                    },
+                    "cover": {
+                        "default": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/resources/card_covers/31f18006b03e7f3c051cf7b205bd03de.png",
+                        "mini": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/card_covers/a5fa993c43e7f5ccde060f0c459ebea6.png"
+                    }
+                }
+            ]
+        }
+    ],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

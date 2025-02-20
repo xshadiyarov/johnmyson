@@ -1,0 +1,44 @@
+// Алгоритм рендеринга экшенов:
+// 1. Получить объект экшена
+// 2. Обозначить текущий экран
+// 3. Проверить существует ли объект конфигурации для этого экшнена, под этот экран
+// 4. Если да, рендер
+// 5. Если нет, проверить существует ли объект конфигурации под этот экшен в целом
+// 6. Если да, рендер
+// 7. Если нет, проверить существует ли объект конфигурации для экшенов, под этот экран
+// 8. Если да, рендер
+// 9. Если нет, использовать дефолтный объект конфигурации экшенов - модалка
+
+// f(page, action.key) ?? f(action.key) ?? f(page) ?? f()
+
+// Нужно определить структуры: AltActionConfig
+
+{
+    "data": {},
+    "state": "error", // error, success
+    "error_text": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct во вкладке Услуги (ID: 1s32z61t1)",
+    "actions": [
+        {
+            "key": "alt-vd",
+            "type": "alt-action", // Абстрактный компонент, конкретный выбирается под контекст
+            "title": "Visa Direct",
+            "subtitle": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct", // Допустимо использовать error_text в др. сценариях
+            "is_enabled": true,
+            "is_on": true,
+            "icon": {
+                "id": "601",
+                "name": "button_payments.icon",
+                "type": "card",
+                "links": {
+                    "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                    "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png"
+                }
+            },
+            "action": {
+                "type": "deeplink",
+                "value": "iym://services/39"
+            }
+        }
+    ],
+    "code": 100
+}

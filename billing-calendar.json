@@ -1,0 +1,64 @@
+// user/card/billing -- Новый
+// REQUEST
+{
+    "id": "",
+    "bill_date": "" // Не дата, что-то попроще, типа месяца, но более универсально, а может вообще и не привязываться к дате
+    // Определишь после понимания полной концепции и объекта ответа
+}
+// RESPONSE
+{
+    "data": { // BillingInfo
+        "bill_period": {
+            "begin": "2024-01-01T00:00:00",
+            "end": ""
+        },
+        "payment": { // BillingPaymentInfo
+            "min": { // BillingPaymentItem
+                "all": 0, // AMNT_MINBAL
+                "purchase": 0, // AMNT_PURCHASE
+                "cash": 0, // AMNT_CASH
+                "other": 0, // AMNT_OTHER
+                "fee": 0 // AMNT_SURCHANGE
+            },
+            "total": { // BillingPaymentItem
+                "all": 0, // AMNT_TOTAL
+                "purchase": 0, // AMNT_PURCHASE + BAMNT_PURCHASE
+                "cash": 0, // AMNT_CASH + BAMNT_CASH
+                "other": 0, // AMNT_OTHER + BAMNT_OTHER
+                "fee": 0 // AMNT_SURCHANGE + BAMNT_SURCHANGE
+            }
+        },
+        "explanation": { // BillingExplanation
+            "text": "",
+            "faq": [
+                { // Detail
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        "navigation": {
+            "prev": "",
+            "next": ""
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// - AMNT_TOTAL
+// - AMNT_MINBAL
+// - AMNT_PURCHASE
+// - AMNT_CASH
+// - AMNT_OTHER
+// - AMNT_SURCHANGE
+// - BAMNT_PURCHASE
+// - BAMNT_CASH
+// - BAMNT_OTHER
+// - BAMNT_SURCHANGE
+// - Лексическое объяснение. По сути шаблон, который все данные по билингу выводит в текст, как мы в группе
+// - Фильтруемый по категориям список транзакций
+// - Q&A о приоритизации и др. вопросах связанных с аттрибутами биллинга
+
+
+// card/history -- Без изменений

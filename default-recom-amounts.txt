@@ -1,0 +1,14 @@
+p2p  Card to card                  50000.00, 100000.00, 200000.00   UZS
+p2a  Card to account               100000.00, 250000.00, 500000.00  UZS
+v2a  Visa.USD to account           20.00, 50.00, 100.00             USD
+a2a  Account to account            250000.00, 500000.00, 1000000.00 UZS
+w2a  Wallet to account             50000.00, 150000.00, 300000.00   UZS
+w2p  Wallet to card                50000.00, 150000.00, 300000.00   UZS
+a2p  Account to card               100000.00, 250000.00, 500000.00  UZS
+a2w  Account to wallet             50000.00, 100000.00, 200000.00   UZS
+p2w  Card to wallet                50000.00, 100000.00, 200000.00   UZS
+w2w  Wallet to wallet              50000.00, 100000.00, 200000.00   UZS
+pcv  Card.UZS to Card.USD exchange 200000.00, 500000.00, 1000000.00 UZS
+vcp  Card.USD to Card.UZS exchange 20.00, 50.00, 100.00             USD
+v2v  Visa.USD to Visa.USD          20.00, 50.00, 100.00             USD
+a2v  Account to Visa.USD           20.00, 50.00, 100.00             USD

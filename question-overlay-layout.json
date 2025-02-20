@@ -1,0 +1,109 @@
+// button
+{
+    "data": {
+        "type": "card_info",
+        "sections": [
+            // ...
+            {
+                "key": "secondary",
+                "header": null,
+                "widgets": [
+                    // ...
+                    {
+                        "key": "card_actions",
+                        "type": "list_actions",
+                        "components": [
+                            // ...
+                            {
+                                "key": "row_action_credit_card_info",
+                                "type": "row_action",
+                                "title": "Информация",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": {
+                                    "id": "605",
+                                    "name": "row_action_card_info.icon",
+                                    "type": "card",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1667ac42a11bf6.png",
+                                        "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/d_1667ac42a1b637.png"
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "credit_card_info"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+// overlays
+{
+    // ...
+    "overlays": {
+        "credit_card_info": {
+            "key": "credit_card_info",
+            "type": "bottom_menu",
+            "header": null,
+            "sections": [
+                {
+                    "key": "credit_card_info_hero",
+                    "header": null,
+                    "widgets": [
+                        {
+                            "key": "credit_card_info_hero_block",
+                            "type": "hero_block",
+                            "components": [
+                                {
+                                    "key": "credit_card_info_pair_text",
+                                    "type": "pair_text",
+                                    "title": "Кредитная карта",
+                                    "subtitle": "Это карта позволяющая тратить деньги Банка, а потом возвращать и если соблюсти условия льготного периода, то абсолютно без процентов.",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "pair_text_hero",
+                                        "style": "Gradient",
+                                        "priority": "Primary",
+                                        "size": "",
+                                        "color": null,
+                                        "background_color": "Blue"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "credit_card_info_general",
+                    "header": {
+                        "title": "Общая информация"
+                    },
+                    "widgets": [
+                        {
+                            "key": "collapse_list_credit_card_info_general",
+                            "type": "collapse_list",
+                            "components": [
+                                {
+                                    "key": "credit_card_q1",
+                                    "type": "collapse_item",
+                                    "title": "Чем кредитная карта отличается от обычной?",
+                                    "subtitle": "Можно тратить деньги Банка, а потом возвращать и если соблюсти условия льготного периода, то без процентов.",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "icon": null,
+                                    "action": null
+                                },
+                                // ...
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

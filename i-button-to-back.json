@@ -1,0 +1,204 @@
+// TO-BE
+// Проблема: Нет возможности управлять наполнение онбордингов, вызываемые через i-шки, без обновления МП
+// Решение: Разметка наложения будет передаваться в overlays. Если виджет открытый, в нем компонент и-шки должен открывать наложение через стандартный action типа overlay
+// Если виджет закрытый и при этом в нем есть и-шка, то ее отображение будет зависить от того есть ли наложение с ключем i_{ключ виджета}.
+// Разметка онбординга в card/info
+{
+    // ...
+    "overlays": {
+        "i_credit_limit": {
+            "key": "i_credit_limit",
+            "type": "x_scroll_bottom_menu",
+            "header": null,
+            "sections": [
+                {
+                    "key": "i_credit_limit_grace",
+                    "header": null,
+                    "widgets": [
+                        {
+                            "key": "intro_block_grace",
+                            "type": "intro_block",
+                            "components": [
+                                {
+                                    "key": "img_box_grace",
+                                    "type": "img_box",
+                                    "title": "",
+                                    "subtitle": "",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "img_box_4x3",
+                                        "style": "Rectangle",
+                                        "priority": null,
+                                        "size": "4x3",
+                                        "color": null,
+                                        "background": null
+                                    },
+                                    "icon": {
+                                        "id": "610",
+                                        "name": "intro_grace.img",
+                                        "type": "card",
+                                        "links": {
+                                            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                                            "dark": null
+                                        }
+                                    },
+                                    "action": null
+                                },
+                                {
+                                    "key": "text_block_grace",
+                                    "type": "text_block",
+                                    "title": "Льготный период",
+                                    "subtitle": "Период, в который вы не платите проценты за использование кредитных средств. Погасите задолженность до конца этого периода и не платите проценты.",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "text_block_center_primary_h2",
+                                        "style": "Center",
+                                        "priority": "Primary",
+                                        "size": "H2",
+                                        "color": null,
+                                        "background_color": null
+                                    },
+                                    "icon": null,
+                                    "action": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "i_credit_limit_duration",
+                    "header": null,
+                    "widgets": [
+                        {
+                            "key": "intro_block_duration",
+                            "type": "intro_block",
+                            "components": [
+                                {
+                                    "key": "img_box_duration",
+                                    "type": "img_box",
+                                    "title": "",
+                                    "subtitle": "",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "img_box_4x3",
+                                        "style": "Rectangle",
+                                        "priority": null,
+                                        "size": "4x3",
+                                        "color": null,
+                                        "background": null
+                                    },
+                                    "icon": {
+                                        "id": "610",
+                                        "name": "intro_grace_duration.img",
+                                        "type": "card",
+                                        "links": {
+                                            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                                            "dark": null
+                                        }
+                                    },
+                                    "action": null
+                                },
+                                {
+                                    "key": "text_block_duration",
+                                    "type": "text_block",
+                                    "title": "Длительность",
+                                    "subtitle": "Льготный период завершается через 25 дней после даты выписки. Чтобы избежать процентов на потраченные средства, погасите вовремя всю сумму, использованную из кредитного лимита.",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "text_block_center_primary_h2",
+                                        "style": "Center",
+                                        "priority": "Primary",
+                                        "size": "H2",
+                                        "color": null,
+                                        "background_color": null
+                                    },
+                                    "icon": null,
+                                    "action": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "i_credit_limit_benefit",
+                    "header": null,
+                    "widgets": [
+                        {
+                            "key": "intro_block_benefit",
+                            "type": "intro_block",
+                            "components": [
+                                {
+                                    "key": "img_box_benefit",
+                                    "type": "img_box",
+                                    "title": "",
+                                    "subtitle": "",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "img_box_4x3",
+                                        "style": "Rectangle",
+                                        "priority": null,
+                                        "size": "4x3",
+                                        "color": null,
+                                        "background": null
+                                    },
+                                    "icon": {
+                                        "id": "611",
+                                        "name": "into_grace_benefit.img",
+                                        "type": "card",
+                                        "links": {
+                                            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                                            "dark": null
+                                        }
+                                    },
+                                    "action": null
+                                },
+                                {
+                                    "key": "text_block_benefit",
+                                    "type": "text_block",
+                                    "title": "Преимущество",
+                                    "subtitle": "Беспроцентный период — это время, когда можно вернуть траты по кредитке и не платить проценты банку. Беспроцентный период возобновляется каждый месяц и длится до 55 дней.",
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "rendering": {
+                                        "key": "text_block_center_primary_h2",
+                                        "style": "Center",
+                                        "priority": "Primary",
+                                        "size": "H2",
+                                        "color": null,
+                                        "background_color": null
+                                    },
+                                    "icon": null,
+                                    "action": null
+                                },
+                                {
+                                    "key": "button_benefit",
+                                    "type": "button",
+                                    "title": "ОК",
+                                    "subtitle": null,
+                                    "is_enabled": true,
+                                    "is_on": true,
+                                    "icon": null,
+                                    "rendering": {
+                                        "key": "button_accent_primary_standard",
+                                        "style": "Accent",
+                                        "priority": "Primary",
+                                        "size": "Standard",
+                                        "color": null,
+                                        "background_color": null
+                                    },
+                                    "action": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        // Таким же образом остальные
+    }
+}

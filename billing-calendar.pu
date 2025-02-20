@@ -1,0 +1,86 @@
+@startuml
+actor       "Пользователь" as User
+participant "МП IYM"       as App
+participant "IYM Backend"  as BE
+participant "ISS WS"       as Tieto
+
+User -> App : Экран КК
+activate User
+activate App
+App -> BE : user/card/info
+activate BE
+App <-- BE : Разметка экрана КК
+deactivate BE
+User <-- App : Пререндер
+note over App
+На экране КК новый 
+виджет по текущему 
+биллингу
+end note
+App -> BE : user/card/credit
+activate BE
+BE -> Tieto : queryBillInfo
+activate Tieto
+BE <-- Tieto : Разбивка послед. \n биллинга
+deactivate Tieto
+App -> BE : user/card/billing
+alt Метод в ISS WS
+    note over Tieto #SkyBlue
+    Уточнить у вендора 
+    возможность предвыгрузки
+    end note
+else Локально
+    BE -> Tieto : queryTransactionHistory
+    BE <-- Tieto : История транзакций
+    BE -> BE : Группировка по кодам \nTIETO_TRANSACTION_TYPES
+    BE -> BE : Суммирование пред. \nбиллинга
+    BE -> BE : Расчет (не)обязательных \nпроцентов
+end
+App <-- BE : Информация КЛ
+App <-- BE : Текущий биллинг
+deactivate BE
+User <-- App : Рендер
+deactivate User
+deactivate App
+User -> App : Биллинг календарь
+activate User
+activate App
+App -> BE : user/card/billing/history
+activate BE
+BE -> Tieto : queryBillHistory
+activate Tieto
+note over Tieto
+Возможность разработки 
+согласована
+end note
+BE <-- Tieto : Даты биллингов
+deactivate Tieto
+App <-- BE : История биллингов
+deactivate BE
+User <-- App : Экран истории
+deactivate App
+User -> App : Детали биллинга
+activate App
+App -> BE : user/card/billing \n(С датой)
+activate BE
+BE -> Tieto : queryBillInfo \n(С BILL_DATE)
+activate Tieto
+BE <-- Tieto : Разбивка биллинга
+deactivate Tieto
+App <-- BE : Объект биллинга
+deactivate BE
+User <-- App : Детали биллинга
+App -> BE : card/history \n(В период биллинга)
+activate BE
+BE -> Tieto : queryTransactionHistory
+activate Tieto
+BE <-- Tieto : История транзакций
+deactivate Tieto
+BE -> BE : Маппинг по кодам
+App <-- BE : История операций \nTIETO_TRANSACTION_TYPES
+deactivate BE
+User <-- App : История операций
+deactivate App
+deactivate User
+
+@enduml

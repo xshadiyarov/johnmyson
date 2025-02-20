@@ -1,0 +1,56 @@
+{
+    "key": "filter_item_all",
+    "type": "filter_item",
+    "title": "Все",
+    "subtitle": null,
+    "is_enabled": true,
+    "is_on": true,
+    "icon": null,
+    "rendering": null,
+    "action": {
+        "type": "deeplink",
+        "value": "iym://cards/order"
+    }
+},
+{
+    "key": "filter_item_credit_card",
+    "type": "filter_item",
+    "title": "Кредитная",
+    "subtitle": null,
+    "is_enabled": true,
+    "is_on": true,
+    "icon": null,
+    "rendering": null,
+    "action": {
+        "type": "deeplink",
+        "value": "iym://cards/order?filter[type]=credit_card"
+    }
+},
+{
+    "key": "filter_item_debit_card",
+    "type": "filter_item",
+    "title": "Дебитовая",
+    "subtitle": null,
+    "is_enabled": true,
+    "is_on": true,
+    "icon": null,
+    "rendering": null,
+    "action": {
+        "type": "deeplink",
+        "value": "iym://cards/order?filter[type]=debit_card"
+    }
+},
+{
+    "key": "filter_item_international_card",
+    "type": "filter_item",
+    "title": "Международная",
+    "subtitle": null,
+    "is_enabled": true,
+    "is_on": true,
+    "icon": null,
+    "rendering": null,
+    "action": {
+        "type": "deeplink",
+        "value": "iym://cards/order?filter[type]=international_card"
+    }
+}

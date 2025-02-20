@@ -1,0 +1,12 @@
+@startuml
+actor       "Пользователь" as User
+participant "МП IYM"       as App
+participant "IYM Backend"  as BE
+participant "DB"           as DB
+
+User -> App : Заказать карту
+App -> BE : card/products
+BE -> DB : LAYOUT_PAGE, catalog_info
+BE -> BE : 
+
+@enduml

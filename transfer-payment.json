@@ -1,0 +1,88 @@
+// transfer/payment
+// RESPONSE
+{
+    "data": {
+        "state": "complete",
+        "id": 79936170,
+        "sender": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV XASAN",
+            "pan": "860057******0117"
+        },
+        "receiver": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV X.",
+            "pan": "860057******0117"
+        },
+        "additional": [
+            {
+                "key": "udate",
+                "value": "21.01.2025",
+                "name": "Дата",
+                "action": ""
+            },
+            {
+                "key": "pan",
+                "value": "**** 7495",
+                "name": "С карты",
+                "action": ""
+            },
+            {
+                "key": "hpan",
+                "value": "**** 6616",
+                "name": "На карту",
+                "action": ""
+            },
+            {
+                "key": "receiver_name",
+                "value": "XASAN SHADIYAROV",
+                "name": "Получатель",
+                "action": ""
+            },
+            {
+                "key": "send_amount",
+                "value": "1 000.00 UZS",
+                "name": "Сумма к получению",
+                "action": ""
+            },
+            {
+                "key": "own_commission",
+                "value": "500 UZS",
+                "name": "Комиссия с собственных средств",
+                "action": ""
+            },
+            {
+                "key": "credit_commission",
+                "value": "5 000 UZS",
+                "name": "Комиссия с кредитных средств",
+                "action": ""
+            }
+        ],
+        "self": null,
+        "commission": {
+            "state": "own_credit",
+            "currency": "UZS",
+            "total": {
+                "amount": 205500,
+                "send": 200000,
+                "fee": 5500
+            },
+            "funds": {
+                "own": {
+                    "amount": 100000,
+                    "percent": 0.5,
+                    "fee": 500
+                },
+                "credit": {
+                    "amount": 200000,
+                    "percent": 2.5,
+                    "fee": 5000
+                }
+            },
+            "limit": null // Если будет нужен, можно возвращать предыдущий
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

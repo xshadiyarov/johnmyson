@@ -1,0 +1,26 @@
+// A
+{
+    "key": "link_accept_offer",
+    "type": "link",
+    "title": "t:public_offer_1",
+    "subtitle": "morph", // Заменим на ссылку
+    "is_enabled": true,
+    "is_on": true,
+    "icon": null,
+    "action": null
+}
+// B
+{
+    "key": "link_accept_offer",
+    "type": "link",
+    "title": "t:public_offer_1",
+    "subtitle": "",
+    "is_enabled": true,
+    "is_on": true,
+    "icon": null,
+    "action": {
+        "type": "browser",
+        "value": "morph" // Заменим на ссылку
+    }
+}
+

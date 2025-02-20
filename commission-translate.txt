@@ -1,0 +1,47 @@
+Доступно без комиссии
+Available without commission
+Dastup mavjud komissiyasiz
+
+Переводы без комиссии
+Transfers without commission
+Pul o‘tkazmalari komissiyasiz
+
+Каждый месяц вы можете переводить без процентов до определенного лимита, после будет взиматься комиссия.
+Each month, you can transfer funds without fees up to a certain limit, after which a commission will be charged.
+Har oy muayyan limitgacha foizsiz pul o‘tkazishingiz mumkin, undan keyin komissiya olinadi.
+
+Остаток
+Balance
+Qoldiq
+
+Потрачено
+Spent
+Sarflangan
+
+Сумма лимита
+Limit amount
+Limit summasi
+
+Ваш лимит на бесплатные переводы исчерпан, но вы все еще можете переводить средства с небольшой комиссией.
+Your free transfer limit is spent, but you can still transfer funds with a small commission.
+Bepul pul o‘tkazish limiti tugadi, lekin siz hali ham kichik komissiya bilan mablag‘ o‘tkazishingiz mumkin.
+
+Сумма к списанию
+Withdrawal amount
+Yechildigan summa
+
+Включить комиссию
+Include commission
+Komissiyani qo‘shish
+
+Остаток на бесплатные переводы меньше суммы на перевод. Комиссия будет взята за всю сумму.
+The remaining free transfer balance is less than the transfer amount. The commission will be charged on the full amount.
+Bepul pul o‘tkazmalar uchun qoldiq o‘tkazma summasidan kam. Komissiya butun summa uchun olinadi.
+
+с собственных средств
+from own funds
+o‘z mablag‘laridan
+
+с кредитных средств
+from credit funds
+kredit mablag‘laridan

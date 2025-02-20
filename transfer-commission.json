@@ -1,0 +1,694 @@
+// preflight - full
+{
+    "data": {
+        "state": "preflight",
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": {
+            "state": "full",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 0
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// preflight - part_used
+{
+    "data": {
+        "state": "preflight",
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": {
+            "state": "part_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// preflight - overlimit
+{
+    "data": {
+        "state": "preflight",
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": {
+            "state": "overlimit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 999900000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// preflight - full_used
+{
+    "data": {
+        "state": "preflight",
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": {
+            "state": "full_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 1000000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// preflight - no_limit
+{
+    "data": {
+        "state": "preflight",
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": {
+            "state": "no_limit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// preflight - Нет лимита
+{
+    "data": {
+        "state": "preflight",
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// own - full
+{
+    "data": {
+        "state": "own",
+        "currency": "UZS",
+        "total": {
+            "amount": 20100000,
+            "send": 20000000,
+            "fee": 100000
+        },
+        "funds": {
+            "own": {
+                "amount": 20000000,
+                "percent": 0.5,
+                "fee": 100000
+            },
+            "credit": null
+        },
+        "limit": {
+            "state": "full",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 0
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// own - part_used
+{
+    "data": {
+        "state": "own",
+        "currency": "UZS",
+        "total": {
+            "amount": 20100000,
+            "send": 20000000,
+            "fee": 100000
+        },
+        "funds": {
+            "own": {
+                "amount": 20000000,
+                "percent": 0.5,
+                "fee": 100000
+            },
+            "credit": null
+        },
+        "limit": {
+            "state": "part_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// own - overlimit
+{
+    "data": {
+        "state": "own",
+        "currency": "UZS",
+        "total": {
+            "amount": 200100000,
+            "send": 20000000,
+            "fee": 100000
+        },
+        "funds": {
+            "own": {
+                "amount": 20000000,
+                "percent": 0.5,
+                "fee": 100000
+            },
+            "credit": null
+        },
+        "limit": {
+            "state": "overlimit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 990000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// own - full_used
+{
+    "data": {
+        "state": "own",
+        "currency": "UZS",
+        "total": {
+            "amount": 200100000,
+            "send": 20000000,
+            "fee": 100000
+        },
+        "funds": {
+            "own": {
+                "amount": 20000000,
+                "percent": 0.5,
+                "fee": 100000
+            },
+            "credit": null
+        },
+        "limit": {
+            "state": "full_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 1000000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// own - no_limit
+{
+    "data": {
+        "state": "own",
+        "currency": "UZS",
+        "total": {
+            "amount": 20000000,
+            "send": 20000000,
+            "fee": 0
+        },
+        "funds": {
+            "own": {
+                "amount": 20000000,
+                "percent": 0,
+                "fee": 0
+            },
+            "credit": null
+        },
+        "limit": {
+            "state": "no_limit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// own - Нет лимита
+{
+    "data": {
+        "state": "own",
+        "currency": "UZS",
+        "total": {
+            "amount": 200100000,
+            "send": 20000000,
+            "fee": 100000
+        },
+        "funds": {
+            "own": {
+                "amount": 20000000,
+                "percent": 0.5,
+                "fee": 100000
+            },
+            "credit": null
+        },
+        "limit": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit - full
+{
+    "data": {
+        "state": "credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20500000,
+            "send": 20000000,
+            "fee": 500000
+        },
+        "funds": {
+            "own": null,
+            "credit": {
+                "amount": 20000000,
+                "percent": 2.5,
+                "fee": 500000
+            }
+        },
+        "limit": {
+            "state": "full",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 0
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit - part_used
+{
+    "data": {
+        "state": "credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20500000,
+            "send": 20000000,
+            "fee": 500000
+        },
+        "funds": {
+            "own": null,
+            "credit": {
+                "amount": 20000000,
+                "percent": 2.5,
+                "fee": 500000
+            }
+        },
+        "limit": {
+            "state": "part_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit - overlimit
+{
+    "data": {
+        "state": "credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20500000,
+            "send": 20000000,
+            "fee": 500000
+        },
+        "funds": {
+            "own": null,
+            "credit": {
+                "amount": 20000000,
+                "percent": 2.5,
+                "fee": 500000
+            }
+        },
+        "limit": {
+            "state": "overlimit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 999900000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit - full_used
+{
+    "data": {
+        "state": "credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20500000,
+            "send": 20000000,
+            "fee": 500000
+        },
+        "funds": {
+            "own": null,
+            "credit": {
+                "amount": 20000000,
+                "percent": 2.5,
+                "fee": 500000
+            }
+        },
+        "limit": {
+            "state": "full_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 1000000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit - no_limit
+{
+    "data": {
+        "state": "credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20500000,
+            "send": 20000000,
+            "fee": 500000
+        },
+        "funds": {
+            "own": null,
+            "credit": {
+                "amount": 20000000,
+                "percent": 2.5,
+                "fee": 500000
+            }
+        },
+        "limit": {
+            "state": "no_limit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit - Нет лимита
+{
+    "data": {
+        "state": "credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20500000,
+            "send": 20000000,
+            "fee": 500000
+        },
+        "funds": {
+            "own": null,
+            "credit": {
+                "amount": 20000000,
+                "percent": 2.5,
+                "fee": 500000
+            }
+        },
+        "limit": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit_own - full
+{
+    "data": {
+        "state": "own_credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20300000,
+            "send": 20000000,
+            "fee": 300000
+        },
+        "funds": {
+            "own": {
+                "amount": 10000000,
+                "percent": 0.5,
+                "fee": 50000
+            },
+            "credit": {
+                "amount": 10000000,
+                "percent": 2.5,
+                "fee": 250000
+            }
+        },
+        "limit": {
+            "state": "full",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 0
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit_own - part_used
+{
+    "data": {
+        "state": "own_credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20300000,
+            "send": 20000000,
+            "fee": 300000
+        },
+        "funds": {
+            "own": {
+                "amount": 10000000,
+                "percent": 0.5,
+                "fee": 50000
+            },
+            "credit": {
+                "amount": 10000000,
+                "percent": 2.5,
+                "fee": 250000
+            }
+        },
+        "limit": {
+            "state": "part_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit_own - overlimit
+{
+    "data": {
+        "state": "own_credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20300000,
+            "send": 20000000,
+            "fee": 300000
+        },
+        "funds": {
+            "own": {
+                "amount": 10000000,
+                "percent": 0.5,
+                "fee": 50000
+            },
+            "credit": {
+                "amount": 10000000,
+                "percent": 2.5,
+                "fee": 250000
+            }
+        },
+        "limit": {
+            "state": "overlimit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 999900000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit_own - full_used
+{
+    "data": {
+        "state": "own_credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20300000,
+            "send": 20000000,
+            "fee": 300000
+        },
+        "funds": {
+            "own": {
+                "amount": 10000000,
+                "percent": 0.5,
+                "fee": 50000
+            },
+            "credit": {
+                "amount": 10000000,
+                "percent": 2.5,
+                "fee": 250000
+            }
+        },
+        "limit": {
+            "state": "full_used",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 1000000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit_own - no_limit
+{
+    "data": {
+        "state": "own_credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20300000,
+            "send": 20000000,
+            "fee": 300000
+        },
+        "funds": {
+            "own": {
+                "amount": 10000000,
+                "percent": 0.5,
+                "fee": 50000
+            },
+            "credit": {
+                "amount": 10000000,
+                "percent": 2.5,
+                "fee": 250000
+            }
+        },
+        "limit": {
+            "state": "no_limit",
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// credit_own - Нет лимита
+{
+    "data": {
+        "state": "own_credit",
+        "currency": "UZS",
+        "total": {
+            "amount": 20300000,
+            "send": 20000000,
+            "fee": 300000
+        },
+        "funds": {
+            "own": {
+                "amount": 10000000,
+                "percent": 0.5,
+                "fee": 50000
+            },
+            "credit": {
+                "amount": 10000000,
+                "percent": 2.5,
+                "fee": 250000
+            }
+        },
+        "limit": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

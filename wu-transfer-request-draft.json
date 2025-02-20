@@ -1,0 +1,86 @@
+// v1/transfer/commission
+// AS-IS
+{
+    "to": "4475332",
+    "amount": 100000,
+    "from_mfo": "",
+    "card": "4475332",
+    "include_fee": false,
+    "from": "4488411",
+    "to_mfo": "",
+    "event": 60
+}
+// TO-BE
+{ // TransferCreateRequest
+    "source": { // TransferParticipant
+        "id": "4488411",
+        "type": "card" // card, account, wallet
+    },
+    "destination": {
+        "id": "8600123456780000",
+        "type": "pan" // card, account, wallet, pan, bank, transfer
+    },
+    "amount": 100000,
+    "include_fee": false
+}
+// v1/transfer/prepayment
+// AS-IS
+{
+    "amount": 100000,
+    "from": 4488411,
+    "to_mfo": "",
+    "currency": "UZS",
+    "event": 60,
+    "card": 4475332,
+    "isInternalTransfer": true,
+    "include_fee": false,
+    "to": 4475332,
+    "from_mfo": "",
+    "is_send_otp": false
+}
+// TO-BE
+{ // TransferCreateRequest
+    "source": { // TransferParticipant
+        "id": "4488411",
+        "type": "card" // card, account, wallet
+    },
+    "destination": {
+        "id": "8600123456780000",
+        "type": "pan" // card, account, wallet, pan, bank, transfer
+    },
+    "amount": 100000,
+    "include_fee": false
+}
+
+
+// Examples for types
+// card
+{
+    "id": "4488411",
+    "type": "card"
+},
+// account
+{
+    "id": "142957315",
+    "type": "account"
+},
+// wallet
+{
+    "id": "1468878",
+    "type": "wallet"
+},
+// pan
+{
+    "id": "8600123456780000",
+    "type": "pan"
+},
+// bank
+{
+    "id": "00444:20206000962789683400",
+    "type": "bank"
+}
+// transfer
+{
+    "id": "745286",
+    "type": "transfer"
+}

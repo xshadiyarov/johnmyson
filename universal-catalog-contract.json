@@ -1,0 +1,71 @@
+// v1/card/products
+// REQUEST
+// RESPONSE
+{
+    "data": {
+        "type": "catalog",
+        "sections": [
+            {
+                "key": "catalog_filters",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "products_filter_carousel",
+                        "type": "filter_carousel",
+                        "components": [
+                            {
+                                "key": "filter_item_all",
+                                "type": "filter",
+                                "title": "Все",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://cards/order"
+                                    // Если query параметров нет в value, очищаем
+                                }
+                            }
+                            {
+                                "key": "filter_item_morph",
+                                "type": "filter",
+                                "title": "morph", // t:TAGS.NAME - Дебетова
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "morph" // iym://cards/order?filter[TAGS.GROUP]=TAGS.ID - iym://cards/order?filter[type]=1
+                                    // Проверяем что URL совпадает с текущим местом положения
+                                    // Если да, тогда делаем слияние query параметров с текущими
+                                    // Если нет, просто переходим
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "catalog_carousel",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "",
+                        "type": "product_item",
+                        "components": []
+                    }
+                ]
+            }
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+
+// Касаемо фильтров, можно 
+// После того как будет готово, встреча с Мишей и объяснение отличия каждой механики

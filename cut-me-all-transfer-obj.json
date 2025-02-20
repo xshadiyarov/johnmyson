@@ -1,0 +1,472 @@
+// [OLD] RESPONSE - transfer/prepayment
+{
+    "data": {
+        "state": "create", // Статус по умолчанию до совершения платежа, на будущее
+        "id": { // Идентификация перевода
+            "token": "some-hash", // Идентификатор
+            "ttl": 300, // Время жихники платежа в памяти
+            "ttl_at": 1737440164 // Время начала отсчета
+        },
+        "sender": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV XASAN",
+            "pan": "860057******0117"
+        },
+        "receiver": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV X.",
+            "pan": "860057******0117"
+        },
+        "additional": [ // Рендеринг деталей на сервере
+            {
+                "key": "udate",
+                "value": "21.01.2025",
+                "name": "Дата",
+                "action": ""
+            },
+            {
+                "key": "pan",
+                "value": "**** 7495",
+                "name": "С карты",
+                "action": ""
+            },
+            {
+                "key": "hpan",
+                "value": "**** 6616",
+                "name": "На карту",
+                "action": ""
+            },
+            {
+                "key": "receiver_name",
+                "value": "XASAN SHADIYAROV",
+                "name": "Получатель",
+                "action": ""
+            },
+            {
+                "key": "send_amount",
+                "value": "1 000.00 UZS",
+                "name": "Сумма к получению",
+                "action": ""
+            },
+            {
+                "key": "own_commission",
+                "value": "900 UZS",
+                "name": "Комиссия с собственных средств",
+                "action": ""
+            },
+            {
+                "key": "credit_commission",
+                "value": "4 500 UZS",
+                "name": "Комиссия с кредитных средств",
+                "action": ""
+            }
+        ],
+        "self": { // Контроль автоматических действий
+            "card": true, // Карта своя или нет
+            "confirm": { // Информация о OTP
+                "phone": "99897*****17",
+                "code": "678850",
+                "ttl": 60, // Истечение OTP
+                "ttl_at": 1737440164 // Время отсчета
+            },
+            "transfer": true // Стоит ли пропустить экран претрансфера
+        },
+        "commission": { // Объект комиссии
+            "state": "own_credit",
+            "currency": "UZS",
+            "total": {
+                "amount": 205500,
+                "send": 200000,
+                "fee": 5500
+            },
+            "funds": {
+                "own": {
+                    "amount": 100000,
+                    "percent": 0.5,
+                    "fee": 500
+                },
+                "credit": {
+                    "amount": 200000,
+                    "percent": 2.5,
+                    "fee": 5000
+                }
+            },
+            "limit": {
+                "state": "part_used",
+                "period_type": "month",
+                "period_count": 1,
+                "type": "sum",
+                "min": null,
+                "max": 1000000000,
+                "used": 500000000
+            }
+        },
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// [OLD] RESPONSE - transfer/payment
+{
+    "data": {
+        "state": "complete",
+        "id": 79936170,
+        "sender": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV XASAN",
+            "pan": "860057******0117"
+        },
+        "receiver": {
+            "card_id": "4475332",
+            "name": "SHADIYAROV X.",
+            "pan": "860057******0117"
+        },
+        "additional": [
+            {
+                "key": "udate",
+                "value": "21.01.2025",
+                "name": "Дата",
+                "action": ""
+            },
+            {
+                "key": "pan",
+                "value": "**** 7495",
+                "name": "С карты",
+                "action": ""
+            },
+            {
+                "key": "hpan",
+                "value": "**** 6616",
+                "name": "На карту",
+                "action": ""
+            },
+            {
+                "key": "receiver_name",
+                "value": "XASAN SHADIYAROV",
+                "name": "Получатель",
+                "action": ""
+            },
+            {
+                "key": "send_amount",
+                "value": "1 000.00 UZS",
+                "name": "Сумма к получению",
+                "action": ""
+            },
+            {
+                "key": "own_commission",
+                "value": "500 UZS",
+                "name": "Комиссия с собственных средств",
+                "action": ""
+            },
+            {
+                "key": "credit_commission",
+                "value": "5 000 UZS",
+                "name": "Комиссия с кредитных средств",
+                "action": ""
+            }
+        ],
+        "self": null,
+        "commission": {
+            "state": "own_credit",
+            "currency": "UZS",
+            "total": {
+                "amount": 205500,
+                "send": 200000,
+                "fee": 5500
+            },
+            "funds": {
+                "own": {
+                    "amount": 100000,
+                    "percent": 0.5,
+                    "fee": 500
+                },
+                "credit": {
+                    "amount": 200000,
+                    "percent": 2.5,
+                    "fee": 5000
+                }
+            },
+            "limit": null // Если будет нужен, можно возвращать предыдущий
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+
+Заполнение additional:
+1. Создается класс TransferAdditionalResource
+2. В запросе на transfer/prepayment в него передается параметры запроса и объект комиссии
+3. Популяризируется объект additional и сохраняется в память под токен и под код
+    - header.title - Translation::get('transfer_type_title_$type')
+    - header.icon - Icon::getIconObject('transfer_type_icon_$type')
+    - items - utils::conversion_key_value
+    - items[].icon - Icon::first([['type', '=', 'card'],['name', '=', $resource['type']]]);
+        - $resource['type'] - $db_card->type ?? (utils::isWallet($from) ? 'wallet' : 'account');
+4. В запросе на transfer/payment, из памяти достается addtional
+5. Возвращается
+
+// RESPONSE - transfer/commission
+{
+    "data": {
+        "state": "preflight", // own, credit, own_credit, preflight
+        "currency": "UZS",
+        "total": null,
+        "funds": null,
+        "limit": {
+            "state": "part_used", // full, part_used, overlimit, full_used, no_limit 
+            "period_type": "month",
+            "period_count": 1,
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        },
+        "amounts": [
+            100000
+            123400
+            200000
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// RESPONSE - transfer/prepayment
+{
+    "data": {
+        "state": "create",
+        "id": "some-hash", // Идентификатор
+        "ttl": 300, // Время жихники платежа в памяти
+        "ttl_at": 1737440164, // Время начала отсчета
+        "additional": { // Рендеринг деталей на сервере
+            "header": {
+                "title": "Перевод на карту",
+                "icon": {
+                    "id": null,
+                    "name": null,
+                    "type": null,
+                    "links": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1661f68528c6fb.png", // transfer_to_card
+                        "dark": null
+                    }
+                }
+            },
+            "footer": {
+                "title": "Итого",
+                "value": "205 500 UZS"
+            },
+            "items": [
+                {
+                    "key": "Дата",
+                    "value": "21.01.2025",
+                    "icon": ""
+                },
+                {
+                    "key": "С карты",
+                    "value": "**** 7495",
+                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                },
+                {
+                    "key": "На карту",
+                    "value": "**** 6616",
+                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                },
+                {
+                    "key": "Получатель",
+                    "value": "XASAN SHADIYAROV",
+                    "icon": ""
+                },
+                {
+                    "key": "Сумма к получению",
+                    "value": "1 000 UZS",
+                    "icon": ""
+                },
+                {
+                    "key": "Комиссия с собственных средств",
+                    "value": "500 UZS",
+                    "icon": ""
+                },
+                {
+                    "key": "Комиссия с кредитных средств",
+                    "value": "5 000 UZS",
+                    "icon": ""
+                }
+            ]
+        },
+        "gni": null,
+        "self": { // Контроль автоматических действий
+            "card": true, // Карта своя или нет
+            "confirm": { // Информация о OTP
+                "phone": "99897*****17",
+                "code": "678850",
+                "ttl": 60, // Истечение OTP
+                "ttl_at": 1737440164 // Время отсчета
+            },
+            "transfer": true // Стоит ли пропустить экран претрансфера
+        },
+        "commission": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// RESPONSE - transfer/payment
+{
+    "data": {
+        "state": "complete",
+        "id": 79936170,
+        "additional": {
+            "header": {
+                "title": "Перевод на карту",
+                "icon": {
+                    "id": null,
+                    "name": null,
+                    "type": null,
+                    "links": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1661f68528c6fb.png", // transfer_to_card
+                        "dark": null
+                    }
+                }
+            },
+            "footer": {
+                "title": "Итого",
+                "value": "205 500 UZS"
+            },
+            "items": [
+                {
+                    "key": "Дата",
+                    "value": "21.01.2025",
+                    "icon": ""
+                },
+                {
+                    "key": "С карты",
+                    "value": "**** 7495",
+                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                },
+                {
+                    "key": "На карту",
+                    "value": "**** 6616",
+                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                },
+                {
+                    "key": "Получатель",
+                    "value": "XASAN SHADIYAROV",
+                    "icon": ""
+                },
+                {
+                    "key": "Сумма к получению",
+                    "value": "1 000 UZS",
+                    "icon": ""
+                },
+                {
+                    "key": "Комиссия с собственных средств",
+                    "value": "500 UZS",
+                    "icon": ""
+                },
+                {
+                    "key": "Комиссия с кредитных средств",
+                    "value": "5 000 UZS",
+                    "icon": ""
+                }
+            ]
+        },
+        "gni": null,
+        "self": null,
+        "commission": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+
+
+deeplink - Назад/Перейти
+method - Отмена/Продолжить
+overlay - Назад/Далее
+* - ОК
+
+
+
+
+
+// Алгоритм рендеринга экшенов:
+// 1. Получить объект экшена
+// 2. Обозначить текущий экран
+// 3. Проверить существует ли объект конфигурации для этого экшнена, под этот экран
+// 4. Если да, рендер
+// 5. Если нет, проверить существует ли объект конфигурации под этот экшен в целом
+// 6. Если да, рендер
+// 7. Если нет, проверить существует ли объект конфигурации для экшенов, под этот экран
+// 8. Если да, рендер
+// 9. Если нет, использовать дефолтный объект конфигурации экшенов - модалка
+
+// f(page, action.key) ?? f(action.key) ?? f(page) ?? f()
+
+// Нужно определить структуры: AltActionConfig
+
+{
+    "data": {},
+    "state": "error", // error, success
+    "error_text": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct во вкладке Услуги (ID: 1s32z61t1)",
+    "actions": [
+        {
+            "key": "alt-vd",
+            "type": "alt-action", // Абстрактный компонент, конкретный выбирается под контекст
+            "title": "Visa Direct",
+            "subtitle": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct", // Допустимо использовать error_text в др. сценариях
+            "is_enabled": true,
+            "is_on": true,
+            "icon": {
+                "id": "601",
+                "name": "button_payments.icon",
+                "type": "card",
+                "links": {
+                    "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                    "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png"
+                }
+            },
+            "action": {
+                "type": "deeplink",
+                "value": "iym://services/39"
+            }
+        }
+    ],
+    "code": 100
+}
+
+
+
+// Просто определяй на бэке в БД тип модалки и вуаля
+// И уже modal-forward будет определять какие кнопки в модалке использовать
+{
+    "data": {},
+    "state": "error", // error, success
+    "error_text": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct во вкладке Услуги (ID: 1s32z61t1)",
+    "actions": [
+        {
+            "key": "please_try_vd_2_transfer",
+            "type": "modal-forward",
+            "title": "Visa Direct",
+            "subtitle": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct",
+            "is_enabled": true,
+            "is_on": true,
+            "icon": {
+                "id": "601",
+                "name": "button_payments.icon",
+                "type": "card",
+                "links": {
+                    "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png",
+                    "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/....png"
+                }
+            },
+            "action": {
+                "type": "deeplink",
+                "value": "iym://services/39"
+            }
+        }
+    ],
+    "code": 100
+}
+
+
