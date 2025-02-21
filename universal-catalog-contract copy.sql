@@ -14,10 +14,8 @@ CREATE TABLE TAGS_RELATIONS {
     TARGET_ID
     TARGET
     SORT_ORDER
-    IS_PRIMARY
     RENDER_ID
     -- [X] PQ: А как стили ставятся? -- RENDER_ID
-    -- [X] PQ: Как будет вестись разделение между фильтрами и тегами -- Через TAGS.TYPE
 }
 CREATE TABLE CARD_PRODUCTS_V1 {
     ID -- ID
@@ -80,16 +78,13 @@ CREATE TABLE CARD_PRODUCTS_V1_TEXTS {
     CARD_PRODUCT_ID -- CARD_PRODUCT_ID
     LANGUAGE -- LANG
     TITLE -- SUBTYPE
-    SUBTITLE -- TEXT -- [X] Q: Возможно нужно поменять на SUBTITLE -- Да
+    DESCRIPTION -- TEXT
     ICON
     TYPE -- TYPE, но другие типы
     SORT_ORDER
     CREATED_AT
     UPDATED_AT
     DELETED_AT
-    RENDER_ID
-    -- [] Q: Возможно стоит добавить тут ALT_KEY для подгрузки контента i-шек
-    -- [X] Q: Тут нужен либо render_id либо цвет -- Да, render_id
     -- TABLE: CARD_PRODUCTS_TEXTS
     -- ID -- ID
     -- CARD_PRODUCT_ID -- CARD_PRODUCT_ID

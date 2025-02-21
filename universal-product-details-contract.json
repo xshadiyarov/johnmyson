@@ -1,0 +1,207 @@
+{
+    "data": {
+        "type": "card_details",
+        "sections": [
+            {
+                "key": "card_details_default",
+                "widgets": [
+                    // ...осталось заголовок с тегами
+                    {
+                        "key": "card_details_page_header",
+                        "type": "page_header",
+                        "components": [
+                            {
+                                "key": "card_details_bullets_text_block",
+                                "type": "text_block",
+                                "title": "Карта возможностей", // Тоже через morph подтягивается
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_block_left_primary_h2",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "H2",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_badge_morph",
+                                "type": "badge",
+                                "title": "Скоро",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_red_primary_small",
+                                    "style": "Red",
+                                    "priority": "Primary",
+                                    "size": "Small",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    },
+                    {
+                        "key": "card_details_webview",
+                        "type": "webview",
+                        "components": [
+                            {
+                                "key": "card_details_webview_frame",
+                                "type": "webview_frame",
+                                "title": "",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null,
+                                "meta": {
+                                    "webview_frame": {
+                                        "url": "https://mobile-view-3d.netlify.app/view?version=v2" // Тут будет правильная ссылка, саму ссылку храним в CARD_PRODUCTS_META.3D_VIEW
+                                    }
+                                }
+                            },
+                            {
+                                "key": "card_details_bullets_text_block",
+                                "type": "text_block",
+                                "title": "Дополнительные сведения", // Тоже через morph подтягивается
+                                "subtitle": "Дополнительно убедительный рекламный текст, почему пользователь должен открыть карту?",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_block_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B-1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    }
+                    {
+                        "key": "card_details_list_info",
+                        "type": "list_info",
+                        "components": [
+                            {
+                                "key": "card_details_bullets_text_block",
+                                "type": "text_block",
+                                "title": "Почему эта карта?",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_block_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B-1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            // Популяризируется из CARD_PRODUCTS_V1_TEXTS по типу list
+                            {
+                                "key": "card_details_list_info_item_morph",
+                                "type": "list_info_item",
+                                "title": "morph",
+                                "subtitle": "morph",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "meta": {
+                                    "list_info_item": {
+                                        "alt_key": "abc" // CARD_PRODUCTS_V1_TEXTS.ALT_KEY
+                                    }
+                                },
+                                "action": { // Механика динамического вызова альт экшена
+                                    "type": "method",
+                                    "value": "alt_action",
+                                    "meta": {
+                                        "method": {
+                                            "headers": null,
+                                            "query": null,
+                                            "body": {
+                                                "key": "{{list_info_item.alt_key}}" // Подтягивает из meta
+                                                // После отправки запроса при успехе вернется виджет типа onboarding, который фронт отобразит
+                                                // Заложить логику что если не вернулось, тогда иконку надо скрыть
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // Цена и кнопка с низу зависят от выбора клиента, поэтому они будут залочены на странице
+                        ]
+                    },
+                    {
+                        // Якорь баннера, альт экшн
+                        // Передавать рекламный баннер во флоу заказа продукта не самая лучшая идея
+                        // Вместо этого поставим якорь на альт действие, потом при связке с методом получения деталей продукта если вернулся баннер будем заменять
+                        "key": "card_details_alt_banner",
+                        "type": "alt_banner"
+                    },
+                    {
+                        "key": "custom_design",
+                        "type": "custom_design",
+                        "meta": {
+                            "custom_design": {
+                                "price": 22500000
+                            }
+                        }
+                    },
+                    {
+                        "key": "card_details_faq",
+                        "type": "collapse_group",
+                        "components": [
+                            { // Отдельный компонент для заголовка, в будущем во многих местах понадобиться
+                                "key": "card_details_faq_text_block",
+                                "type": "text_block",
+                                "title": "Остались вопросы?",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_block_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B-1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            { // Популяризируется из CARD_PRODUCTS_V1_TEXTS по типу question
+                                "key": "card_details_faq_collapse_item_morph",
+                                "type": "collapse_item",
+                                "title": "morph",
+                                "subtitle": "morph",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            }
+                            // ...
+                        ]
+                    }
+                    // ...
+                ]
+            }
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

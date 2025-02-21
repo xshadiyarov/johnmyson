@@ -1,0 +1,301 @@
+{
+    "data": {
+      "type": "card_product_details",
+      "sections": [
+        {
+          "key": "card_product_details_section_primary",
+          "header": null,
+          "widgets": []
+        },
+        {
+          "key": "card_product_details_section_secondary_texts",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_texts",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_texts",
+                  "type": "text",
+                  "title": "morph",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph",
+                  "icon": []
+                },
+                {
+                  "key": "card_product_details_component_secondary_texts",
+                  "type": "text",
+                  "title": "morph",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph",
+                  "icon": []
+                },
+                {
+                  "key": "card_product_details_component_secondary_texts",
+                  "type": "text",
+                  "title": "morph",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph",
+                  "icon": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_advertisement",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_advertisement",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_advertisement",
+                  "type": "text",
+                  "title": "morph",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph",
+                  "icon": [],
+                  "action": {
+                    "type": "deeplink",
+                    "value": "iym:\/\/default"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_indesign",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_indesign",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_indesign_header",
+                  "type": "text",
+                  "title": "card_product_indesign_title",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "card_product_indesign_title"
+                }
+              ]
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_indesign_images",
+                  "type": "image",
+                  "title": "image",
+                  "is_enabled": true,
+                  "is_on": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_collapse",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_collapse",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_components_secondary_collapse",
+                  "type": "text",
+                  "title": "morph",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_price",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_price",
+              "type": "list",
+              "meta": {
+                "id": "1",
+                "widget_title": "\u0414\u043b\u044f \u043e\u043d\u043b\u0430\u0439\u043d \u043f\u043e\u043a\u0443\u043f\u043e\u043a",
+                "title": "VISA Virtual",
+                "card_image": "https:\/\/umobile.ipakyulibank.uz:5444\/https:\/\/umobile.ipakyulibank.uz:5444\/images\/visa_virtual_card_image.png",
+                "background_color": "#423269",
+                "tags": [
+                  {
+                    "id": 1,
+                    "bg_color": "#A5CA3B",
+                    "font_color": "#FFFFFF",
+                    "border_color": "#A5CA3B",
+                    "name": "tag_virtual",
+                    "group": ""
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "card_product_currency_name",
+                    "value": "card_product_currency_usd",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "card_product_card_issue",
+                    "value": "card_product_card_issue_free",
+                    "color": "Accent"
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_all",
+                    "group": "payment_system"
+                  },
+                  {
+                    "id": 11,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_humo",
+                    "group": "payment_system"
+                  },
+                  {
+                    "id": 15,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_all",
+                    "group": "currency"
+                  },
+                  {
+                    "id": 16,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_uzs",
+                    "group": "currency"
+                  },
+                  {
+                    "id": 18,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_all",
+                    "group": "price"
+                  },
+                  {
+                    "id": 19,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_free",
+                    "group": "price"
+                  },
+                  {
+                    "id": 19,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_free",
+                    "group": "price"
+                  },
+                  {
+                    "id": 21,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_all",
+                    "group": "type"
+                  },
+                  {
+                    "id": 22,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_debit",
+                    "group": "type"
+                  },
+                  {
+                    "id": 23,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_credit",
+                    "group": "type"
+                  },
+                  {
+                    "id": 26,
+                    "bg_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "filter_virtual",
+                    "group": "aspect"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "card_product_details_components_secondary_price",
+                  "type": "text",
+                  "title": "price",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph"
+                },
+                {
+                  "key": "card_product_details_components_secondary_button",
+                  "type": "button",
+                  "title": "continue_order",
+                  "is_enabled": true,
+                  "is_on": true
+                },
+                {
+                  "key": "card_product_details_components_secondary_price",
+                  "type": "text",
+                  "title": "price",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph"
+                },
+                {
+                  "key": "card_product_details_components_secondary_button",
+                  "type": "button",
+                  "title": "continue_order",
+                  "is_enabled": true,
+                  "is_on": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overlays": []
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+  }
