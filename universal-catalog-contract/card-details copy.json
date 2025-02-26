@@ -1,0 +1,117 @@
+{
+    "data": {
+        // Делать универсальными детали не имеет смысла, тк нужен индивидуальный подход к каждому типу продукта
+        "type": "card_details",
+        "meta": {
+            "card_details": { // Этот уже не объект CatalogItem, а его предшественник конкретно по карте
+                "id": 1,
+                "product_code": "ABC123",
+                "sort_order": 100,
+                "currency": "UZS",
+                "price": 0,
+                "card_image": "https://storage.googleapis.com/iyb-mobile-app-front/images/visa_sum_card_image.png",
+                "background_color": "Quantum of Sloace",
+                "title": "VISA START SUM",
+                "short": "Бомбезная зеленая карта, выгода х3",
+                "description": "VISA START SUM - самая доступная пластиковая карта из семейства Visa. Несмотря на свою простоту - карта имеет все преимущества, присущие картам Visa. С полным описанием тарифа по карте можно ознакомиться в разделе тарифы на сайте банка",
+                "block": false,
+                "message": null,
+                "header_color": "Grey Base",
+                "background": "https://storage.googleapis.com/iyb-mobile-app-front/images/cardissue/humo.png",
+                "custom_design_price": 22500000, // [] Q: Возможно, если все для чего вставляется этот объект это custom_design_price, то лучше использовать morph с разбивкой на компоненты
+                "logos_layer": "https://storage.googleapis.com/iyb-mobile-app-front/images/humo_tpl.png",
+                "is_virtual": false,
+                "has_custom_design": true,
+                "3d_view": "https://mobile-view-3d.netlify.app/view?version=v2" // [] Q: Подумай действительно ли так делать это лучшее решение?
+            }
+        },
+        "sections": [
+            {
+                "key": "card_details_default",
+                "widgets": [
+                    {
+                        "key": "card_details_page_header",
+                        "type": "page_header",
+                        "components": [
+                            {
+                                "key": "card_details_bullets_text_block",
+                                "type": "text_block",
+                                "title": "morph",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_block_left_primary_h2",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "H2",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_badge_morph",
+                                "type": "badge",
+                                "title": "Morph",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": { // [X] Q: Это можем ли взять из TAGS_RELATIONS.RENDER_ID? - Да
+                                    "key": "badge_red_primary_small",
+                                    "style": "Red",
+                                    "priority": "Primary",
+                                    "size": "Small",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                            // ...
+                        ]
+                    },
+                    {
+                        "key": "card_details_webview",
+                        "type": "webview",
+                        "components": [
+                            {
+                                "key": "card_details_webview_frame",
+                                "type": "webview_frame",
+                                "title": "",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_bullets_text_block",
+                                "type": "text_block",
+                                "title": "morph",
+                                "subtitle": "Дополнительно убедительный рекламный текст, почему пользователь должен открыть карту?",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_block_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B-1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

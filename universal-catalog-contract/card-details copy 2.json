@@ -1,6 +1,30 @@
 {
     "data": {
+        // Делать универсальными детали не имеет смысла, тк нужен индивидуальный подход к каждому типу продукта
         "type": "card_details",
+        "meta": {
+            "card_details": { // Этот уже не объект CatalogItem, а его предшественник конкретно по карте
+                "id": 1,
+                "product_code": "ABC123",
+                "sort_order": 100,
+                "currency": "UZS",
+                "price": 0,
+                "card_image": "https://storage.googleapis.com/iyb-mobile-app-front/images/visa_sum_card_image.png",
+                "background_color": "Quantum of Sloace",
+                "title": "VISA START SUM",
+                "short": "Бомбезная зеленая карта, выгода х3",
+                "description": "VISA START SUM - самая доступная пластиковая карта из семейства Visa. Несмотря на свою простоту - карта имеет все преимущества, присущие картам Visa. С полным описанием тарифа по карте можно ознакомиться в разделе тарифы на сайте банка",
+                "block": false,
+                "message": null,
+                "header_color": "Grey Base",
+                "background": "https://storage.googleapis.com/iyb-mobile-app-front/images/cardissue/humo.png",
+                "custom_design_price": 22500000, // [X] Q: Возможно, если все для чего вставляется этот объект это custom_design_price, то лучше использовать morph с разбивкой на компоненты - Так не получиться, в какой компонент ты передаешь цену? Ни в какой
+                "logos_layer": "https://storage.googleapis.com/iyb-mobile-app-front/images/humo_tpl.png",
+                "is_virtual": false,
+                "has_custom_design": true,
+                "3d_view": "https://mobile-view-3d.netlify.app/view?version=v2" // [] Q: Подумай действительно ли так делать это лучшее решение?
+            }
+        },
         "sections": [
             {
                 "key": "card_details_default",
@@ -9,10 +33,10 @@
                         "key": "card_details_page_header",
                         "type": "page_header",
                         "components": [
-                            {
+                            { // Отдельный компонент для заголовка, в будущем во многих местах понадобиться
                                 "key": "card_details_bullets_text_block",
                                 "type": "text_block",
-                                "title": "Карта возможностей", // Тоже через morph подтягивается
+                                "title": "morph",
                                 "subtitle": null,
                                 "is_enabled": true,
                                 "is_on": true,
@@ -30,11 +54,11 @@
                             {
                                 "key": "card_details_badge_morph",
                                 "type": "badge",
-                                "title": "Скоро",
+                                "title": "Morph",
                                 "subtitle": null,
                                 "is_enabled": true,
                                 "is_on": true,
-                                "rendering": {
+                                "rendering": { // [X] Q: Это можем ли взять из TAGS_RELATIONS.RENDER_ID? - Да
                                     "key": "badge_red_primary_small",
                                     "style": "Red",
                                     "priority": "Primary",
@@ -45,6 +69,7 @@
                                 "icon": null,
                                 "action": null
                             }
+                            // ...
                         ]
                     },
                     {
@@ -54,24 +79,19 @@
                             {
                                 "key": "card_details_webview_frame",
                                 "type": "webview_frame",
-                                "title": "",
+                                "title": "morph", // Вставляется корректная ссылка - https://mobile-view-3d.netlify.app/view?version=v2
                                 "subtitle": null,
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": null,
                                 "icon": null,
-                                "action": null,
-                                "meta": {
-                                    "webview_frame": {
-                                        "url": "https://mobile-view-3d.netlify.app/view?version=v2" // Тут будет правильная ссылка, саму ссылку храним в CARD_PRODUCTS_META.3D_VIEW
-                                    }
-                                }
+                                "action": null
                             },
                             {
                                 "key": "card_details_bullets_text_block",
                                 "type": "text_block",
-                                "title": "Дополнительные сведения", // Тоже через morph подтягивается
-                                "subtitle": "Дополнительно убедительный рекламный текст, почему пользователь должен открыть карту?",
+                                "title": "Дополнительные сведения",
+                                "subtitle": "morph",
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
@@ -86,84 +106,38 @@
                                 "action": null
                             }
                         ]
-                    }
+                    },
+                    // [] Q: Как наиболее дешево реализовать инфо с онбордингом?
+                    // [] Q: Что делать с банером?
                     {
-                        "key": "card_details_list_info",
-                        "type": "list_info",
+                        "key": "custom_design",
+                        "type": "custom_design",
                         "components": [
                             {
                                 "key": "card_details_bullets_text_block",
                                 "type": "text_block",
-                                "title": "Почему эта карта?",
-                                "subtitle": null,
+                                "title": "Дизайн карты",
+                                "subtitle": "Смена обложки физических карт является платной услугой, стоимость составляет",
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_block_left_primary_b1p200",
+                                    "key": "text_block_left_primary_h2",
                                     "style": "Left",
                                     "priority": "Primary",
-                                    "size": "B-1-p200",
+                                    "size": "H2",
                                     "color": null,
                                     "background_color": null
                                 },
                                 "icon": null,
                                 "action": null
-                            },
-                            // Популяризируется из CARD_PRODUCTS_V1_TEXTS по типу list
-                            {
-                                "key": "card_details_list_info_item_morph",
-                                "type": "list_info_item",
-                                "title": "morph",
-                                "subtitle": "morph",
-                                "is_enabled": true,
-                                "is_on": true,
-                                "rendering": null,
-                                "icon": null,
-                                "meta": {
-                                    "list_info_item": {
-                                        "alt_key": "abc" // CARD_PRODUCTS_V1_TEXTS.ALT_KEY
-                                    }
-                                },
-                                "action": { // Механика динамического вызова альт экшена
-                                    "type": "method",
-                                    "value": "alt_action",
-                                    "meta": {
-                                        "method": {
-                                            "headers": null,
-                                            "query": null,
-                                            "body": {
-                                                "key": "{{list_info_item.alt_key}}" // Подтягивает из meta
-                                                // После отправки запроса при успехе вернется виджет типа onboarding, который фронт отобразит
-                                                // Заложить логику что если не вернулось, тогда иконку надо скрыть
-                                            }
-                                        }
-                                    }
-                                }
                             }
-                            // Цена и кнопка с низу зависят от выбора клиента, поэтому они будут залочены на странице
                         ]
-                    },
-                    {
-                        // Якорь баннера, альт экшн
-                        // Передавать рекламный баннер во флоу заказа продукта не самая лучшая идея
-                        // Вместо этого поставим якорь на альт действие, потом при связке с методом получения деталей продукта если вернулся баннер будем заменять
-                        "key": "card_details_alt_banner",
-                        "type": "alt_banner"
-                    },
-                    {
-                        "key": "custom_design",
-                        "type": "custom_design",
-                        "meta": {
-                            "custom_design": {
-                                "price": 22500000
-                            }
-                        }
                     },
                     {
                         "key": "card_details_faq",
                         "type": "collapse_group",
                         "components": [
-                            { // Отдельный компонент для заголовка, в будущем во многих местах понадобиться
+                            {
                                 "key": "card_details_faq_text_block",
                                 "type": "text_block",
                                 "title": "Остались вопросы?",
@@ -195,7 +169,7 @@
                             // ...
                         ]
                     }
-                    // ...
+                    // [X] Q: Подумай как сделать и стоит ли тут передавать здесь цену и кнопку? - Так как и тут будет разность текста у кнопки для виртуальной, их отображение за фронтам, туда и цену
                 ]
             }
         ]

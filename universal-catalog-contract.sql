@@ -12,7 +12,7 @@ CREATE TABLE TAGS {
 CREATE TABLE TAGS_RELATIONS {
     TAG_ID
     TARGET_ID
-    TARGET
+    TARGET -- Для того чтобы можно было связывать с разными таблицами, конкретно для разных типов продуктов
     SORT_ORDER
     IS_PRIMARY
     RENDER_ID
@@ -65,7 +65,7 @@ CREATE TABLE CARD_PRODUCTS_META {
     CARD_PRODUCT_ID
     LANGUAGE
     TITLE
-    DESCRIPTION
+    -- DESCRIPTION [] Q: По-моему он тут вообще не нужен, если есть CARD_PRODUCTS_V1_TEXTS типа description
     SHORT -- [X] Q: SHORT это то что над карточкой в каталоге? -- Да
     PRODUCT_LAYOUT -- [X] Q: Для чего PRODUCT_LAYOUT? -- Скорее всего не будет использоваться, он сам не знает
     CREATED_AT
@@ -79,6 +79,7 @@ CREATE TABLE CARD_PRODUCTS_V1_TEXTS {
     ID -- ID
     CARD_PRODUCT_ID -- CARD_PRODUCT_ID
     LANGUAGE -- LANG
+    -- KEY -- По нему у типов advantages будет подтягиваться наложение
     TITLE -- SUBTYPE
     SUBTITLE -- TEXT -- [X] Q: Возможно нужно поменять на SUBTITLE -- Да
     ICON
@@ -88,7 +89,8 @@ CREATE TABLE CARD_PRODUCTS_V1_TEXTS {
     UPDATED_AT
     DELETED_AT
     RENDER_ID
-    -- [] Q: Возможно стоит добавить тут ALT_KEY для подгрузки контента i-шек
+    ACTION_ID -- Так для каждого онбординга заведем его вызывающий экшен и сможем прикреплять индивидуально
+    -- [X] Q: Возможно стоит добавить тут ALT_KEY для подгрузки контента i-шек - Добавлен ACTION_ID
     -- [X] Q: Тут нужен либо render_id либо цвет -- Да, render_id
     -- TABLE: CARD_PRODUCTS_TEXTS
     -- ID -- ID

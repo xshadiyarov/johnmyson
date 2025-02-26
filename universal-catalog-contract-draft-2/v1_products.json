@@ -1,0 +1,351 @@
+// REQUEST - v1/products
+{
+    "type": "card"
+}
+// RESPONSE - v1/products
+{
+    "data": {
+        "type": "catalog",
+        "sections": [
+            { // Секция фильтров
+                "key": "catalog_filter",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "catalog_filters_carousel",
+                        "type": "filter_carousel",
+                        "components": [
+                            {
+                                "key": "catalog_filters_item_all",
+                                "type": "filter_reset", // Наследует все от компонента типа filter, только логика работы с хранилищем фильтров разное - если пустой action.value - это сброс всех фильтров, если что-то в нем есть (пр. группа) - это сброс всех фильтров по префиксу
+                                "title": "Все",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "filter_default",
+                                    "style": "Default",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "filter",
+                                    "value": "" // Пустой означает сброс всех фильтров
+                                }
+                            },
+                            // Фильтры будут популяризироваться в один фильтр morph компонент, в него нужно передать теги со свойство TAGS_RELATIONS.IS_PRIMARY TRUE
+                            // IS_PRIMARY находиться в TAGS_RELATIONS, тк один и тот же фильтр может быть PRIMARY в картах, но не PRIMARY к примеру в депозитах
+                            {
+                                "key": "catalog_filters_item_morph", // В при работе с массивом в morph нужно заложить суффикс для того чтобы ключи не повторялись
+                                "type": "filter",
+                                "title": "morph", // t:TAGS.NAME - Дебетова
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "filter_default",
+                                    "style": "Default",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "filter",
+                                    "value": "morph" // Композитный ключ {{TAGS.GROUP}}.{{TAGS.ID}}
+                                }
+                            },
+                            // ...catalog_filters_item_morph
+                            { // Кнопка открывающая наложение всех фильтров
+                                "key": "catalog_filters_item_groups",
+                                "type": "filter_groups", // Отдельный компонент чтобы корректно вместить счетчик
+                                "title": "",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "742",
+                                    "name": "catalog_filters_group",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png",
+                                      "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png"
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "catalog_filters_group"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            { // Секция каталога продуктов
+                "key": "catalog_carousel",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "catalog_carousel_item",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": { // Универсальный объект CatalogItem
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                    // В CARD_PRODUCTS_V1.HEADER_COLOR храниться также
+                                ],
+                                "page_background_color": "Quantum of Sloace", // CARD_PRODUCTS_V1.BACKGROUND_COLOR
+                                "block": false, // Нужно для того чтобы сделать карточку полупрозрачной
+                                "filters": [ // Название не tags, тк теперь тут type = badge нету, а только type = filter
+                                    "type.3",
+                                    "currency.1"
+                                    // ...и тд
+                                ]
+                            }
+                        }, // Возможно не будет вообще меты если фронты смогут по типу виджета и типам компонентов ставить их в правильное место
+                        "components": [
+                            { // Short
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "morph", // CARD_PRODUCTS_V1_TEXTS.TITLE of type short
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            { // Название
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "morph", // CARD_PRODUCTS_V1_TEXTS.TITLE of type name
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "b2p300",
+                                    "style": null,
+                                    "priority": null,
+                                    "size": "B/2-p300",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            { // Иконка
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "morph", // CARD_PRODUCTS_V1.CARD_IMAGE
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            { // Теги
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "morph", // TAGS.NAME
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": { // TAGS_RELATIONS.RENDER_ID
+                                    "key": "badge_red_primary_small",
+                                    "style": "Red",
+                                    "priority": "Primary",
+                                    "size": "Small",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            // ...catalog_item_badge_morph - TAGS.TYPE = badge
+                            { // Буллеты
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "morph", // CARD_PRODUCTS_V1_TEXTS.TITLE
+                                "subtitle": "morph", // CARD_PRODUCTS_V1_TEXTS.SUBTITLE
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": { // CARD_PRODUCTS_V1_TEXTS.RENDER_ID
+                                    // Рендеринг применяется к title, стилизация subtitle всегда на стороне фронта в зависимости от компонента
+                                    "key": "b2p300_accent",
+                                    "style": null,
+                                    "priority": null,
+                                    "size": "B/2-p300",
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "742",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png",
+                                      "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png"
+                                    }
+                                },
+                                "action": { // CARD_PRODUCTS_V1_TEXTS.ACTION_ID
+                                    "type": "overlay",
+                                    "value": "morph"
+                                }
+                                // Для отображения иконки с действие нужно чтобы пришли оба icon, action
+                            },
+                            // ...catalog_item_bullet_morph
+                            { // Сообщение
+                                "key": "catalog_item_alert",
+                                "type": "alert",
+                                "title": "morph", // t:CARD_PRODUCTS_BLOCKS.ERROR_KEY
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null, // Пока заложим вид по умолчанию, в будущем сделаем рендеринг alert
+                                "icon": null,
+                                "action": null
+                            },
+                            { // Кнопка Подробнее
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "morph" // iym://{{product_type}}/details/{{id}}
+                                }
+                            },
+                            { // Вторая кнопка не придет, если карта недоступна к оформлению - чек по CARD_PRODUCTS_BLOCKS
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "morph", // Смотрим на CARD_PRODUCTS_V1.IS_VIRTUAL, если TRUE "Открыть", если FALSE "Оформить"
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "morph" // Смотрим на CARD_PRODUCTS_V1.IS_VIRTUAL, если TRUE "iym://card/issue/prepayment/{{id}}", если FALSE "iym://card/issue/{{id}}"
+                                    // Ссылки еще надо уточнить у фронта
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "overlays": {
+            "catalog_filters_group": {
+                "key": "catalog_filters_group",
+                "type": "filter_bottom_menu", // Расширяет bottom_menu, нужно для счетчика фильтров
+                "header": "Фильтр",
+                "sections": [
+                    {
+                        "key": "catalog_filters_group_default",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "components": [
+                                    { // Название
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "morph", // t:TAGS.GROUP
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "b2p300",
+                                            "style": null,
+                                            "priority": null,
+                                            "size": "B/2-p300",
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    { // Кнопка Все
+                                        // Так как поведение первой кнопки Все должна сносить фильтры данной группы, заведем два компонента, для разграничения их по action.value
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "morph" // Ключ только по группе - {{TAGS.GROUP}}
+                                        }
+                                    },
+                                    { // Фильтры
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "morph", // t:TAGS.NAME
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "morph" // Композитный ключ {{TAGS.GROUP}}.{{TAGS.ID}}
+                                        }
+                                    }
+                                    // ...filter_group_item_morph
+                                ]
+                            }
+                            // Кнопки закрыть и сбросить будут частью виджета на фронте, так как они привязаны к хранилищу фильтров - если хранилище пустое - кнопка Закрыть, если в хранилище хоть что-то есть - кнопка Сбросить и Закрыть. Фильтр будет применяться сразу по клику на него
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

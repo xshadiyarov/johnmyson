@@ -1,0 +1,322 @@
+// REQUEST - v1/products/details
+{
+    "id": 1,
+    "type": "card"
+}
+// RESPONSE - v1/products/details
+{
+    "data": {
+        "type": "card_details",
+        "sections": [
+            {
+                "key": "card_details_default",
+                "widgets": [
+                    {
+                        "key": "card_details_page_header",
+                        "type": "page_header",
+                        "components": [
+                            { // Отдельный компонент для заголовка, в будущем во многих местах понадобиться
+                                "key": "card_details_bullets_text",
+                                "type": "text",
+                                "title": "morph",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_h2",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "H2",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_badge_morph",
+                                "type": "badge",
+                                "title": "Morph",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_red_primary_small",
+                                    "style": "Red",
+                                    "priority": "Primary",
+                                    "size": "Medium",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                            // ...catalog_item_badge_morph - TAGS.TYPE = badge
+                        ]
+                    },
+                    {
+                        "key": "card_details_description",
+                        "type": "generic", // Этот виджет только объединяет компоненты и другой логики за собой не несет
+                        "components": [
+                            {
+                                "key": "card_details_webview",
+                                "type": "webview",
+                                "title": "morph", // CARD_PRODUCTS_V1.WEBVIEW
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_description_morph",
+                                "type": "text",
+                                "title": "morph", // title тоже morph, тк у нас есть CARD_PRODUCTS_V1_TEXTS, заводим запись по типу description и из него мы можем подтянуть и title, и subtitle и render_id
+                                "subtitle": "morph",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": { // CARD_PRODUCTS_V1_TEXTS.RENDER_ID
+                                    "key": "text_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B/1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            // ...card_details_description_morph
+                        ]
+                    },
+                    {
+                        "key": "card_details_row_actions",
+                        "type": "row_actions",
+                        "components": [
+                            {
+                                // Подобная реализация не уступает в гибкости, при этом очень недорогая
+                                "key": "row_action_morph",
+                                "type": "row_action",
+                                "title": "morph", // CARD_PRODUCTS_V1_TEXTS.TITLE of type advantages
+                                "subtitle": "morph", // CARD_PRODUCTS_V1_TEXTS.SUBTITLE
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "610",
+                                    "name": "row_actions_item_default",
+                                    "type": "target-main",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                        "dark": null
+                                    }
+                                },
+                                "action": {
+                                    // Тк потребована большая гибкость этой механики, экшен будет подтягиваться из CARD_PRODUCTS_V1_TEXTS.ACTION_ID
+                                    // Все наложения на этой странице будут статичными в БД, тк они переиспользуются в МП
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            // ...card_details_row_actions_item_morph
+                        ]
+                    },
+                    {
+                        "key": "card_details_banner_list",
+                        "type": "banner_list", // Виджет вертикального отображения банеров
+                        "components": [
+                            {
+                                "key": "card_details_banner",
+                                "type": "banner",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2022/05/full/e8395ab0b365f72be31b72685f8ae9936f587188.png", 
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "https://ru.ipakyulibank.uz/physical/plateji-i-perevody"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        // custom_design_price и logos_layer будет подгружаться из запроса для картинок - будет отправляться product_id в запросе
+                        // Если статус картинки default, это не считается индивидуальным дизайном, это бесплатный вариант обложки карты, в нем же и будет CARD_PRODUCTS_V1.BACKGROUND
+                        "key": "custom_design",
+                        "type": "custom_design"
+                    },
+                    {
+                        "key": "card_details_faq",
+                        "type": "collapse_group",
+                        "components": [
+                            {
+                                "key": "card_details_faq_text",
+                                "type": "text",
+                                "title": "Остались вопросы?",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B/1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            { // Популяризируется из CARD_PRODUCTS_V1_TEXTS по типу question
+                                "key": "card_details_faq_collapse_item_morph",
+                                "type": "collapse_item",
+                                "title": "morph",
+                                "subtitle": "morph",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            }
+                            // ...card_details_faq_collapse_item_morph
+                        ]
+                    },
+                    // Передав буллет цены и кнопку мы полностью избавляемся от meta страницы
+                    {
+                        "key": "card_details_final",
+                        "type": "generic",
+                        "components": [
+                            {
+                                // Этот буллет заводиться отдельно, его цена изначально зависит от CARD_PRODUCTS_V1.PRICE, если выбран индивидуальный дизайн, фронт по ключу card_details_bullet_price должно обновить его
+                                "key": "card_details_bullet_price",
+                                "type": "bullet",
+                                "title": "morph", // CARD_PRODUCTS_V1.PRICE + UZS, если 0, тогда БЕСПЛАТНО
+                                "subtitle": "Цена",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "b2p300_accent",
+                                    "style": null,
+                                    "priority": null,
+                                    "size": "B/2-p300",
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_proceed",
+                                "type": "button",
+                                "title": "morph", // Смотрим на CARD_PRODUCTS_V1.IS_VIRTUAL, если TRUE "Открыть", если FALSE "Оформить"
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "morph" // Смотрим на CARD_PRODUCTS_V1.IS_VIRTUAL, если TRUE "iym://card/issue/prepayment/{{id}}", если FALSE "iym://card/issue/{{id}}"
+                                    // Ссылки еще надо уточнить у фронта
+                                    // Если выбран индивидуальный дизайн, фронт должен по ключу card_details_proceed заменить экшен на type=method, value=(Запрос на заявку индивидуального дизайна) и текст Оставить заявку
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "overlays": {
+            // Все наложения для индивидуального подхода (структуры) и удобства связки с row_action будут статично заведены в БД и ставиться в overlays по тому какие CARD_PRODUCTS_V1_TEXTS.ACTION_ID типа advantages были подтянуты
+            "i_credit_limit": { // Префикс i_ важен для будущего
+                "key": "i_credit_limit_menu",
+                "type": "slides_bottom_menu", // Расширяет bottom_menu, все секции скроляться как слайды
+                "header": {
+                    "title": "Льготный период"
+                },
+                "sections": [
+                    {
+                        "key": "i_credit_limit_grace",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "intro_block_grace",
+                                "type": "intro_block",
+                                "components": [
+                                    {
+                                        "key": "image_grace",
+                                        "type": "image",
+                                        "title": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/....png", // Ссылка на корректное изображение
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "image_rectangle_4x3",
+                                            "style": "Rectangle",
+                                            "priority": null,
+                                            "size": "4x3",
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "text_grace",
+                                        "type": "text",
+                                        "title": "Льготный период",
+                                        "subtitle": "Период, в который вы не платите проценты за использование кредитных средств. Погасите задолженность до конца этого периода и не платите проценты.",
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_center_primary_h2",
+                                            "style": "Center",
+                                            "priority": "Primary",
+                                            "size": "H2",
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "button_benefit",
+                                        "type": "button",
+                                        "title": "ОК",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "icon": null,
+                                        "rendering": {
+                                            "key": "button_accent_primary_standard",
+                                            "style": "Accent",
+                                            "priority": "Primary",
+                                            "size": "Standard",
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "action": null // Как условились в Переводах 2.0, action=null в наложении и модалке закрывает их
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                    // ...Остальные слайды
+                ]
+            }
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

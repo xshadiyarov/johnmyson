@@ -1,0 +1,209 @@
+// REQUEST - products
+{
+    "type": "card"
+}
+// RESPONSE - products
+{
+    "data": {
+        "type": "catalog",
+        "sections": [
+            {
+                "key": "catalog_filters",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "catalog_filters_carousel",
+                        "type": "filter_carousel",
+                        "components": [
+                            // Фильтр "Все" будет залочен в виджете с ссылкой на текущую страницу
+                            // Фильтры будут популяризироваться в один фильтр morph компонент, в него нужно передать теги со свойство IS_PRIMARY TRUE
+                            {
+                                "key": "catalog_filters_item_morph",
+                                "type": "filter",
+                                "title": "morph", // t:TAGS.NAME - Дебетова
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "morph" // iym://cards/order?filter[TAGS.GROUP]=TAGS.ID - iym://cards/order?filter[Тип]=1
+                                    // Проверяем что URL совпадает с текущим местом положения
+                                    // Если да, тогда делаем слияние query параметров с текущими
+                                    // Если нет, просто переходим
+                                }
+                            },
+                            // ...catalog_filters_item_morph
+                            // Кнопка открывающая наложение всех фильтров
+                            {
+                                "key": "catalog_filters_item_groups",
+                                "type": "filter_groups", // Отдельный компонент чтобы корректно вместить счетчик
+                                "title": "",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": {
+                                    "id": "742",
+                                    "name": "catalog_filters_group",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png",
+                                      "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png"
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "catalog_filters_group"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "catalog_carousel",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "catalog_carousel_item",
+                        "type": "catalog_item",
+                        "meta": {
+                            // Название мета объекта должно соответствовать типу виджета, это даст возможность поставить универсальное условие, в будущем мета будет работать по схожей механике у всех LAYOUT_*
+                            "catalog_item": {
+                                "id": 1,
+                                "type": "card",
+                                "product_code": "ABC123",
+                                "sort_order": 100,
+                                "currency": "UZS",
+                                "price": 0,
+                                "image": "https://storage.googleapis.com/iyb-mobile-app-front/images/visa_sum_card_image.png", // CARD_IMAGE
+                                "header_color": "Grey Base",
+                                "background_color": "Quantum of Sloace",
+                                "title": "VISA START SUM",
+                                "short": "Бомбезная зеленая карта, выгода х3",
+                                "description": "VISA START SUM - самая доступная пластиковая карта из семейства Visa. Несмотря на свою простоту - карта имеет все преимущества, присущие картам Visa. С полным описанием тарифа по карте можно ознакомиться в разделе тарифы на сайте банка",
+                                "block": false, // Из логики работы с CARD_PRODUCTS_BLOCKS
+                                "message": null, // Вводиться как универсальный конструкт, но сейчас только для сообщения блокировки, нужно будет адаптировать сообщения
+                                "meta": {
+                                    "card": {
+                                        // Это нужно для того чтобы менять кнопки в зависимости от типа, отдельно передавать кнопки из-за их типа смысла нет
+                                        // Логика обнаружения метаданных та же что и в других места - по типу
+                                        // В будущем при необходимости можно будет гибко использовать подобную типовую передачу деталей продукта из конкретно его типа объекта
+                                        "is_virtual": true
+                                    }
+                                },
+                                "tags": [
+                                    // Тут будут все типы тегов, логика работы с репрезентации должна быть на фронте
+                                    {
+                                        "id": 1,
+                                        "name": "Скоро",
+                                        "type": "badge",
+                                        "group": "",
+                                        "sort_order": 100,
+                                        "rendering": {
+                                            "key": "badge_red_primary_small",
+                                            "style": "Red",
+                                            "priority": "Primary",
+                                            "size": "Small",
+                                            "color": null,
+                                            "background": null
+                                        }
+                                    },
+                                    {
+                                        "id": 3,
+                                        "name": "Международная",
+                                        "type": "filter",
+                                        "group": "Тип",
+                                        "sort_order": 100,
+                                        "rendering": null
+                                    }
+                                    // ...tags
+                                ],
+                                "text": [
+                                    // Также работа с репрезентацией должна вестись клиентом, body подтягивать из CARD_PRODUCTS_V1_TEXTS к которому привязать render
+                                    // Работа с i-шками будет через подтягивание action по CARD_PRODUCTS_V1_TEXTS.ACTION_ID
+                                    {
+                                        "id": 1,
+                                        "title": "Сум",
+                                        "subtitle": "Валюта",
+                                        "icon": null,
+                                        "type": "body",
+                                        "sort_order": 100,
+                                        "rendering": {
+                                            "key": "b2p300",
+                                            "style": null,
+                                            "priority": null,
+                                            "size": "B-2-p300",
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "action": {
+                                            "type": "overlay",
+                                            "value": "grace_period"
+                                        }
+                                    },
+                                    {
+                                        "id": 1,
+                                        "title": "БЕСПЛАТНО",
+                                        "subtitle": "Выпуск",
+                                        "icon": null,
+                                        "type": "body",
+                                        "sort_order": 100,
+                                        "rendering": {
+                                            "key": "b2p300_accent",
+                                            "style": null,
+                                            "priority": null,
+                                            "size": "B-2-p300",
+                                            "color": "Accent",
+                                            "background": null
+                                        }
+                                    }
+                                    // ...text
+                                ]
+                            }
+                        }
+                        // Кнопки будут формироваться в зависимости от переданных данных о продукте, тк это закрытый виджет плодить новые типы не стоит и не имеет смысла
+                        // ...catalog_carousel_item
+                    }
+                ]
+            }
+        ],
+        "overlays": {
+            "catalog_filters_group": {
+                "key": "catalog_filters_group",
+                "type": "filter_bottom_menu", // Расширяет bottom_menu, нужно для счетчика фильтров
+                "header": "Фильтр",
+                "sections": [
+                    {
+                        "key": "catalog_filters_group_default",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "meta": {
+                                    "filter_group": [
+                                        {
+                                            "id": 3,
+                                            "name": "Международная",
+                                            "type": "filter",
+                                            "group": "Тип",
+                                            "sort_order": 100,
+                                            "rendering": null
+                                        }
+                                        // ...tags
+                                    ]
+                                }
+                            }
+                            // ...filter_group_morph
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
