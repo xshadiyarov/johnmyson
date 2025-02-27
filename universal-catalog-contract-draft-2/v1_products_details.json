@@ -191,7 +191,7 @@
                         "components": [
                             {
                                 // Этот буллет заводиться отдельно, его цена изначально зависит от CARD_PRODUCTS_V1.PRICE, если выбран индивидуальный дизайн, фронт по ключу card_details_bullet_price должно обновить его
-                                "key": "card_details_bullet_price",
+                                "key": "card_details_price",
                                 "type": "bullet",
                                 "title": "morph", // CARD_PRODUCTS_V1.PRICE + UZS, если 0, тогда БЕСПЛАТНО
                                 "subtitle": "Цена",

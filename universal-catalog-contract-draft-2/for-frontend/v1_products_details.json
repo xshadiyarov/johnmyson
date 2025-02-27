@@ -1,0 +1,413 @@
+// REQUEST - v1/products/details
+{
+    "id": 1,
+    "type": "card"
+}
+// RESPONSE - v1/products/details
+{
+    "data": {
+        "type": "card_details",
+        "sections": [
+            {
+                "key": "card_details_default",
+                "widgets": [
+                    {
+                        "key": "card_details_page_header",
+                        "type": "page_header",
+                        "components": [
+                            {
+                                "key": "card_details_bullets_text",
+                                "type": "text",
+                                "title": "Карта возможностей",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_h2",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "H2",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_badge_morph",
+                                "type": "badge",
+                                "title": "Скоро",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_red_primary_medium",
+                                    "style": "Red",
+                                    "priority": "Primary",
+                                    "size": "Medium",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    },
+                    {
+                        "key": "card_details_description",
+                        "type": "generic",
+                        "components": [
+                            {
+                                "key": "card_details_webview",
+                                "type": "webview",
+                                "title": "https://3d-card-view.netlify.app/?version=v2",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_description_morph",
+                                "type": "text",
+                                "title": "Дополнительные сведения",
+                                "subtitle": "Дополнительно убедительный рекламный текст, почему пользователь должен открыть карту?",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B/1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    },
+                    {
+                        "key": "card_details_row_actions",
+                        "type": "row_actions",
+                        "components": [
+                            {
+                                "key": "card_details_faq_text",
+                                "type": "text",
+                                "title": "Почему эта карта?",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B/1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "row_action_morph_1",
+                                "type": "row_action",
+                                "title": "Льготный период",
+                                "subtitle": "У вас есть до 55 дней что-бы погасить потраченную сумму",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "610",
+                                    "name": "row_actions_item_default",
+                                    "type": "target-main",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                        "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "row_action_morph_2",
+                                "type": "row_action",
+                                "title": "Мульти валютная карта",
+                                "subtitle": "Базируется в сумах, но можно тратить в любой точке мира, с авто конверсией",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "610",
+                                    "name": "row_actions_item_default",
+                                    "type": "target-main",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                        "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "row_action_morph_3",
+                                "type": "row_action",
+                                "title": "Кредитный лимит",
+                                "subtitle": "Одобрим сумму до 100 млн. сум.",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "610",
+                                    "name": "row_actions_item_default",
+                                    "type": "target-main",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                        "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "row_action_morph_3",
+                                "type": "row_action",
+                                "title": "Срок выпуска",
+                                "subtitle": "от трех дней, до одной недели",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "610",
+                                    "name": "row_actions_item_default",
+                                    "type": "target-main",
+                                    "links": {
+                                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                        "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "card_details_banner_list",
+                        "type": "banner_list",
+                        "components": [
+                            {
+                                "key": "card_details_banner",
+                                "type": "banner",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2022/05/full/e8395ab0b365f72be31b72685f8ae9936f587188.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "https://ru.ipakyulibank.uz/physical/plateji-i-perevody"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "custom_design",
+                        "type": "custom_design"
+                    },
+                    {
+                        "key": "card_details_faq",
+                        "type": "collapse_group",
+                        "components": [
+                            {
+                                "key": "card_details_faq_text",
+                                "type": "text",
+                                "title": "Остались вопросы?",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B/1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_faq_collapse_item_morph_1",
+                                "type": "collapse_item",
+                                "title": "Вопрос 1",
+                                "subtitle": "Вфывфывфывфывфывфывфывфывфывфывфывфывфывфывфыв",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_faq_collapse_item_morph_2",
+                                "type": "collapse_item",
+                                "title": "Вопрос 2",
+                                "subtitle": "Вфывфывфывфывфывфывфывфывфывфывфывфывфывфывфыв",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_faq_collapse_item_morph_3",
+                                "type": "collapse_item",
+                                "title": "Вопрос 3",
+                                "subtitle": "Вфывфывфывфывфывфывфывфывфывфывфывфывфывфывфыв",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    },
+                    {
+                        "key": "card_details_final",
+                        "type": "generic",
+                        "components": [
+                            {
+                                "key": "card_details_price",
+                                "type": "bullet",
+                                "title": "БЕСПЛАТНО",
+                                "subtitle": "Цена",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "b2p300_accent",
+                                    "style": null,
+                                    "priority": null,
+                                    "size": "B/2-p300",
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_proceed",
+                                "type": "button",
+                                "title": "Продолжить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/1"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "overlays": {
+            "i_credit_limit": {
+                "key": "i_credit_limit_menu",
+                "type": "slides_bottom_menu",
+                "header": {
+                    "title": "Льготный период"
+                },
+                "sections": [
+                    {
+                        "key": "i_credit_limit_grace",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "intro_block_grace",
+                                "type": "intro_block",
+                                "components": [
+                                    {
+                                        "key": "image_grace",
+                                        "type": "image",
+                                        "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "image_rectangle_4x3",
+                                            "style": "Rectangle",
+                                            "priority": null,
+                                            "size": "4x3",
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "text_grace",
+                                        "type": "text",
+                                        "title": "Льготный период",
+                                        "subtitle": "Период, в который вы не платите проценты за использование кредитных средств. Погасите задолженность до конца этого периода и не платите проценты.",
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_center_primary_h2",
+                                            "style": "Center",
+                                            "priority": "Primary",
+                                            "size": "H2",
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "button_benefit",
+                                        "type": "button",
+                                        "title": "ОК",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "icon": null,
+                                        "rendering": {
+                                            "key": "button_accent_primary_standard",
+                                            "style": "Accent",
+                                            "priority": "Primary",
+                                            "size": "Standard",
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "action": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

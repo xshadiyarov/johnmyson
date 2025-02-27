@@ -101,3 +101,50 @@ CREATE TABLE CARD_PRODUCTS_V1_TEXTS {
     -- LANG -- LANGUAGE
     -- [X] PQ: Почему текст в объекте body это hard code и показать как, можно ли его перенести в БД -- Миртолип подумает
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE CARD_PRODUCTS_META {
+    ID
+    CARD_PRODUCT_ID
+    LANGUAGE
+    TITLE
+    DESCRIPTION
+    SHORT
+    PRODUCT_LAYOUT
+    CREATED_AT
+    UPDATED_AT
+    DELETED_AT
+}
+
+CREATE TABLE CARD_PRODUCTS_V1_TEXTS {
+    ID
+    CARD_PRODUCT_ID
+    LANGUAGE
+    TITLE
+    SUBTITLE
+    ICON
+    TYPE
+    SORT_ORDER
+    CREATED_AT
+    UPDATED_AT
+    DELETED_AT
+    RENDER_ID
+    ACTION_ID
+}
