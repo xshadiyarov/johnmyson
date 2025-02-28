@@ -23,10 +23,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_left_primary_h2",
-                                    "style": "Left",
-                                    "priority": "Primary",
-                                    "size": "H2",
+                                    "key": "text_h2",
+                                    "style": "H2",
+                                    "priority": null,
+                                    "size": null,
                                     "color": null,
                                     "background_color": null
                                 },
@@ -42,11 +42,11 @@
                                 "is_on": true,
                                 "rendering": {
                                     "key": "badge_red_primary_medium",
-                                    "style": "Red",
+                                    "style": null,
                                     "priority": "Primary",
                                     "size": "Medium",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Red"
                                 },
                                 "icon": null,
                                 "action": null
@@ -76,10 +76,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_left_primary_b1p200",
-                                    "style": "Left",
-                                    "priority": "Primary",
-                                    "size": "B/1-p200",
+                                    "key": "text_b1p200",
+                                    "style": "B-1-p200",
+                                    "priority": null,
+                                    "size": null,
                                     "color": null,
                                     "background_color": null
                                 },
@@ -100,10 +100,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_left_primary_b1p200",
-                                    "style": "Left",
-                                    "priority": "Primary",
-                                    "size": "B/1-p200",
+                                    "key": "text_b1p200",
+                                    "style": "B-1-p200",
+                                    "priority": null,
+                                    "size": null,
                                     "color": null,
                                     "background_color": null
                                 },
@@ -236,10 +236,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_left_primary_b1p200",
-                                    "style": "Left",
-                                    "priority": "Primary",
-                                    "size": "B/1-p200",
+                                    "key": "text_b1p200",
+                                    "style": "B-1-p200",
+                                    "priority": null,
+                                    "size": null,
                                     "color": null,
                                     "background_color": null
                                 },
@@ -282,6 +282,84 @@
                         ]
                     },
                     {
+                        "key": "card_details_conditions",
+                        "type": "bullet_list",
+                        "components": [
+                            {
+                                "key": "cards_details_conditions_text",
+                                "type": "text",
+                                "title": "Условия",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b1p200",
+                                    "style": "B-1-p200",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_conditions_morph_1",
+                                "type": "bullet",
+                                "title": "$200",
+                                "subtitle": "Минимальный депозит",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b3p300",
+                                    "style": "B-3-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_conditions_morph_2",
+                                "type": "bullet",
+                                "title": "0%",
+                                "subtitle": "Оплата товаров и услуг",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b3p300",
+                                    "style": "B-3-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_conditions_morph_3",
+                                "type": "bullet",
+                                "title": "$4,99/месяц",
+                                "subtitle": "Обслуживание карты",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b3p300",
+                                    "style": "B-3-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    },
+                    {
                         "key": "card_details_final",
                         "type": "generic",
                         "components": [
@@ -293,12 +371,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_s1_accent",
+                                    "style": "S-1",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
-                                    "background": null
+                                    "background_color": null
                                 },
                                 "icon": null,
                                 "action": null
@@ -371,10 +449,10 @@
                                         "is_enabled": true,
                                         "is_on": true,
                                         "rendering": {
-                                            "key": "text_center_primary_h2",
-                                            "style": "Center",
-                                            "priority": "Primary",
-                                            "size": "H2",
+                                            "key": "text_h2",
+                                            "style": "H2",
+                                            "priority": null,
+                                            "size": null,
                                             "color": null,
                                             "background_color": null
                                         },

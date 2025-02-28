@@ -170,10 +170,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -199,12 +199,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_red_primary_small",
-                                    "style": "Red",
+                                    "key": "badge_primary_small_white_red",
+                                    "style": null,
                                     "priority": "Primary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Red"
                                 },
                                 "icon": null,
                                 "action": null
@@ -217,10 +217,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -235,10 +235,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -253,10 +253,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -349,10 +349,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -378,12 +378,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_red_secondary_small",
-                                    "style": "Red",
+                                    "key": "badge_secondary_small_white_red",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Red"
                                 },
                                 "icon": null,
                                 "action": null
@@ -396,12 +396,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_purple_secondary_small",
-                                    "style": "Purple",
+                                    "key": "badge_secondary_small_white_purple",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Purple"
                                 },
                                 "icon": null,
                                 "action": null
@@ -414,10 +414,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -432,10 +432,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -527,10 +527,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -556,12 +556,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_turquoise_secondary_small",
-                                    "style": "Turquoise",
+                                    "key": "badge_secondary_small_white_turquoise",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Turquoise"
                                 },
                                 "icon": null,
                                 "action": null
@@ -574,10 +574,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -592,10 +592,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -686,10 +686,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -715,12 +715,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_lightgreen_primary_small",
-                                    "style": "LightGreen",
+                                    "key": "badge_primary_small_white_lightgreen",
+                                    "style": null,
                                     "priority": "Primary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "LightGreen"
                                 },
                                 "icon": null,
                                 "action": null
@@ -733,10 +733,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -751,10 +751,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -769,10 +769,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -874,10 +874,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -903,12 +903,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_turquoise_secondary_small",
-                                    "style": "Turquoise",
+                                    "key": "badge_secondary_small_white_turquoise",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Turquoise"
                                 },
                                 "icon": null,
                                 "action": null
@@ -921,10 +921,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -939,10 +939,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -957,10 +957,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1063,10 +1063,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1092,12 +1092,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_lightgreen_primary_small",
-                                    "style": "LightGreen",
+                                    "key": "badge_primary_small_white_lightgreen",
+                                    "style": null,
                                     "priority": "Primary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "LightGreen"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1110,10 +1110,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1128,10 +1128,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -1223,10 +1223,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1252,12 +1252,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_orange_secondary_small",
-                                    "style": "Orange",
+                                    "key": "badge_secondary_small_white_orange",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Orange"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1270,10 +1270,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1288,10 +1288,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -1306,10 +1306,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1412,10 +1412,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1441,12 +1441,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_orange_secondary_small",
-                                    "style": "Orange",
+                                    "key": "badge_secondary_small_white_orange",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Orange"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1459,10 +1459,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1477,10 +1477,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1495,10 +1495,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1601,10 +1601,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1630,7 +1630,7 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_black_primary_small",
+                                    "key": "text_badge_black_primary_small",
                                     "style": "Black",
                                     "priority": "Primary",
                                     "size": "Small",
@@ -1648,10 +1648,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1666,10 +1666,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1761,10 +1761,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1790,7 +1790,7 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_black_primary_small",
+                                    "key": "text_badge_black_primary_small",
                                     "style": "Black",
                                     "priority": "Primary",
                                     "size": "Small",
@@ -1808,10 +1808,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1826,10 +1826,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -1921,10 +1921,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1950,12 +1950,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_lightblue_secondary_small",
-                                    "style": "LightBlue",
+                                    "key": "badge_secondary_small_white_lightblue",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "LightBlue"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1968,10 +1968,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -1986,10 +1986,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2004,10 +2004,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2110,10 +2110,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2139,12 +2139,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_purple_secondary_small",
-                                    "style": "Purple",
+                                    "key": "badge_secondary_small_white_purple",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Purple"
                                 },
                                 "icon": null,
                                 "action": null
@@ -2157,10 +2157,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2175,10 +2175,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300_accent",
-                                    "style": null,
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": "Accent",
                                     "background": null
                                 },
@@ -2244,7 +2244,7 @@
                                     "type.filter_type_international",
                                     "payment.filter_payment_unionpay",
                                     "currency.filter_currency_usd",
-                                    "proce.filter_price_fee",
+                                    "price.filter_price_fee",
                                     "type.filter_type_debit",
                                     "aspect.filter_aspect_physical"
                                 ]
@@ -2270,10 +2270,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2299,12 +2299,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_purple_secondary_small",
-                                    "style": "Purple",
+                                    "key": "badge_secondary_small_white_purple",
+                                    "style": null,
                                     "priority": "Secondary",
                                     "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "color": "White",
+                                    "background": "Purple"
                                 },
                                 "icon": null,
                                 "action": null
@@ -2317,10 +2317,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2335,10 +2335,10 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "b2p300",
-                                    "style": null,
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
                                     "priority": null,
-                                    "size": "B/2-p300",
+                                    "size": null,
                                     "color": null,
                                     "background": null
                                 },
@@ -2393,6 +2393,538 @@
             }
         ],
         "overlays": {
+            "catalog_filters_group": {
+                "key": "catalog_filters_group",
+                "type": "filter_bottom_menu",
+                "header": "Фильтр",
+                "sections": [
+                    {
+                        "key": "catalog_filters_group_default",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "filter_group_morph_1",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Платежная система",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Uzcard",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_uzcard"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Humo",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_humo"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "VISA",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_visa"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Mastercard",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_mastercard"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "UnionPay",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_unionpay"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph_2",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Валюта",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "currency."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "UZS",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "currency.filter_currency_uzs"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "USD",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "currency.filter_currency_usd"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph_3",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Цена выпуска",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "price."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Бесплатная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "price.filter_price_free"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Платная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "price.filter_price_fee"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph_4",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Тип",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Дебитовая",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type.filter_type_debit"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Кредитная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type.filter_type_credit"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Международная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type.filter_type_international"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph_5",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Вид",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "aspect."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Физическая",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "aspect.filter_aspect_physical"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Виртуальная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "aspect.filter_aspect_virtual"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
             "i_credit_limit": {
                 "key": "i_credit_limit_menu",
                 "type": "slides_bottom_menu",

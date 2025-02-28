@@ -184,6 +184,49 @@
                             // ...card_details_faq_collapse_item_morph
                         ]
                     },
+                    {
+                        "key": "card_details_conditions",
+                        "type": "bullet_list",
+                        "components": [
+                            {
+                                "key": "card_details_conditions_text",
+                                "type": "text",
+                                "title": "Условия",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_left_primary_b1p200",
+                                    "style": "Left",
+                                    "priority": "Primary",
+                                    "size": "B-1-p200",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "card_details_conditions_morph",
+                                "type": "bullet",
+                                "title": "morph", // CARD_PRODUCTS_V1_TEXTS of type condition
+                                "subtitle": "morph",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "b2p300",
+                                    "style": null,
+                                    "priority": null,
+                                    "size": "B-2-p300",
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                            // ...card_details_conditions_morph
+                        ]
+                    },
                     // Передав буллет цены и кнопку мы полностью избавляемся от meta страницы
                     {
                         "key": "card_details_final",

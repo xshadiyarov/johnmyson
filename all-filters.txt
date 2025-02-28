@@ -1,0 +1,14 @@
+payment.filter_payment_uzcard
+payment.filter_payment_humo
+payment.filter_payment_visa
+payment.filter_payment_mastercard
+payment.filter_payment_unionpay
+currency.filter_currency_uzs
+currency.filter_currency_usd
+price.filter_price_free
+price.filter_price_fee
+type.filter_type_debit
+type.filter_type_credit
+type.filter_type_international
+aspect.filter_aspect_physical
+aspect.filter_aspect_virtual
