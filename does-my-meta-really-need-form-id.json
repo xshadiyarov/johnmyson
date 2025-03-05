@@ -1,0 +1,508 @@
+[
+    {
+        "max": {
+            "ID_MOBILE": "CC81",
+            "MAX_AMOUNT": "50000000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "33634009.26 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "99140360",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": [
+                    {
+                        "TYPE": "1",
+                        "AMOUNT": "20000000.00 "
+                    },
+                    {
+                        "TYPE": "3",
+                        "AMOUNT": "5000000.00 "
+                    }
+                ]
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "35388347.86 ",
+            "INCOME_ZP_MKT": "20643202.92 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "43654172.99 ",
+            "CRED_PAY_SUM": "12628396.09 ",
+            "SCOR_VALUE": "45 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        },
+        "status_1": {
+            "ID_MOBILE": "CC81",
+            "NCI_PARTNER": "60013895",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "1"
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC63",
+            "MAX_AMOUNT": "50000000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "99177550",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": [
+                    {
+                        "TYPE": "1",
+                        "AMOUNT": "15000000.00 "
+                    },
+                    {
+                        "TYPE": "3",
+                        "AMOUNT": "5000000.00 "
+                    }
+                ]
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "54365814.09 ",
+            "INCOME_ZP_MKT": "59665102.68 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "166022963.44 ",
+            "CRED_PAY_SUM": "14629485.41 ",
+            "SCOR_VALUE": "36 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        },
+        "status_1": {
+            "ID_MOBILE": "CC63",
+            "NCI_PARTNER": "62511146",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "1"
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC552",
+            "MAX_AMOUNT": "0.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "10836748.92 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61077316",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "5",
+                    "AMOUNT": "0.00 "
+                }
+            },
+            "RATING": "4 ",
+            "INCOME_ZP": "0.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "0 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "2",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC10933",
+            "MAX_AMOUNT": "15000000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "10836748.92 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61077316",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": [
+                    {
+                        "TYPE": "1",
+                        "AMOUNT": "20000000.00 "
+                    },
+                    {
+                        "TYPE": "2",
+                        "AMOUNT": "12518664.70 "
+                    },
+                    {
+                        "TYPE": "3",
+                        "AMOUNT": "5000000.00 "
+                    }
+                ]
+            },
+            "RATING": "4 ",
+            "INCOME_ZP": "16053670.58 ",
+            "INCOME_ZP_MKT": "16010986.00 ",
+            "INCOME_OTHER": "1788380.67 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "15464945.00 ",
+            "CRED_PAY_SUM": "5913584.69 ",
+            "SCOR_VALUE": "60 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        },
+        "status_1": {
+            "ID_MOBILE": "CC10933",
+            "NCI_PARTNER": "61077316",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "1"
+        },
+        "status_9": {
+            "ID_MOBILE": "CC10933",
+            "NCI_PARTNER": "61077316",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "9"
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC2541",
+            "MAX_AMOUNT": "0.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "10836748.92 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61077316",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "5",
+                    "AMOUNT": "0.00 "
+                }
+            },
+            "RATING": "4 ",
+            "INCOME_ZP": "0.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "0 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "2",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC644",
+            "MAX_AMOUNT": "10000000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61674624",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": [
+                    {
+                        "TYPE": "1",
+                        "AMOUNT": "15000000.00 "
+                    },
+                    {
+                        "TYPE": "3",
+                        "AMOUNT": "5000000.00 "
+                    }
+                ]
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "6497250.08 ",
+            "INCOME_ZP_MKT": "6497250.08 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "22241307.65 ",
+            "CRED_PAY_SUM": "359509.13 ",
+            "SCOR_VALUE": "37 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        },
+        "status_1": {
+            "ID_MOBILE": "CC644",
+            "NCI_PARTNER": "61674624",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "1"
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC29607",
+            "MAX_AMOUNT": "14600000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61266874",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": [
+                    {
+                        "TYPE": "1",
+                        "AMOUNT": "15000000.00 "
+                    },
+                    {
+                        "TYPE": "3",
+                        "AMOUNT": "5000000.00 "
+                    }
+                ]
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "12000973.67 ",
+            "INCOME_ZP_MKT": "12122062.83 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "22589830.80 ",
+            "CRED_PAY_SUM": "3573409.01 ",
+            "SCOR_VALUE": "35 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC21276",
+            "MAX_AMOUNT": "0.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61266874",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "5",
+                    "AMOUNT": "0.00 "
+                }
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "0.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "0 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "2",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC2825",
+            "MAX_AMOUNT": "0.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61266874",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "5",
+                    "AMOUNT": "0.00 "
+                }
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "0.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "0 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "2",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC10275",
+            "MAX_AMOUNT": "0.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61266874",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "5",
+                    "AMOUNT": "0.00 "
+                }
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "0.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "0 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "2",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC1067",
+            "MAX_AMOUNT": "0.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61266874",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "5",
+                    "AMOUNT": "0.00 "
+                }
+            },
+            "RATING": "3 ",
+            "INCOME_ZP": "0.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "0 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "2",
+            "RESULT_MESSAGE": ""
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC3490",
+            "MAX_AMOUNT": "500000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "1024999.99 ",
+            "CRDEXT_MZ_OFFL_SALDO": "20472641.41 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "62739705",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": {
+                    "TYPE": "1",
+                    "AMOUNT": "4817766.20 "
+                }
+            },
+            "RATING": "2 ",
+            "INCOME_ZP": "3362432.09 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "0.00 ",
+            "CRED_PAY_SUM": "1871925.84 ",
+            "SCOR_VALUE": "30 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        },
+        "status_1": {
+            "ID_MOBILE": "CC3490",
+            "NCI_PARTNER": "62739705",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "1"
+        },
+        "status_9": {
+            "ID_MOBILE": "CC3490",
+            "NCI_PARTNER": "62739705",
+            "CLIENTTYPE": "0801",
+            "BRANCH": "00444",
+            "REQUEST_ID": "",
+            "FORM_ID": "",
+            "STATUS_CODE": "9"
+        }
+    },
+    {
+        "max": {
+            "ID_MOBILE": "CC29638",
+            "MAX_AMOUNT": "50000000.00 ",
+            "CRDEXT_MZ_ONLN_SALDO": "0.00 ",
+            "CRDEXT_MZ_OFFL_SALDO": "0.00 ",
+            "CURRENCY": "UZS",
+            "CLIENTTYPE": "0801",
+            "NCI_PARTNER": "61491306",
+            "BRANCH": "00444",
+            "SEGMENTS": {
+                "SEGMENT": [
+                    {
+                        "TYPE": "1",
+                        "AMOUNT": "15000000.00 "
+                    },
+                    {
+                        "TYPE": "3",
+                        "AMOUNT": "0.00 "
+                    }
+                ]
+            },
+            "RATING": "2 ",
+            "INCOME_ZP": "31693168.00 ",
+            "INCOME_ZP_MKT": "0.00 ",
+            "INCOME_OTHER": "0.00 ",
+            "OUTINCOME_OTHER": "0.00 ",
+            "CRD_TRNO_SUM": "32150.00 ",
+            "CRED_PAY_SUM": "0.00 ",
+            "SCOR_VALUE": "26 ",
+            "ANNUITY_RATE": "0.000000 ",
+            "BLNC_UNSEC_LN": "0.00 ",
+            "SUM_UNSEC_LN": "",
+            "RESULT_CODE": "0",
+            "RESULT_MESSAGE": ""
+        }
+    },
+]

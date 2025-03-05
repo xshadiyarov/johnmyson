@@ -8,9 +8,13 @@
 -- MIGRATE CARD_PRODUCTS_TEXT INTO CARD_PRODUCTS_V1_TEXTS - Подготовь все для кредитки, убедиться что этого для каталога достаточно и заполни для остальных карт
 
 -- INSERT INTO TAGS - Собери все баджи и фильтры и вставь
--- INSERT INTO LAYOUT_RENDERS FOR TAGS - Выгрузи все объекты рендера из разметки каталога и вставь
 -- INSERT INTO TAG_RELATIONS - Из файла give-me-filters.sql сделай связи с рендером для баджей и вставь теги
+-- INSERT INTO LAYOUT_RENDERS FOR TAGS - Выгрузи все объекты рендера из разметки каталога и вставь
+-- INSERT INTO LAYOUT_* FOR CATALOG
 -- INSERT INTO ICONS - Вставь иконку вызова catalog_filters_group
+
+-- CORRECTLY ORDER
+-- CHECK EVERYTHING AGAIN AND MAKE SURE CATALOG IS FILLABLE
 
 201 Кредитная карта Возможностей
 200 VISA START SUM
@@ -25,6 +29,78 @@
 040 Mastercard Platinum
 001 UnionPay Classic
 002 UnionPay Gold
+
+INSERT INTO TAG_RELATIONS (TAG_ID, TARGET_ID, TARGET, SORT_ORDER, IS_PRIMARY, RENDER_ID)
+VALUES
+-- badge
+    (SELECT id FROM TAGS WHERE NAME='tag_soon' AND TYPE='badge', SELECT id FROM CARD_PRODUCTS_V1 WHERE PRODUCT_CODE='201', 'CARD_PRODUCTS_V1', 100, 0, SELECT id FROM LAYOUT_RENDERS WHERE key='badge_primary_small_white_red'),
+    -- TODO: Обговори с фронтами, условный размер самое оптимальное решение
+    -- STOPPED HERE
+-- filter
+    -- Кредитная карта Возможностей
+    -- VISA START SUM
+    -- Uzcard Duo
+    -- HUMO Virtual
+    -- HUMO
+    -- VISA Virtual
+    -- VISA Start
+    -- VISA Platinum
+    -- Visa Infinite
+    -- Mastercard Virtual
+    -- Mastercard Platinum
+    -- UnionPay Classic
+    -- UnionPay Gold
+
+INSERT INTO TAGS (NAME, TYPE, "GROUP")
+VALUES
+-- badge
+-- Скоро                tag_soon
+-- Новый                tag_new
+-- Выгода х3            tag_benefit_x3
+-- Бесконтактная оплата tag_contactless_payment
+-- Виртуальная карта    tag_virtual_card
+-- 1+1 подарок          tag_1_plus_1
+-- Премиум              tag_premium
+-- Бесконтактная карта  tag_contactless_card
+-- Выгода               tag_benefit
+    ('tag_soon', 'badge', NULL),
+    ('tag_new', 'badge', NULL),
+    ('tag_benefit_x3', 'badge', NULL),
+    ('tag_contactless_payment', 'badge', NULL),
+    ('tag_virtual_card', 'badge', NULL),
+    ('tag_1_plus_1', 'badge', NULL),
+    ('tag_premium', 'badge', NULL),
+    ('tag_contactless_card', 'badge', NULL),
+    ('tag_benefit', 'badge', NULL),
+-- filter
+-- Uzcard               filter_payment_uzcard
+-- Humo                 filter_payment_humo
+-- VISA                 filter_payment_visa
+-- Mastercard           filter_payment_mastercard
+-- UnionPay             filter_payment_unionpay
+-- UZS                  filter_currency_uzs
+-- USD                  filter_currency_usd
+-- Бесплатная           filter_price_free
+-- Платная              filter_price_fee
+-- Дебитовая            filter_type_debit
+-- Кредитная            filter_type_credit
+-- Международная        filter_type_international
+-- Физическая           filter_aspect_physical
+-- Виртуальная          filter_aspect_virtual
+    ('filter_payment_uzcard', 'filter', 'payment'),
+    ('filter_payment_humo', 'filter', 'payment'),
+    ('filter_payment_visa', 'filter', 'payment'),
+    ('filter_payment_mastercard', 'filter', 'payment'),
+    ('filter_payment_unionpay', 'filter', 'payment'),
+    ('filter_currency_uzs', 'filter', 'currency'),
+    ('filter_currency_usd', 'filter', 'currency'),
+    ('filter_price_free', 'filter', 'price'),
+    ('filter_price_fee', 'filter', 'price'),
+    ('filter_type_debit', 'filter', 'type'),
+    ('filter_type_credit', 'filter', 'type'),
+    ('filter_type_international', 'filter', 'type'),
+    ('filter_aspect_physical', 'filter', 'aspect'),
+    ('filter_aspect_virtual', 'filter', 'aspect');
 
 -- short, name, bullets
 INSERT INTO CARD_PRODUCTS_V1_TEXTS (CARD_PRODUCT_ID, "LANGUAGE", TITLE, DESCRIPTION, ICON_ID, TYPE, SORT_ORDER, RENDER_ID, ACTION_ID)
@@ -84,116 +160,164 @@ VALUES
     ('002', 'uz', '', NULL, NULL, 'short', 100, NULL, NULL),
 -- Name
     -- Кредитная карта Возможностей
-    ('201', 'ru', 'Карта возможностей', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'Possibilities credit card', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'Imkoniyatlar credit kartasi', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'Карта возможностей', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'Possibilities credit card', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'Imkoniyatlar credit kartasi', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA START SUM
-    ('201', 'ru', 'VISA START SUM', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'VISA START SUM', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'VISA START SUM', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'VISA START SUM', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'VISA START SUM', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'VISA START SUM', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- Uzcard Duo
-    ('201', 'ru', 'Uzcard Duo', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'Uzcard Duo', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'Uzcard Duo', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'Uzcard Duo', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'Uzcard Duo', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'Uzcard Duo', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- HUMO
-    ('201', 'ru', 'HUMO', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'HUMO', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'HUMO', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'HUMO', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'HUMO', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'HUMO', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- HUMO Virtual
-    ('201', 'ru', 'HUMO Virtual', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'HUMO Virtual', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'HUMO Virtual', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'HUMO Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'HUMO Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'HUMO Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA Virtual
-    ('201', 'ru', 'VISA Virtual', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'VISA Virtual', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'VISA Virtual', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'VISA Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'VISA Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'VISA Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA Start
-    ('201', 'ru', 'VISA Start', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'VISA Start', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'VISA Start', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'VISA Start', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'VISA Start', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'VISA Start', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA Platinum
-    ('201', 'ru', 'VISA Platinum', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'VISA Platinum', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'VISA Platinum', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'VISA Platinum', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'VISA Platinum', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'VISA Platinum', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- Visa Infinite
-    ('201', 'ru', 'Visa Infinite', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'Visa Infinite', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'Visa Infinite', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'Visa Infinite', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'Visa Infinite', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'Visa Infinite', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- Mastercard Virtual
-    ('201', 'ru', 'Mastercard Virtual', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'Mastercard Virtual', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'Mastercard Virtual', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'Mastercard Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'Mastercard Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'Mastercard Virtual', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- Mastercard Platinum
-    ('201', 'ru', 'Mastercard Platinum', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'Mastercard Platinum', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'Mastercard Platinum', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'Mastercard Platinum', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'Mastercard Platinum', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'Mastercard Platinum', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- UnionPay Classic
-    ('201', 'ru', 'UnionPay Classic', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'UnionPay Classic', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'UnionPay Classic', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'UnionPay Classic', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'UnionPay Classic', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'UnionPay Classic', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- UnionPay Gold
-    ('201', 'ru', 'UnionPay Gold', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'en', 'UnionPay Gold', NULL, NULL, 'name', 100, NULL, NULL),
-    ('201', 'uz', 'UnionPay Gold', NULL, NULL, 'name', 100, NULL, NULL),
+    ('201', 'ru', 'UnionPay Gold', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', 'UnionPay Gold', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', 'UnionPay Gold', NULL, NULL, 'name', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
 -- Bullets
     -- Кредитная карта Возможностей
-    ('201', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, NULL, NULL),
-    ('201', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('201', 'uz', "", '', NULL, 'bullet', 100, NULL, NULL),
-    ('201', 'ru', 'Тип карты', 'Рассрочка', NULL, 'bullet', 200, NULL, NULL),
-    ('201', 'en', '', '', NULL, 'bullet', 200, NULL, NULL),
-    ('201', 'uz', '', '', NULL, 'bullet', 200, NULL, NULL),
-    ('201', 'ru', 'Лимит', 'До 100 млн. сум', NULL, 'bullet', 300, NULL, NULL),
-    ('201', 'en', '', '', NULL, 'bullet', 300, NULL, NULL),
-    ('201', 'uz', '', '', NULL, 'bullet', 300, NULL, NULL),
-    -- TO DELETE
-    ('{PRODUCT_ID}', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, NULL, NULL),
-
-    ('{PRODUCT_ID}', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, NULL, NULL),
-
-    ('{PRODUCT_ID}', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-
-    ('{PRODUCT_ID}', 'ru', 'Есть (см. подробнее)', 'Индивидуальный дизайн', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, NULL, NULL),
-    -- TO DELETE END
+    ('201', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', "", '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'ru', 'Тип карты', 'Рассрочка', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'ru', 'Лимит', 'До 100 млн. сум', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'en', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('201', 'uz', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA START SUM
-    ('{PRODUCT_ID}', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('200', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('200', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('200', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('200', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('200', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('200', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
     -- Uzcard Duo
-    ('{PRODUCT_ID}', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('861', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('861', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('861', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('861', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('861', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('861', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
     -- HUMO Virtual
-    ('{PRODUCT_ID}', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 100, NULL, NULL),
-    ('{PRODUCT_ID}', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    ('{PRODUCT_ID}', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
-    -- (STOPPED HERE, REVIEW PREV FIRST)
+    ('871', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('871', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('871', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('871', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('871', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('871', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
     -- HUMO
+    ('870', 'ru', 'Сум', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('870', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('870', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('870', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('870', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('870', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('870', 'ru', 'Есть (см. подробнее)', 'Индивидуальный дизайн', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('870', 'en', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('870', 'uz', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA Virtual
+    ('030', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('030', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('030', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('030', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('030', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('030', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
     -- VISA Start
+    ('031', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('031', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('031', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('031', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('031', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('031', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('031', 'ru', 'Есть (см. подробнее)', 'Индивидуальный дизайн', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('031', 'en', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('031', 'uz', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- VISA Platinum
+    ('032', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'ru', '34 000 сум', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'ru', 'Есть (см. подробнее)', 'Индивидуальный дизайн', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'en', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('032', 'uz', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- Visa Infinite
+    ('034', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('034', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('034', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('034', 'ru', '170 000 сум', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('034', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('034', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- Mastercard Virtual
+    ('068', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('068', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('068', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('068', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('068', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('068', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
     -- Mastercard Platinum
+    ('040', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'ru', '34 000 сум', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'ru', 'Есть (см. подробнее)', 'Индивидуальный дизайн', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'en', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('040', 'uz', '', '', NULL, 'bullet', 300, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
     -- UnionPay Classic
+    ('001', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('001', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('001', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('001', 'ru', 'БЕСПЛАТНО', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('001', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
+    ('001', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300_accent'), NULL),
     -- UnionPay Gold
+    ('002', 'ru', 'Доллар США', 'Валюта', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('002', 'en', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('002', 'uz', '', '', NULL, 'bullet', 100, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('002', 'ru', '34 000 сум', 'Выпуск', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('002', 'en', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),
+    ('002', 'uz', '', '', NULL, 'bullet', 200, (SELECT id FROM LAYOUT_RENDER WHERE key='text_b2p300'), NULL),    
 
 CREATE TABLE CARD_PRODUCTS_V1 {
     ID                       NUMBER(10) GENERATED BY DEFAULT AS IDENTITY MINVALUE 1 MAXVALUE 9999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER NOCYCLE NOKEEP NOSCALE NOT NULL,
@@ -252,7 +376,7 @@ CREATE TABLE TAG_RELATIONS {
     TAG_ID                   NUMBER(10) NOT NULL,
     TARGET_ID                NUMBER(10) NOT NULL, -- [X] Q: В теории у него может быть не только NUMBER что скажите? - Не планируется
     TARGET                   VARCHAR(250) NOT NULL,
-    SORT_ORDER               NUMBER(10) DEFAULT 100 NOT NULL,
+    SORT_ORDER               NUMBER(10) DEFAULT 100 NOT NULL, -- TODO: Most likely move sort_order to TAGS, if yes, need to update TAGS INSERTS and only then continue TAG_RELATIONS INSERT
     IS_PRIMARY               NUMBER(1) DEFAULT 0 NOT NULL, /** 0|1 */
     RENDER_ID                VARCHAR(250) NULL, /** FK - LAYOUT_RENDERS.ID */
     CREATED_AT               TIMESTAMP DEFAULT SYSDATE,
