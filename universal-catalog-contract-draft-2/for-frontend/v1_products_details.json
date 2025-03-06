@@ -41,12 +41,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_red_primary_medium",
+                                    "key": "badge_primary_white_100_warning",
                                     "style": null,
                                     "priority": "Primary",
-                                    "size": "Medium",
-                                    "color": "White",
-                                    "background": "Red"
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "Warning"
                                 },
                                 "icon": null,
                                 "action": null

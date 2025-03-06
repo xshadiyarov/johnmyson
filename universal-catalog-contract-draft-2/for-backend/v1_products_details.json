@@ -4,6 +4,7 @@
     "type": "card"
 }
 // RESPONSE - v1/products/details
+// TODO: Адаптировать с обновлениями в for-front-end
 {
     "data": {
         "type": "card_details",

@@ -199,12 +199,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_primary_small_white_red",
+                                    "key": "badge_primary_white_100_warning",
                                     "style": null,
                                     "priority": "Primary",
-                                    "size": "Small",
-                                    "color": "White",
-                                    "background": "Red"
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "Warning"
                                 },
                                 "icon": null,
                                 "action": null
@@ -378,12 +378,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_red",
+                                    "key": "badge_secondary_warning_warning",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
-                                    "background": "Red"
+                                    "size": null,
+                                    "color": "Warning",
+                                    "background": "Warning"
                                 },
                                 "icon": null,
                                 "action": null
@@ -396,11 +396,11 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_purple",
+                                    "key": "badge_secondary_purple_purple",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
+                                    "size": null,
+                                    "color": "Purple",
                                     "background": "Purple"
                                 },
                                 "icon": null,
@@ -556,11 +556,11 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_turquoise",
+                                    "key": "badge_secondary_turquoise_sup_turquoise",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
+                                    "size": null,
+                                    "color": "Turquoise Sup",
                                     "background": "Turquoise"
                                 },
                                 "icon": null,
@@ -715,11 +715,11 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_primary_small_white_lightgreen",
+                                    "key": "badge_primary_white_100_lightgreen",
                                     "style": null,
                                     "priority": "Primary",
-                                    "size": "Small",
-                                    "color": "White",
+                                    "size": null,
+                                    "color": "White 100",
                                     "background": "LightGreen"
                                 },
                                 "icon": null,
@@ -903,12 +903,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_turquoise",
+                                    "key": "badge_secondary_accent_accent",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
-                                    "background": "Turquoise"
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": "Accent"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1092,11 +1092,11 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_primary_small_white_lightgreen",
+                                    "key": "badge_primary_white_100_lightgreen",
                                     "style": null,
                                     "priority": "Primary",
-                                    "size": "Small",
-                                    "color": "White",
+                                    "size": null,
+                                    "color": "White 100",
                                     "background": "LightGreen"
                                 },
                                 "icon": null,
@@ -1252,12 +1252,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_orange",
+                                    "key": "badge_secondary_yellow_sup_yellow",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
-                                    "background": "Orange"
+                                    "size": null,
+                                    "color": "Yellow Sup",
+                                    "background": "Yellow"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1441,12 +1441,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_orange",
+                                    "key": "badge_secondary_yellow_sup_yellow",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
-                                    "background": "Orange"
+                                    "size": null,
+                                    "color": "Yellow Sup",
+                                    "background": "Yellow"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1630,12 +1630,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_badge_black_primary_small",
-                                    "style": "Black",
+                                    "key": "badge_primary_white_100_black_100",
+                                    "style": null,
                                     "priority": "Primary",
-                                    "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "Black 100"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1785,17 +1785,17 @@
                             {
                                 "key": "catalog_item_badge_morph_1",
                                 "type": "badge",
-                                "title": "Премиум",
+                                "title": "Виртуальная карта",
                                 "subtitle": null,
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_badge_black_primary_small",
-                                    "style": "Black",
+                                    "key": "badge_primary_white_100_lightgreen",
+                                    "style": null,
                                     "priority": "Primary",
-                                    "size": "Small",
-                                    "color": null,
-                                    "background": null
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "LightGreen"
                                 },
                                 "icon": null,
                                 "action": null
@@ -1950,12 +1950,12 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_lightblue",
+                                    "key": "badge_secondary_turquoise_sup_turquoise",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
-                                    "background": "LightBlue"
+                                    "size": null,
+                                    "color": "Turquoise Sup",
+                                    "background": "Turquoise"
                                 },
                                 "icon": null,
                                 "action": null
@@ -2139,11 +2139,11 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_purple",
+                                    "key": "badge_secondary_purple_purple",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
+                                    "size": null,
+                                    "color": "Purple",
                                     "background": "Purple"
                                 },
                                 "icon": null,
@@ -2299,11 +2299,11 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "badge_secondary_small_white_purple",
+                                    "key": "badge_secondary_purple_purple",
                                     "style": null,
                                     "priority": "Secondary",
-                                    "size": "Small",
-                                    "color": "White",
+                                    "size": null,
+                                    "color": "Purple",
                                     "background": "Purple"
                                 },
                                 "icon": null,
