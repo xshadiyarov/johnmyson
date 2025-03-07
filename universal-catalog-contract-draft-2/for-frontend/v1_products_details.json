@@ -16,7 +16,7 @@
                         "type": "page_header",
                         "components": [
                             {
-                                "key": "card_details_bullets_text",
+                                "key": "card_details_name",
                                 "type": "text",
                                 "title": "Карта возможностей",
                                 "subtitle": null,
@@ -93,7 +93,7 @@
                         "type": "row_actions",
                         "components": [
                             {
-                                "key": "card_details_faq_text",
+                                "key": "card_details_row_actions_text",
                                 "type": "text",
                                 "title": "Почему эта карта?",
                                 "subtitle": null,
@@ -111,7 +111,7 @@
                                 "action": null
                             },
                             {
-                                "key": "row_action_morph_1",
+                                "key": "row_action_morph",
                                 "type": "row_action",
                                 "title": "Льготный период",
                                 "subtitle": "У вас есть до 55 дней что-бы погасить потраченную сумму",
@@ -133,7 +133,7 @@
                                 }
                             },
                             {
-                                "key": "row_action_morph_2",
+                                "key": "row_action_morph",
                                 "type": "row_action",
                                 "title": "Мульти валютная карта",
                                 "subtitle": "Базируется в сумах, но можно тратить в любой точке мира, с авто конверсией",
@@ -155,7 +155,7 @@
                                 }
                             },
                             {
-                                "key": "row_action_morph_3",
+                                "key": "row_action_morph",
                                 "type": "row_action",
                                 "title": "Кредитный лимит",
                                 "subtitle": "Одобрим сумму до 100 млн. сум.",
@@ -177,7 +177,7 @@
                                 }
                             },
                             {
-                                "key": "row_action_morph_3",
+                                "key": "row_action_morph",
                                 "type": "row_action",
                                 "title": "Срок выпуска",
                                 "subtitle": "от трех дней, до одной недели",
@@ -247,7 +247,7 @@
                                 "action": null
                             },
                             {
-                                "key": "card_details_faq_collapse_item_morph_1",
+                                "key": "card_details_faq_collapse_item_morph",
                                 "type": "collapse_item",
                                 "title": "Вопрос 1",
                                 "subtitle": "Вфывфывфывфывфывфывфывфывфывфывфывфывфывфывфыв",
@@ -258,7 +258,7 @@
                                 "action": null
                             },
                             {
-                                "key": "card_details_faq_collapse_item_morph_2",
+                                "key": "card_details_faq_collapse_item_morph",
                                 "type": "collapse_item",
                                 "title": "Вопрос 2",
                                 "subtitle": "Вфывфывфывфывфывфывфывфывфывфывфывфывфывфывфыв",
@@ -269,7 +269,7 @@
                                 "action": null
                             },
                             {
-                                "key": "card_details_faq_collapse_item_morph_3",
+                                "key": "card_details_faq_collapse_item_morph",
                                 "type": "collapse_item",
                                 "title": "Вопрос 3",
                                 "subtitle": "Вфывфывфывфывфывфывфывфывфывфывфывфывфывфывфыв",
@@ -304,7 +304,7 @@
                                 "action": null
                             },
                             {
-                                "key": "card_details_conditions_morph_1",
+                                "key": "card_details_conditions_morph",
                                 "type": "bullet",
                                 "title": "$200",
                                 "subtitle": "Минимальный депозит",
@@ -322,7 +322,7 @@
                                 "action": null
                             },
                             {
-                                "key": "card_details_conditions_morph_2",
+                                "key": "card_details_conditions_morph",
                                 "type": "bullet",
                                 "title": "0%",
                                 "subtitle": "Оплата товаров и услуг",
@@ -340,7 +340,7 @@
                                 "action": null
                             },
                             {
-                                "key": "card_details_conditions_morph_3",
+                                "key": "card_details_conditions_morph",
                                 "type": "bullet",
                                 "title": "$4,99/месяц",
                                 "subtitle": "Обслуживание карты",
