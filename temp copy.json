@@ -1,6 +1,6 @@
 {
   "data": {
-    "card_issue_id": 30102024,
+    "card_issue_id": 15112024,
     "header": {
       "key": "\u041d\u0430\u0437\u044b\u0432\u0430\u043d\u0438\u0435 \u043a\u0430\u0440\u0442\u044b",
       "value": "Uzcard",
@@ -15,7 +15,11 @@
       }
     },
     "body": {
-      "custom_design": {},
+      "custom_design": {
+        "key": "\u0412\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u043e\u0431\u043b\u043e\u0436\u043a\u0430",
+        "value": "\u041b\u0435\u0432",
+        "image": "https:\/\/storage.googleapis.com\/iyb-mobile-app-front\/api-live\/images\/cardtpls\/16491a76fc5e48.png"
+      },
       "card_issue": [
         {
           "key": "\u041f\u043b\u0430\u0442. \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
@@ -32,8 +36,8 @@
         },
         {
           "key": "\u0418\u043d\u0434\u0438\u0432. \u0434\u0438\u0437\u0430\u0439\u043d",
-          "value": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e",
-          "is_amount": false
+          "value": "94 500 \u0441\u0443\u043c",
+          "is_amount": true
         }
       ],
       "card_issue_additional": {
