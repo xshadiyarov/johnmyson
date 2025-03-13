@@ -1,0 +1,14 @@
+// REQUEST
+{
+    "id": 30102024,
+    "code": "123456"
+}
+// RESPONSE
+{
+    "data": {
+        "id": 30102024
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

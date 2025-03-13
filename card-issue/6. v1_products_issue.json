@@ -19,92 +19,96 @@
     }
 }
 // RESPONSE - v1/products/issue
-{ // Универсальный объект - ProductIssue
-    "state": "draft",
-    "id": 3001,
-    "product": { // Универсальный объект - ProductIssueDetails
-        "id": 1,
-        "type": "card",
-        "details": {
-            "name": "VISA Platinum",
-            "image": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
-            "price": 22500000,
-            "additional": { // Всеми знакомый объект Additional
-                "header": null,
-                "footer": null,
-                "items": [
-                    { // Т.к. это не bdui на странице поставить условие что если пришла картинка, сделать во всю длину
-                        "key": "Выбранная обложка",
-                        "value": "Темный лев",
-                        "icon": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png"
-                    },
-                    {
-                        "key": "Минимальный депозит",
-                        "value": "$20",
-                        "icon": null
-                    },
-                    {
-                        "key": "Оплата товаров и услуг",
-                        "value": "Без комиссии",
-                        "icon": null
-                    },
-                    {
-                        "key": "Обслуживание карты",
-                        "value": "$0,49/месяц",
-                        "icon": null
-                    }
-                ]
-            },
-            "info": [
-                {
-                    "header": {
-                        "title": "Детали доставки",
-                        "icon": null
-                    },
+{
+    "data": { // Универсальный объект - ProductIssue
+        "id": 3001,
+        "product": { // Универсальный объект - ProductIssueDetails
+            "id": 1,
+            "type": "card",
+            "details": {
+                "name": "VISA Platinum",
+                "image": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                "price": 22500000,
+                "additional": { // Всеми знакомый объект Additional
+                    "header": null,
                     "footer": null,
                     "items": [
+                        { // Т.к. это не bdui на странице поставить условие что если пришла картинка, сделать во всю длину
+                            "key": "Выбранная обложка",
+                            "value": "Темный лев",
+                            "icon": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png"
+                        },
                         {
-                            "key": "Адрес доставки",
-                            "value": "Samarqand shaxri, Oqqo’rg’on rayon MFY, Berezin Mixail ko’chasi, 123-uy",
+                            "key": "Минимальный депозит",
+                            "value": "$20",
                             "icon": null
                         },
                         {
-                            "key": "Комментария для курьера",
-                            "value": "Пожалуйста, позвоните перед доставкой! В будни по локации буду до 19:00, в выходные и после 19:00 буду в районе Чиланзар.",
+                            "key": "Оплата товаров и услуг",
+                            "value": "Без комиссии",
                             "icon": null
                         },
                         {
-                            "key": "Дополнительный номер телефона",
-                            "value": "+998 90 987 65 43",
+                            "key": "Обслуживание карты",
+                            "value": "$0,49/месяц",
                             "icon": null
-                        },
-                        {
-                            "key": "Дополнительный номер телефона",
-                            "value": "+998 90 987 65 43",
-                            "icon": {
-                                "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
-                                "dark": null
-                            }
                         }
                     ]
-                }
-            ]
+                },
+                "info": [
+                    {
+                        "header": {
+                            "title": "Детали доставки",
+                            "icon": null
+                        },
+                        "footer": null,
+                        "items": [
+                            {
+                                "key": "Адрес доставки",
+                                "value": "Samarqand shaxri, Oqqo’rg’on rayon MFY, Berezin Mixail ko’chasi, 123-uy",
+                                "icon": null
+                            },
+                            {
+                                "key": "Комментария для курьера",
+                                "value": "Пожалуйста, позвоните перед доставкой! В будни по локации буду до 19:00, в выходные и после 19:00 буду в районе Чиланзар.",
+                                "icon": null
+                            },
+                            {
+                                "key": "Дополнительный номер телефона",
+                                "value": "+998 90 987 65 43",
+                                "icon": null
+                            },
+                            {
+                                "key": "Дополнительный номер телефона",
+                                "value": "+998 90 987 65 43",
+                                "icon": {
+                                    "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                    "dark": null
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "offers": [
+            { // Следуем структуре из Оферты 2.0, чтобы потом бесшовно интегрировать
+                "key": "uzcard_issue",
+                "url": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/offers/uzcard_issue_ru.pdf",
+                "is_accepted": false
+            }
+        ],
+        "self": { // Универсальный объект определяющий автоматическое поведение, использовался в Переводы 2.0
+            "confirm": {
+                "phone": "99897*****17",
+                "code": "678850",
+                "ttl": 60,
+                "ttl_at": 1737440164
+            },
+            "transfer": false // Перебрасываем через претрансфер
         }
     },
-    "offers": [
-        { // Следуем структуре из Оферты 2.0, чтобы потом бесшовно интегрировать
-            "key": "uzcard_issue",
-            "url": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/offers/uzcard_issue_ru.pdf",
-            "is_accepted": false
-        }
-    ],
-    "self": { // Универсальный объект определяющий автоматическое поведение, использовался в Переводы 2.0
-        "confirm": {
-            "phone": "99897*****17",
-            "code": "678850",
-            "ttl": 60,
-            "ttl_at": 1737440164
-        },
-        "transfer": false // Перебрасываем через претрансфер
-    }
+    "state": "success",
+    "error_text": "",
+    "code": 0
 }

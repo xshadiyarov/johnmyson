@@ -1,0 +1,17 @@
+// REQUEST
+{
+    "id": 30102024,
+    "source": "886392",
+    "source_type": "card"
+}
+// RESPONSE
+{
+    "data": {
+        "code": "123456",
+        "send_to": "",
+        "amount": 0
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

@@ -7,42 +7,45 @@
         "type": "card"
     },
     "offset": 0, // По умолчанию 0
-    "count": 10 // По умолчанию 10, 1 >= count <= 100 (А то ошибка count_out_of_range)
+    "count": 25 // По умолчанию 25, 1 >= count <= 100 (А то ошибка count_out_of_range)
 }
 // RESPONSE - v1/products/designs
-{ // Универсальный объект - ProductDesignCollection
-    "product": {
-        "id": 1,
-        "type": "card"
+{
+    "data": { // Универсальный объект - ProductDesignCollection
+        "product": {
+            "id": 1,
+            "type": "card"
+        },
+        "offset": 0,
+        "count": 10,
+        "designs": [
+            // Необходимо вывести изображения по след. порядку: default, reviewing, approved (Акционные), approved (Пользовательские), approved
+            { // Объект индивидуального дизайна карты - CardDesignItem
+                "id": 5,
+                "state": "default", // approved (Системный или загружал пользователь и апрувнулся) | default (Бесплатный, один из дефолтных) | reviewing (На рассмотрении) | disabled (Выключен или удален)
+                "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
+                "price": null
+            },
+            {
+                "id": 9,
+                "state": "reviewing",
+                "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
+                "price": 18500000
+            },
+            {
+                "id": 4,
+                "state": "approved",
+                "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
+                "price": 18500000
+            }
+        ]
     },
-    "offset": 0,
-    "count": 10,
-    "designs": [
-        // Необходимо вывести изображения по след. порядку: default, reviewing, approved (Акционные), approved (Пользовательские), approved
-        { // Объект индивидуального дизайна карты - CardDesignItem
-            "id": 5,
-            "state": "default", // approved (Системный или загружал пользователь и апрувнулся) | default (Бесплатный, один из дефолтных) | reviewing (На рассмотрении)
-            "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
-            "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
-            "price": null
-        },
-        {
-            "id": 9,
-            "state": "reviewing",
-            "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
-            "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
-            "price": 18500000
-        },
-        {
-            "id": 4,
-            "state": "approved",
-            "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
-            "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
-            "price": 18500000
-        }
-    ]
+    "state": "success",
+    "error_text": "",
+    "code": 0
 }
-
-// TODO: Оберни все ответы в data и добавь остальные
 
 

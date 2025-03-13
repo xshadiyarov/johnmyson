@@ -1,0 +1,32 @@
+// REQUEST - v1/products/issue/confirm (Send OTP)
+{ // Универсальный объект подтверждения заявки на продукт - Request/IssueConfirm
+    "id": 3001,
+    "product": {
+        "type": "card"
+    },
+    "source": {
+        "id": "4488411",
+        "type": "card"
+    }
+}
+// RESPONSE - v1/products/issue/confirm (Send OTP)
+// Отправляем СМС с кодом
+{
+    "data": {
+        "id": 3001,
+        "product": null,
+        "offers": [], // До Оферты 2.0 пустой массив, потом возвращаем то что каким-то образом не подтвердил к этому моменту
+        "self": {
+            "confirm": {
+                "phone": "99897*****17",
+                "code": "",
+                "ttl": 60,
+                "ttl_at": 1737440164
+            },
+            "transfer": null
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

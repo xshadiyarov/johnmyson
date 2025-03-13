@@ -12,17 +12,20 @@
 }
 // RESPONSE - v1/products/confirm
 {
-    "state": "draft",
-    "id": 3001,
-    "product": null,
-    "offers": [], // До Оферты 2.0 пустой массив, потом возвращаем то что каким-то образом не подтвердил к этому моменту
-    "self": {
-        "confirm": {
-            "phone": "99897*****17",
-            "code": "",
-            "ttl": 60,
-            "ttl_at": 1737440164
-        },
-        "transfer": null
-    }
+    "data": {
+        "id": 3001,
+        "product": null,
+        "offers": [],
+        "self": null,
+        "gni": {
+            "terminal_id": "EP000000000001",
+            "message": "1000000000",
+            "fiscal_sign": "175000000000",
+            "date_time": null,
+            "qr_link": "https://ofd.soliq.uz/epi?t=EP000000000001&r=1000000000&c=20250313131155&s=175000000000"
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
 }

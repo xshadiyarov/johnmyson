@@ -1,0 +1,142 @@
+// REQUEST - v1/products/delivery
+{
+    "product": {
+        "id": 1,
+        "type": "card"
+    }
+}
+// RESPONSE - v1/products/delivery
+{
+    "data": {
+        "map": { // Универсальный объект карты - MapResource
+            "type": "google",
+            "url": "https://storage.googleapis.com/iyb-mobile-app-front/api-test2/sample_map.kmz"
+        },
+        "branches": [
+            { // Универсальный объект локации - PlaceResource
+                "id": 1,
+                "location": {
+                    "lng": "-77.0364",
+                    "lat": "38.8951"
+                },
+                "title": "ОПЕРУ",
+                "address": {
+                    "formatted": "100017, г. Ташкент, ул. А.Кадыри, 2",
+                    "short": "ул. А.Кадыри, 2"
+                },
+                "icon": null,
+                "week": [
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Пн"
+                    },
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Вт"
+                    },
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Ср"
+                    },
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Чт"
+                    },
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Пт"
+                    },
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Сб"
+                    },
+                    {
+                        "hours": [
+                            {
+                                "open": "0900",
+                                "close": "1700",
+                                "title": null
+                            },
+                            {
+                                "open": "1300",
+                                "close": "1400",
+                                "title": "Обед"
+                            }
+                        ],
+                        "title": "Вс"
+                    }
+                ]
+            }
+            // Детали места в будущем будут подгружать отдельным общим запросом, с on-demand парсингом фото, транспорта и др.
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
