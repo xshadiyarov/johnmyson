@@ -1,0 +1,7 @@
+// REQUEST - v1/card/issue/confirm
+{
+    "id": 30102024,
+    "code": "123456"
+}
+// RESPONSE
+// TODO: BDUI order accepted

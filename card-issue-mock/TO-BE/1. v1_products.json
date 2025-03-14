@@ -1,0 +1,3008 @@
+// REQUEST - v1/products
+{
+    "type": "card"
+}
+// RESPONSE
+{
+    "data": {
+        "type": "catalog",
+        "sections": [
+            {
+                "key": "catalog_filter",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "catalog_filters_carousel",
+                        "type": "filter_carousel",
+                        "components": [
+                            {
+                                "key": "catalog_filters_item_all",
+                                "type": "filter_reset",
+                                "title": "Все",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "filter_default",
+                                    "style": "Default",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "filter",
+                                    "value": ""
+                                }
+                            },
+                            {
+                                "key": "catalog_filters_item_morph",
+                                "type": "filter",
+                                "title": "Кредитная",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "filter_default",
+                                    "style": "Default",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "filter",
+                                    "value": "type.filter_type_credit"
+                                }
+                            },
+                            {
+                                "key": "catalog_filters_item_morph",
+                                "type": "filter",
+                                "title": "Дебитовая",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "filter_default",
+                                    "style": "Default",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "filter",
+                                    "value": "type.filter_type_debit"
+                                }
+                            },
+                            {
+                                "key": "catalog_filters_item_morph",
+                                "type": "filter",
+                                "title": "Международная",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "filter_default",
+                                    "style": "Default",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "filter",
+                                    "value": "type.filter_type_international"
+                                }
+                            },
+                            {
+                                "key": "catalog_filters_item_groups",
+                                "type": "filter_groups",
+                                "title": "",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "742",
+                                    "name": "catalog_filters_group",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png",
+                                      "dark": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/filter.png"
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "catalog_filters_group"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "catalog_carousel",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Thunderball",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_visa",
+                                    "currency.filter_currency_uzs",
+                                    "price.filter_price_free",
+                                    "type.filter_type_credit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Карта будущего",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Карта возможностей",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Скоро",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_primary_white_100_warning",
+                                    "style": null,
+                                    "priority": "Primary",
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "Warning"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Тип карты",
+                                "subtitle": "Рассрочка",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Лимит",
+                                "subtitle": "До 100 млн. сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "682",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_alert",
+                                "type": "alert",
+                                "title": "Текст о том что карта уже выпущена, лимит исчерпан",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Quantum of Sloace",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_visa",
+                                    "currency.filter_currency_uzs",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Бомбезная зеленая карта, выгода х3",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "VISA START SUM",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Новый",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_warning_warning",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Warning",
+                                    "background": "Warning"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Выгода х3",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_purple_purple",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Purple",
+                                    "background": "Purple"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/2"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Goldfinger",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_uzcard",
+                                    "currency.filter_currency_uzs",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Эволюция в семействе Uzcard",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Uzcard Duo",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Бесконтактная оплата",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_turquoise_sup_turquoise",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Turquoise Sup",
+                                    "background": "Turquoise"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/3"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/3"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Casino Royale",
+                                "block": true,
+                                "filters": [
+                                    "payment.filter_payment_humo",
+                                    "currency.filter_currency_uzs",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_virtual"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Быстрый старт. Открытие карты до 5 минут",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Humo Virtual",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Виртуальная карта",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_primary_white_100_lightgreen",
+                                    "style": null,
+                                    "priority": "Primary",
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "LightGreen"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Индивидуальный дизайн",
+                                "subtitle": "Есть (см. подробнее)",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "682",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/4"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Открыть",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/prepayment/4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Skyfall",
+                                "block": true,
+                                "filters": [
+                                    "payment.filter_payment_humo",
+                                    "currency.filter_currency_uzs",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_virtual"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Без комиссионные переводы меду HUMO",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Humo",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Бесконтактная оплата",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_accent_accent",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": "Accent"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Индивидуальный дизайн",
+                                "subtitle": "Есть (см. подробнее)",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "682",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/5"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/5"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Spectre",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_visa",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_virtual"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Для онлайн покупок",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Visa Virtual",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Виртуальная карта",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_primary_white_100_lightgreen",
+                                    "style": null,
+                                    "priority": "Primary",
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "LightGreen"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/6"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Открыть",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/prepayment/6"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Quantum of Sloace",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_visa",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Классическая дебетовая карта",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Visa Start",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "1+1 подарок",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_yellow_sup_yellow",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Yellow Sup",
+                                    "background": "Yellow"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Индивидуальный дизайн",
+                                "subtitle": "Есть (см. подробнее)",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "682",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/7"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/7"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "The World Is Not Enough",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_visa",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_fee",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Карта для путешествий",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Visa Platinum",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "1+1 подарок",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_yellow_sup_yellow",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Yellow Sup",
+                                    "background": "Yellow"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "34 000 сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Индивидуальный дизайн",
+                                "subtitle": "Есть (см. подробнее)",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "682",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/8"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/8"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Dr No",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_visa",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_fee",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Люксовая карта, для тех кто хочет комфорта",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Visa Infinity",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Премиум",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_primary_white_100_black_100",
+                                    "style": null,
+                                    "priority": "Primary",
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "Black 100"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "170 000 сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/9"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Moonraker",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_mastercard",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_free",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_virtual"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Для любителей шоппинга",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Mastercard Virtual",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Виртуальная карта",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_primary_white_100_lightgreen",
+                                    "style": null,
+                                    "priority": "Primary",
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background": "LightGreen"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/10"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Открыть",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/prepayment/10"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "The World Is Not Enough",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_mastercard",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_fee",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Карта притягивающая скидки",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "Mastercard Platinum",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Бесконтактная карта",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_turquoise_sup_turquoise",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Turquoise Sup",
+                                    "background": "Turquoise"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "34 000 сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Индивидуальный дизайн",
+                                "subtitle": "Есть (см. подробнее)",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": {
+                                    "id": "682",
+                                    "name": "bullet_info",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1673595291efe2.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "overlay",
+                                    "value": "i_credit_limit"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/11"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/11"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Quantum of Sloace",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_unionpay",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_fee",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Выгодная снятие наличных заграницей",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "UnionPay Classic",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Выгода",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_purple_purple",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Purple",
+                                    "background": "Purple"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "БЕСПЛАТНО",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300_accent",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "Accent",
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/12"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/12"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "catalog_carousel_item_morph",
+                        "type": "catalog_item",
+                        "meta": {
+                            "catalog_item": {
+                                "header_color": [
+                                    "Gradient/1/Left",
+                                    "Gradient/1/Right"
+                                ],
+                                "page_background_color": "Golden Eye",
+                                "block": true,
+                                "filters": [
+                                    "type.filter_type_international",
+                                    "payment.filter_payment_unionpay",
+                                    "currency.filter_currency_usd",
+                                    "price.filter_price_fee",
+                                    "type.filter_type_debit",
+                                    "aspect.filter_aspect_physical"
+                                ]
+                            }
+                        },
+                        "components": [
+                            {
+                                "key": "catalog_item_title",
+                                "type": "catalog_item_title",
+                                "title": "Помощник зарубежом",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_text",
+                                "type": "text",
+                                "title": "UnionPay Gold",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_icon",
+                                "type": "image",
+                                "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_badge_morph",
+                                "type": "badge",
+                                "title": "Выгода",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "badge_secondary_purple_purple",
+                                    "style": null,
+                                    "priority": "Secondary",
+                                    "size": null,
+                                    "color": "Purple",
+                                    "background": "Purple"
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Валюта",
+                                "subtitle": "Доллар США",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_bullet_morph",
+                                "type": "bullet",
+                                "title": "Выпуск",
+                                "subtitle": "34 000 сум",
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b2p300",
+                                    "style": "B-2-p300",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": null,
+                                    "background": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "catalog_item_details",
+                                "type": "button",
+                                "title": "Подробнее",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/details/13"
+                                }
+                            },
+                            {
+                                "key": "catalog_item_proceed",
+                                "type": "button",
+                                "title": "Оформить",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "icon": null,
+                                "rendering": {
+                                    "key": "button_accent_primary_standard",
+                                    "style": "Accent",
+                                    "priority": "Primary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://card/issue/13"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "overlays": {
+            "catalog_filters_group": {
+                "key": "catalog_filters_group",
+                "type": "filter_bottom_menu",
+                "header": "Фильтр",
+                "sections": [
+                    {
+                        "key": "catalog_filters_group_default",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Платежная система",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Uzcard",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_uzcard"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Humo",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_humo"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "VISA",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_visa"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Mastercard",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_mastercard"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "UnionPay",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "payment.filter_payment_unionpay"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Валюта",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "currency."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "UZS",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "currency.filter_currency_uzs"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "USD",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "currency.filter_currency_usd"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Цена выпуска",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "price."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Бесплатная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "price.filter_price_free"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Платная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "price.filter_price_fee"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Тип",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Дебитовая",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type.filter_type_debit"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Кредитная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type.filter_type_credit"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Международная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "type.filter_type_international"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "filter_group_morph",
+                                "type": "filter_group",
+                                "components": [
+                                    {
+                                        "key": "filter_group_text",
+                                        "type": "text",
+                                        "title": "Вид",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_b2p300",
+                                            "style": "B-2-p300",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "filter_group_item_all",
+                                        "type": "filter_reset",
+                                        "title": "Все",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "aspect."
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Физическая",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "aspect.filter_aspect_physical"
+                                        }
+                                    },
+                                    {
+                                        "key": "filter_group_item_morph",
+                                        "type": "filter",
+                                        "title": "Виртуальная",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "filter_outline",
+                                            "style": "Outline",
+                                            "priority": null,
+                                            "size": null,
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": {
+                                            "type": "filter",
+                                            "value": "aspect.filter_aspect_virtual"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "i_credit_limit": {
+                "key": "i_credit_limit_menu",
+                "type": "slides_bottom_menu",
+                "header": {
+                    "title": "Льготный период"
+                },
+                "sections": [
+                    {
+                        "key": "i_credit_limit_grace",
+                        "header": null,
+                        "widgets": [
+                            {
+                                "key": "intro_block_grace",
+                                "type": "intro_block",
+                                "components": [
+                                    {
+                                        "key": "image_grace",
+                                        "type": "image",
+                                        "title": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "image_rectangle_4x3",
+                                            "style": "Rectangle",
+                                            "priority": null,
+                                            "size": "4x3",
+                                            "color": null,
+                                            "background": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "text_grace",
+                                        "type": "text",
+                                        "title": "Льготный период",
+                                        "subtitle": "Период, в который вы не платите проценты за использование кредитных средств. Погасите задолженность до конца этого периода и не платите проценты.",
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "rendering": {
+                                            "key": "text_center_primary_h2",
+                                            "style": "Center",
+                                            "priority": "Primary",
+                                            "size": "H2",
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "icon": null,
+                                        "action": null
+                                    },
+                                    {
+                                        "key": "button_benefit",
+                                        "type": "button",
+                                        "title": "ОК",
+                                        "subtitle": null,
+                                        "is_enabled": true,
+                                        "is_on": true,
+                                        "icon": null,
+                                        "rendering": {
+                                            "key": "button_accent_primary_standard",
+                                            "style": "Accent",
+                                            "priority": "Primary",
+                                            "size": "Standard",
+                                            "color": null,
+                                            "background_color": null
+                                        },
+                                        "action": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

@@ -1,0 +1,85 @@
+// REQUEST - v1/card/issue
+{
+    "product_id": 3,
+    "branch_id": 1,
+    "delivery": true,
+    "image_id": 1,
+    "comment": "some-comment",
+    "address": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "phone": "998998818926",
+    "location": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+}
+// RESPONSE
+{
+    "data": {
+        "card_issue_id": 30102024,
+        "header": {
+            "key": "Называние карты",
+            "value": "Uzcard",
+            "icon_resource": {
+                "id": 14,
+                "name": "card_uzcard_issue",
+                "type": "card_issue",
+                "links": {
+                    "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/card_uzcard_issue.png",
+                    "dark": null
+                }
+            }
+        },
+        "body": {
+            "custom_design": {},
+            "card_issue": [
+                {
+                    "key": "Плат. система",
+                    "value": "UZCARD"
+                },
+                {
+                    "key": "Валюта",
+                    "value": "UZS"
+                },
+                {
+                    "key": "Цена",
+                    "value": "37 000 сум",
+                    "is_amount": true
+                },
+                {
+                    "key": "Индив. дизайн",
+                    "value": "Бесплатно",
+                    "is_amount": false
+                }
+            ],
+            "card_issue_additional": {
+                "key": "Филиал и адрес",
+                "value": "Мирзо-Улугбек 100000, г. Taшкент, М.Улугбек, ул. Xамид Олимжон, 5",
+                "info": {
+                    "minibusses": [
+                        144,
+                        80
+                    ],
+                    "busses": [
+                        12,
+                        20,
+                        85,
+                        88
+                    ],
+                    "info": "Branch info message"
+                }
+            },
+            "offer": [
+                {
+                    "id": 123,
+                    "code": "uzcard_issue",
+                    "offer_schedule_id": 123,
+                    "offer_id": 123,
+                    "lang": "ru",
+                    "file_name": "Uzcard issue",
+                    "url_full_path": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/uploads/offers/uzcard_issue_ru.pdf",
+                    "file_type": "pdf"
+                }
+            ]
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

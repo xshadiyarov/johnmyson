@@ -14,8 +14,6 @@ VALUES
     ('catalog_item_open','Открыть','','','main'),
     ('filter_group_item_all','Все','','','main'),
     ('card_details_row_actions_text','Почему эта карта?','','','cards'),
-    ('card_details.201_banner_image','https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2022/05/full/e8395ab0b365f72be31b72685f8ae9936f587188.png','https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2022/05/full/e8395ab0b365f72be31b72685f8ae9936f587188.png','https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2022/05/full/e8395ab0b365f72be31b72685f8ae9936f587188.png','cards'),
-    ('card_details.201_banner_link','https://ru.ipakyulibank.uz/physical/plateji-i-perevody','https://ru.ipakyulibank.uz/physical/plateji-i-perevody','https://ru.ipakyulibank.uz/physical/plateji-i-perevody','cards'),
     ('card_details_faq_text','Остались вопросы?','','','cards'),
     ('cards_details_conditions_text','Условия','','','cards'),
     ('card_details_price','Цена','','','cards'),

@@ -6,7 +6,9 @@
     },
     "details": { // Объект деталей конкретного продукта - {Product}IssueForm
         "branch_id": 1,
-        "design_id": 1,
+        "design": {
+            "image_id": 1
+        },
         "delivery": { // Универсальный объект доставки, в будущем будет переиспользован - DeliveryDetails
             "location": {
                 "lng": "-77.0364",

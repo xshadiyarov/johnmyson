@@ -1,0 +1,180 @@
+// REQUEST - v1/products/designs
+{
+    "product": {
+        "id": 1,
+        "type": "card"
+    },
+    "page": 1,
+    "limit": 25
+}
+// RESPONSE - v1/products/designs
+{
+    "data": {
+        "product": {
+            "id": 1,
+            "type": "card",
+            "details": {
+                "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
+                "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                "price": 3750000
+            }
+        },
+        "design": {
+            "images": [
+                {
+                    "id": 9,
+                    "state": "reviewing",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 4,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 10,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 11,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 12,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 13,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 14,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 15,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 16,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 17,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 18,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 19,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 20,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 21,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 22,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 23,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 24,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 25,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 26,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 27,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 28,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 29,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 30,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 30,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                }
+            ]
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0,
+    "pagination": {
+        "total": 2,
+        "page": 1,
+        "limit": 25,
+        "has_next_page": true
+    }
+}

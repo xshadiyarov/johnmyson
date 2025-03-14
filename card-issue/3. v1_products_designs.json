@@ -4,48 +4,59 @@
 { // Универсальный объект - Request/ProductDesignCollection
     "product": {
         "id": 1,
-        "type": "card"
+        "type": "card" // account, credit, deposit
     },
-    "offset": 0, // По умолчанию 0
-    "count": 25 // По умолчанию 25, 1 >= count <= 100 (А то ошибка count_out_of_range)
+    "page": 1, // По умолчанию 1
+    "limit": 25 // По умолчанию 25, 1 >= count <= 100 (А то ошибка count_out_of_range)
 }
 // RESPONSE - v1/products/designs
+// TODO: Добавить цену по умолчанию
+// TODO: Понять что делать с logos_layer, как можно сделать на будущее то что можно выбирать?
+// 
 {
     "data": { // Универсальный объект - ProductDesignCollection
         "product": {
             "id": 1,
-            "type": "card"
-        },
-        "offset": 0,
-        "count": 10,
-        "designs": [
-            // Необходимо вывести изображения по след. порядку: default, reviewing, approved (Акционные), approved (Пользовательские), approved
-            { // Объект индивидуального дизайна карты - CardDesignItem
-                "id": 5,
-                "state": "default", // approved (Системный или загружал пользователь и апрувнулся) | default (Бесплатный, один из дефолтных) | reviewing (На рассмотрении) | disabled (Выключен или удален)
-                "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+            "type": "card",
+            "details": {
                 "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
-                "price": null
-            },
-            {
-                "id": 9,
-                "state": "reviewing",
                 "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
-                "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
-                "price": 18500000
-            },
-            {
-                "id": 4,
-                "state": "approved",
-                "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
-                "logos_layer": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/16491a79524379.png",
-                "price": 18500000
+                "price": 3750000
             }
-        ]
+        },
+        "design": {
+            "image": [
+                // Необходимо вывести изображения по след. порядку: default, reviewing, approved (Акционные), approved (Пользовательские), approved
+                { // Объект индивидуального дизайна карты - CardDesignItem
+                    "id": 0,
+                    "state": "default", // approved (Системный или загружал пользователь и апрувнулся) | default (Бесплатный, один из дефолтных) | reviewing (На рассмотрении)
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 0
+                },
+                {
+                    "id": 9,
+                    "state": "reviewing",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                },
+                {
+                    "id": 4,
+                    "state": "approved",
+                    "image": "https://umobile.ipakyulibank.uz:5444/api-live/images/cardtpls/tiger_card.png",
+                    "price": 18500000
+                }
+            ]
+        }
     },
     "state": "success",
     "error_text": "",
-    "code": 0
+    "code": 0,
+    "pagination": {
+        "total": 2,
+        "page": 1,
+        "limit": 25,
+        "has_next_page": true
+    }
 }
 
 

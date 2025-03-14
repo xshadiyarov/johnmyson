@@ -1,0 +1,10 @@
+// REQUEST - v1/products/designs/upload
+{
+    "product": {
+        "id": 1,
+        "type": "card"
+    },
+    "image": "base64"
+}
+// RESPONSE
+// TODO: BDUI order accepted

@@ -4,10 +4,14 @@ CARD_PRODUCTS_V1
 CARD_PRODUCTS_V1_TEXTS
 TAGS
 TAG_RELATIONS
+PRODUCT_ISSUE_BRANCHES
+PRODUCT_ISSUE_BRANCHES_META
+CARD_ISSUE_BRANCHES
+MAPS
 
 Disclaimer:
-CARD_PRODUCTS_V1_TEXTS, TAGS, TAG_RELATIONS -- это заполнение для тестов.
-Убедительная просьба проверить корректность CARD_PRODUCTS_V1
+Это заполнение для тестов.
+Убедительная просьба проверить корректность.
 */
 
 INSERT INTO CARD_PRODUCTS_V1 (PRODUCT_CODE, COMMISSION, HAS_CUSTOM_DESIGN, CUSTOM_DESIGN_COMMISSION, CUSTOM_DESIGN_CODE, STATE, BACKGROUND, LOGOS_LAYER, WEBVIEW, EMBOSS_TYPE, IS_VIRTUAL, TYPE_APPLICATION, SORT_ORDER, CURRENCY, PRICE, CARD_IMAGE, BACKGROUND_COLOR, HEADER_COLOR)
@@ -442,3 +446,31 @@ VALUES
     ('032', 'ru', 'Обслуживание карты', '$4,99/месяц', NULL, 'condition', 300, NULL, NULL),
     ('032', 'en', '', NULL, NULL, 'condition', 300, NULL, NULL),
     ('032', 'uz', '', NULL, NULL, 'condition', 300, NULL, NULL);
+
+INSERT INTO PRODUCT_ISSUE_BRANCHES (BUSINESS_ID, LATITUDE, LONGITUDE)
+VALUES
+    ('00444','41.322475','69.280615'),
+    ('00421','41.314719','69.293920'),
+    ('01145','41.320990','69.240514');
+
+INSERT INTO CARD_ISSUE_BRANCHES (BRANCH_ID, TIETO_EMBOSS_ID, IS_TIETO_EMBOSS_ACTIVE, HUMO_EMBOSS_ID, IS_HUMO_EMBOSS_ACTIVE, UZCARD_EMBOSS_ID, IS_UZCARD_EMBOSS_ACTIVE, STATE)
+VALUES
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00444'),'101',1,'00444',1,'80440',1,1),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00421'),'103',1,'00421',1,'80420',1,1),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='01145'),'115',1,'01145',1,'81140',1,1);
+
+INSERT INTO PRODUCT_ISSUE_BRANCHES_META (BRANCH_ID, LANGUAGE, TITLE, DESCRIPTION, ADDRESS, SHORT_ADDRESS, WEEK_DAYS, OPENING_HOURS, LUNCH_HOURS)
+VALUES
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00444'), 'ru', 'ОПЕРУ', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100017, г. Тaшкент, Юнусобод,  ул. Кодирий, 2', 'Юнусобод,  ул. Кодирий, 2', '[{"name":"Пн","is_working":true},{"name":"Вт","is_working":true},{"name":"Ср","is_working":true},{"name":"Чт","is_working":true},{"name":"Пт","is_working":true},{"name":"Сб","is_working":false},{"name":"Сб","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00444'), 'uz', 'OPERU', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100017, Toshkent sh., Yunus obod, Abdulla qodiriy 2', 'Yunus obod, Abdulla qodiriy 2', '[{"name":"Du","is_working":true},{"name":"Se","is_working":true},{"name":"Ch","is_working":true},{"name":"Pa","is_working":true},{"name":"Ju","is_working":true},{"name":"Sh","is_working":false},{"name":"Ya","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00444'), 'en', 'OPERU', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100017, Toshkent c., Yunus obod, Abdulla qodiriy 2', 'Yunus obod, Abdulla qodiriy 2', '[{"name":"Mo","is_working":true},{"name":"Tu","is_working":true},{"name":"We","is_working":true},{"name":"Th","is_working":true},{"name":"Fr","is_working":true},{"name":"Sa","is_working":false},{"name":"Su","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00421'), 'ru', 'Мирзо Улугбек', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100017, г. Тaшкент, М.Улугбек,  ул. Кодирий, 2', 'М.Улугбек,  ул. Кодирий, 2', '[{"name":"\u041f\u043d","is_working":true},{"name":"\u0412\u0442","is_working":true},{"name":"\u0421\u0440","is_working":true},{"name":"\u0427\u0442","is_working":true},{"name":"\u041f\u0442","is_working":true},{"name":"\u0421\u0431","is_working":false},{"name":"\u0421\u0431","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00421'), 'uz', 'Mirzo Ulugbek', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100017, Toshkent sh., Mirzo Ulugbek, Abdulla qodiriy 2', 'Mirzo Ulugbek, Abdulla qodiriy 2', '[{"name":"Du","is_working":true},{"name":"Se","is_working":true},{"name":"Ch","is_working":true},{"name":"Pa","is_working":true},{"name":"Ju","is_working":true},{"name":"Sh","is_working":false},{"name":"Ya","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='00421'), 'en', 'Mirzo Ulugbek', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100017, Toshkent c., Mirzo Ulugbek, Abdulla qodiriy 2', 'Mirzo Ulugbek, Abdulla qodiriy 2', '[{"name":"Mo","is_working":true},{"name":"Tu","is_working":true},{"name":"We","is_working":true},{"name":"Th","is_working":true},{"name":"Fr","is_working":true},{"name":"Sa","is_working":false},{"name":"Su","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='01145'), 'ru', 'Шайхантахур', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100021, г. Тaшкент, Шайхонтохур, ул. Навоий, 25', 'Шайхонтохур, ул. Навоий, 25', '[{"name":"\u041f\u043d","is_working":true},{"name":"\u0412\u0442","is_working":true},{"name":"\u0421\u0440","is_working":true},{"name":"\u0427\u0442","is_working":true},{"name":"\u041f\u0442","is_working":true},{"name":"\u0421\u0431","is_working":false},{"name":"\u0421\u0431","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='01145'), 'uz', 'Shaykhontohur', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100021, Toshkent sh., Shayxontohur, Navoiy k., 25', 'Shayxontohur, Navoiy k., 25', '[{"name":"Du","is_working":true},{"name":"Se","is_working":true},{"name":"Ch","is_working":true},{"name":"Pa","is_working":true},{"name":"Ju","is_working":true},{"name":"Sh","is_working":false},{"name":"Ya","is_working":false}]','09:00 – 17:00','13:00 – 14:00'),
+    ((SELECT id FROM PRODUCT_ISSUE_BRANCHES WHERE BUSINESS_ID='01145'), 'en', 'Shaykhontohur', '{"busses":[33,25,85,89],"minibusses":[100,150],"metro":["Abdulla Qodiriy"]}', '100021, Tashkent, Shaykhontohur, st. Navoi, 25', 'Shaykhontohur, st. Navoi, 25', '[{"name":"Mo","is_working":true},{"name":"Tu","is_working":true},{"name":"We","is_working":true},{"name":"Th","is_working":true},{"name":"Fr","is_working":true},{"name":"Sa","is_working":false},{"name":"Su","is_working":false}]','09:00 – 17:00','13:00 – 14:00');
+
+INSERT INTO MAPS (KEY, TYPE, URL, STATE)
+VALUES
+    ('card_issue_default', 'google', 'https://storage.googleapis.com/iyb-mobile-app-front/api-test2/sample_map.kmz', 1);

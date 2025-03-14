@@ -1,0 +1,136 @@
+// REQUEST - v1/cards/products/branches
+{
+    "id": 1
+}
+// RESPONSE
+{
+    "data": {
+        "map_type": "google",
+        "map_url": "https://storage.googleapis.com/iyb-mobile-app-front/api-test2/sample_map.kmz",
+        "branches": [
+            {
+                "id": "1",
+                "business_id": "00421",
+                "tieto_emboss_id": "103",
+                "humo_emboss_id": "00421",
+                "uzcard_emboss_id": "80420",
+                "longitude": "41.314719",
+                "latitude": "69.293920",
+                "meta": {
+                    "opening_hours": "09:00 - 17:00",
+                    "title": "Мирзо-Улугбек",
+                    "description": {
+                        "minibusses": [
+                            "144",
+                            "144"
+                        ],
+                        "busses": [
+                            "12",
+                            "20",
+                            "85",
+                            "88"
+                        ],
+                        "metro": [
+                            "Abdulla Qodiriy",
+                            "Paxtakor"
+                        ]
+                    },
+                    "week_days": [
+                        {
+                            "name": "Пн",
+                            "is_working": false
+                        },
+                        {
+                            "name": "Вт",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Ср",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Чт",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Пт",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Сб",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Вс",
+                            "is_working": false
+                        }
+                    ],
+                    "address": "100000, г. Taшкент, М.Улугбек, ул. Xамид Олимжон, 5"
+                }
+            },
+            {
+                "id": "2",
+                "business_id": "00444",
+                "tieto_emboss_id": "101",
+                "humo_emboss_id": "00444",
+                "uzcard_emboss_id": "80440",
+                "longitude": "41.322475",
+                "latitude": "69.280615",
+                "meta": {
+                    "opening_hours": "09:00 - 17:00",
+                    "title": "ОПЕРУ",
+                    "description": {
+                        "minibusses": [
+                            "144",
+                            "144"
+                        ],
+                        "busses": [
+                            "12",
+                            "20",
+                            "85",
+                            "88"
+                        ],
+                        "metro": [
+                            "Abdulla Qodiriy",
+                            "Paxtakor"
+                        ]
+                    },
+                    "week_days": [
+                        {
+                            "name": "Пн",
+                            "is_working": false
+                        },
+                        {
+                            "name": "Вт",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Ср",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Чт",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Пт",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Сб",
+                            "is_working": true
+                        },
+                        {
+                            "name": "Вс",
+                            "is_working": false
+                        }
+                    ],
+                    "address": "100017, г. Тaшкент, Юнусобод, ул. Кодирий, 2"
+                }
+            }
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

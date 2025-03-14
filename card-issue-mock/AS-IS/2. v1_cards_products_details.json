@@ -1,0 +1,392 @@
+// REQUEST - v1/cards/products/details
+{
+    "id": 1
+}
+// RESPONSE
+{
+    "data": {
+      "type": "card_product_details",
+      "sections": [
+        {
+          "key": "card_product_details_section_primary",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_header_card",
+              "type": "text",
+              "meta": {
+                "product": {
+                  "id": 7,
+                  "product_code": "870",
+                  "background": "https://storage.googleapis.com/iyb-mobile-app-front/images/cardissue/humo.png",
+                  "logos_layer": "https://storage.googleapis.com/iyb-mobile-app-front/images/humo_tpl.png",
+                  "is_virtual": false,
+                  "sort_order": "700",
+                  "currency": "UZS",
+                  "price": 0,
+                  "custom_design_price": 6750000,
+                  "card_image": "https://storage.googleapis.com/iyb-mobile-app-front/images/humo_image.png",
+                  "background_color": "Skyfall",
+                  "meta": {
+                    "id": 19,
+                    "title": "HUMO",
+                    "short": "Без комиссионные переводы меду HUMO",
+                    "description": "Просто прикоснитесь бесконтактной картой Humo и ваша покупка совершена. Вы полностью контролируете весь процесс, так как не передаете карту кассиру и сами вводите ПИН-код. Предусмотрена технология, которая исключает любую возможность повторного списания денежных средств, так как после проведения оплаты терминал на кассе подает звуковой сигнал и автоматически отключается"
+                  }
+                },
+                "tags": [
+                  {
+                    "id": 5,
+                    "background_color": "White 100",
+                    "font_color": "Accent",
+                    "border_color": "Accent",
+                    "name": "Бесконтактная оплата",
+                    "group": "",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "badge"
+                  }
+                ],
+                "body": [
+                  {
+                    "type": "text",
+                    "name": "Валюта",
+                    "value": "Сум",
+                    "color": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "Выпуск",
+                    "value": "БЕСПЛАТНО",
+                    "color": "Accent"
+                  },
+                  {
+                    "type": "icon",
+                    "name": "Индивидуальный дизайн",
+                    "value": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/info.png",
+                    "color": ""
+                  }
+                ],
+                "filters": [
+                  {
+                    "id": 9,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Все",
+                    "group": "Платежная система",
+                    "state": 1,
+                    "sort_order": 100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 11,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Humo",
+                    "group": "Платежная система",
+                    "state": 1,
+                    "sort_order": 300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 15,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Все",
+                    "group": "Валюта",
+                    "state": 1,
+                    "sort_order": 700,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 16,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "UZS",
+                    "group": "Валюта",
+                    "state": 1,
+                    "sort_order": 800,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 18,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Все",
+                    "group": "Цена выпуска",
+                    "state": 1,
+                    "sort_order": 1000,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 19,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Бесплатная",
+                    "group": "Цена выпуска",
+                    "state": 1,
+                    "sort_order": 1100,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 21,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Все",
+                    "group": "Тип",
+                    "state": 1,
+                    "sort_order": 1300,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 22,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Дебитовая",
+                    "group": "Тип",
+                    "state": 1,
+                    "sort_order": 1400,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 23,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Кредитная",
+                    "group": "Тип",
+                    "state": 1,
+                    "sort_order": 1500,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 24,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Все",
+                    "group": "Вид",
+                    "state": 1,
+                    "sort_order": 1600,
+                    "type": "filter"
+                  },
+                  {
+                    "id": 25,
+                    "background_color": "",
+                    "font_color": "",
+                    "border_color": "",
+                    "name": "Физическая",
+                    "group": "Вид",
+                    "state": 1,
+                    "sort_order": 1700,
+                    "type": "filter"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "card_product_details_widget_secondary_header_info",
+              "type": "text",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_header",
+                  "type": "text",
+                  "title": "Дополнительные сведения",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "Просто прикоснитесь бесконтактной картой Humo и ваша покупка совершена. Вы полностью контролируете весь процесс, так как не передаете карту кассиру и сами вводите ПИН-код. Предусмотрена технология, которая исключает любую возможность повторного списания денежных средств, так как после проведения оплаты терминал на кассе подает звуковой сигнал и автоматически отключается"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_texts",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_texts",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_texts",
+                  "type": "text",
+                  "title": "Снятие наличности с банкоматов",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "1%",
+                  "icon": []
+                },
+                {
+                  "key": "card_product_details_component_secondary_texts",
+                  "type": "text",
+                  "title": "Выпуск карты",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "Без комиссии",
+                  "icon": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_advertisement",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_advertisement",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_component_secondary_advertisement",
+                  "type": "text",
+                  "title": "https://umobile.ipakyulibank.uz:5444/admin/uploads/images/2023/06/full/40fc7503e891477d91fd00dc72436190e65743b2.png",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph",
+                  "icon": [],
+                  "action": {
+                    "type": "deeplink",
+                    "value": "iym://default"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_indesign",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            },
+            {
+              "key": "card_product_details_widget_secondary_indesign_images",
+              "type": "image_list",
+              "meta": []
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_collapse",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_collapse",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_components_secondary_collapse",
+                  "type": "text",
+                  "title": "morph",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "subtitle": "morph"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "card_product_details_section_secondary_price",
+          "header": null,
+          "widgets": [
+            {
+              "key": "card_product_details_widget_secondary_price",
+              "type": "list",
+              "meta": [],
+              "components": [
+                {
+                  "key": "card_product_details_components_secondary_price",
+                  "type": "text",
+                  "title": "Цена выпуска",
+                  "is_enabled": true,
+                  "is_on": true
+                },
+                {
+                  "key": "card_product_details_components_secondary_price_value",
+                  "type": "text",
+                  "title": "morph:price",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "rendering": {
+                    "key": "card_details_price_style",
+                    "style": "Accent",
+                    "priority": "",
+                    "size": "Standart",
+                    "color": "Accent",
+                    "background_color": ""
+                  }
+                },
+                {
+                  "key": "card_product_details_components_secondary_button",
+                  "type": "button",
+                  "title": "continue_order",
+                  "is_enabled": true,
+                  "is_on": true,
+                  "rendering": {
+                    "key": "card_details_order_button",
+                    "style": "Accent",
+                    "priority": "Primary",
+                    "size": "Standard",
+                    "color": "Accent",
+                    "background_color": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overlays": []
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+  }
