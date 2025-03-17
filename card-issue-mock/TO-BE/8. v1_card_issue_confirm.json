@@ -1,7 +1,147 @@
 // REQUEST - v1/card/issue/confirm
 {
     "id": 30102024,
-    "code": "123456"
+    "code": "123456",
+    "notifications": false
 }
 // RESPONSE
-// TODO: BDUI order accepted
+{
+    "data": {
+        "type": "success_page",
+        "sections": [
+            {
+                "key": "success_page_primary",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "success_page_text",
+                        "type": "success_block",
+                        "components": [
+                            {
+                                "key": "success_page_title",
+                                "type": "text",
+                                "title": "Заявка оформлена",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_h2_white_100",
+                                    "style": "H-2",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "success_page_description",
+                                "type": "text",
+                                "title": "Когда карта будет готова, мы направим вам ПУШ-уведомления.\\n\\nЧто бы не пропустить его, включите уведомления через настройки вашего смартфона",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b1_white_100",
+                                    "style": "B-1",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "success_page_secondary",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "success_page_quick_actions",
+                        "type": "quick_actions",
+                        "components": [
+                            {
+                                "key": "success_page_fiscal_qr",
+                                "type": "quick_action",
+                                "title": "Фискальный чек",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": null,
+                                "icon": {
+                                    "id": "742",
+                                    "name": "quick_fiscal_qr.icon",
+                                    "type": "target-main",
+                                    "links": {
+                                      "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/167cada9b41135.png",
+                                      "dark": null
+                                    }
+                                },
+                                "action": {
+                                    "type": "browser",
+                                    "value": "https://ofd.soliq.uz/epi?t=EP000000000364&r=1120823105&c=20250210113922&s=066232904012"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "success_page_actions",
+                        "type": "button_stack",
+                        "components": [
+                            {
+                                "key": "success_page_settings",
+                                "type": "button",
+                                "title": "Включить уведомления",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "settings",
+                                    "value": ""
+                                }
+                            },
+                            {
+                                "key": "success_page_exit",
+                                "type": "button",
+                                "title": "Выйти",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "button_accent_tritery_standard",
+                                    "style": "Accent",
+                                    "priority": "Tritery",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://main"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

@@ -4,7 +4,119 @@
         "id": 1,
         "type": "card"
     },
-    "image": "base64"
+    "image": "base64",
+    "notifications": false
 }
 // RESPONSE
-// TODO: BDUI order accepted
+{
+    "data": {
+        "type": "success_page",
+        "sections": [
+            {
+                "key": "primary",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "success_page_text",
+                        "type": "success_block",
+                        "components": [
+                            {
+                                "key": "success_page_title",
+                                "type": "text",
+                                "title": "Заявка оформлена",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_h2",
+                                    "style": "H-2",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            },
+                            {
+                                "key": "success_page_description",
+                                "type": "text",
+                                "title": "Вы можете узнать статус на странице “Мои заявки”. Также мы сообщим о статусе Вашей заявки посредством пуш уведомления.\\n\\nЧто бы не пропустить его, включите уведомления через  настройки вашего смартфона",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "text_b1",
+                                    "style": "B-1",
+                                    "priority": null,
+                                    "size": null,
+                                    "color": "White 100",
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "secondary",
+                "header": null,
+                "widgets": [
+                    {
+                        "key": "success_page_actions",
+                        "type": "button_stack",
+                        "components": [
+                            {
+                                "key": "success_page_settings",
+                                "type": "button",
+                                "title": "Включить уведомления",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "button_regular_secondary_standard",
+                                    "style": "Regular",
+                                    "priority": "Secondary",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "settings",
+                                    "value": ""
+                                }
+                            },
+                            {
+                                "key": "success_page_exit",
+                                "type": "button",
+                                "title": "Выйти",
+                                "subtitle": null,
+                                "is_enabled": true,
+                                "is_on": true,
+                                "rendering": {
+                                    "key": "button_accent_tritery_standard",
+                                    "style": "Accent",
+                                    "priority": "Tritery",
+                                    "size": "Standard",
+                                    "color": null,
+                                    "background_color": null
+                                },
+                                "icon": null,
+                                "action": {
+                                    "type": "deeplink",
+                                    "value": "iym://main"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

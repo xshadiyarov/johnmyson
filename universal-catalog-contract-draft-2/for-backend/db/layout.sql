@@ -49,8 +49,8 @@ VALUES
 
 INSERT INTO LAYOUT_PAGES ("KEY")
 VALUES
-    (catalog),
-    (card_details);
+    ('catalog'),
+    ('card_details');
 
 INSERT INTO LAYOUT_OVERLAYS ("PAGE_ID", "KEY", "TYPE", "HEADER", "SORT_ORDER")
 VALUES
@@ -115,3 +115,40 @@ VALUES
     ('image_grace','image','https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png',NULL,NULL,'true','true','true',NULL,NULL,(SELECT id FROM LAYOUT_RENDERS WHERE key='image_rectangle_4x3'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='intro_block_grace'),100),
     ('text_grace','text','t:credit_card.grace_period',NULL,"t:credit_card.grace_period_text",'true','true','true',NULL,NULL,(SELECT id FROM LAYOUT_RENDERS WHERE key='text_center_primary_h2'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='intro_block_grace'),200),
     ('button_grace','button','t:credit_card.grace_period_close',NULL,NULL,'true','true','true',NULL,NULL,(SELECT id FROM LAYOUT_RENDERS WHERE key='button_accent_primary_standard'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='intro_block_grace'),300);
+
+-- Success page
+
+INSERT INTO LAYOUT_PAGES ("KEY")
+VALUES
+    ('success_page');
+
+INSERT INTO LAYOUT_SECTIONS ("KEY", "SORT_ORDER", "PAGE_ID", "OVERLAY_ID")
+VALUES
+    ('success_page_primary', 100, (SELECT id FROM LAYOUT_PAGES WHERE KEY='success_page'), NULL),
+    ('success_page_secondary', 200, (SELECT id FROM LAYOUT_PAGES WHERE KEY='success_page'), NULL);
+
+INSERT INTO LAYOUT_WIDGETS ("KEY", "TYPE", "SORT_ORDER", "SECTION_ID", "IS_ACTIVE")
+VALUES
+    ('success_page_text', 'success_block', 100, (SELECT id FROM LAYOUT_SECTIONS WHERE KEY='success_page_primary'), 'true'),
+    ('success_page_quick_actions', 'quick_actions', 100, (SELECT id FROM LAYOUT_SECTIONS WHERE KEY='success_page_secondary'), '{"gni":true}'),
+    ('success_page_actions', 'button_stack', 200, (SELECT id FROM LAYOUT_SECTIONS WHERE KEY='success_page_secondary'), 'true');
+
+INSERT INTO LAYOUT_RENDERS ("KEY", "STYLE", "PRIORITY", "ELEMENT_SIZE", "COLOR", "BACKGROUND_COLOR")
+VALUES
+    ('text_h2_white_100', 'H-2', NULL, NULL, 'White 100', NULL),
+    ('text_b1_white_100', 'B-1', NULL, NULL, 'White 100', NULL),
+    ('button_accent_tritery_standard', 'Accent', 'Tritery', 'Standard', NULL, NULL);
+
+INSERT INTO LAYOUT_ACTIONS ("TYPE", "VALUE")
+VALUES
+    ('browser', 'morph'),
+    ('settings', '');
+
+INSERT INTO LAYOUT_COMPONENTS ("KEY", "TYPE", "TITLE", "BADGE", "SUBTITLE", "IS_ENABLED", "IS_ACTIVE", "IS_ON", "ICON_ID", "ACTION_ID", "RENDER_ID", "WIDGET_ID", "SORT_ORDER")
+VALUES
+    ('success_page_title','text','morph',NULL,NULL,'true','true','true',NULL,NULL,(SELECT id FROM LAYOUT_RENDERS WHERE key='text_h2_white_100'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='success_page_text'),100),
+    ('success_page_description','text','morph',NULL,NULL,'true','true','true',NULL,NULL,(SELECT id FROM LAYOUT_RENDERS WHERE key='text_b1_white_100'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='success_page_text'), 200),
+    ('success_page_fiscal_qr','quick_action','t:quick_fiscal_qr',NULL,NULL,'true','{"gni":true}','true','quick_fiscal_qr.icon',(SELECT id FROM LAYOUT_ACTIONS WHERE type='browser' AND value='morph'),NULL,(SELECT id FROM LAYOUT_WIDGETS WHERE key='success_page_quick_actions'),100),
+    ('success_page_settings','button','t:cta_enable_notifications',NULL,NULL,'true','{"app_notifications":true}','true',NULL,(SELECT id FROM LAYOUT_ACTIONS WHERE type='settings' AND value=''),(SELECT id FROM LAYOUT_RENDERS WHERE key='button_regular_secondary_standard'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='success_page_actions'),100),
+    ('success_page_exit','button','t:success_page_close',NULL,NULL,'true','{"app_notifications":true}','true',NULL,(SELECT id FROM LAYOUT_ACTIONS WHERE type='deeplink' AND value='iym://main'),(SELECT id FROM LAYOUT_RENDERS WHERE key='button_accent_tritery_standard'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='success_page_actions'),200),
+    ('success_page_exit','button','t:success_page_close',NULL,NULL,'true','{"app_notifications":false}','true',NULL,(SELECT id FROM LAYOUT_ACTIONS WHERE type='deeplink' AND value='iym://main'),(SELECT id FROM LAYOUT_RENDERS WHERE key='button_regular_secondary_standard'),(SELECT id FROM LAYOUT_WIDGETS WHERE key='success_page_actions'),200);

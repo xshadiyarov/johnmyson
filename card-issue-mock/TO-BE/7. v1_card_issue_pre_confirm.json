@@ -1,8 +1,10 @@
 // REQUEST - v1/card/issue/pre/confirm
 {
     "id": 30102024,
-    "source": "886392",
-    "source_type": "card"
+    "source": {
+        "id": "886392",
+        "type": "card"
+    }
 }
 // RESPONSE
 {
