@@ -118,6 +118,17 @@ VALUES
 
 -- Success page
 
+INSERT INTO LAYOUT_RENDERS ("KEY", "STYLE", "PRIORITY", "ELEMENT_SIZE", "COLOR", "BACKGROUND_COLOR")
+VALUES
+    ('text_h2_white_100', 'H-2', NULL, NULL, 'White 100', NULL),
+    ('text_b1_white_100', 'B-1', NULL, NULL, 'White 100', NULL),
+    ('button_accent_tritery_standard', 'Accent', 'Tritery', 'Standard', NULL, NULL);
+
+INSERT INTO LAYOUT_ACTIONS ("TYPE", "VALUE")
+VALUES
+    ('browser', 'morph'),
+    ('settings', '');
+
 INSERT INTO LAYOUT_PAGES ("KEY")
 VALUES
     ('success_page');
@@ -132,17 +143,6 @@ VALUES
     ('success_page_text', 'success_block', 100, (SELECT id FROM LAYOUT_SECTIONS WHERE KEY='success_page_primary'), 'true'),
     ('success_page_quick_actions', 'quick_actions', 100, (SELECT id FROM LAYOUT_SECTIONS WHERE KEY='success_page_secondary'), '{"gni":true}'),
     ('success_page_actions', 'button_stack', 200, (SELECT id FROM LAYOUT_SECTIONS WHERE KEY='success_page_secondary'), 'true');
-
-INSERT INTO LAYOUT_RENDERS ("KEY", "STYLE", "PRIORITY", "ELEMENT_SIZE", "COLOR", "BACKGROUND_COLOR")
-VALUES
-    ('text_h2_white_100', 'H-2', NULL, NULL, 'White 100', NULL),
-    ('text_b1_white_100', 'B-1', NULL, NULL, 'White 100', NULL),
-    ('button_accent_tritery_standard', 'Accent', 'Tritery', 'Standard', NULL, NULL);
-
-INSERT INTO LAYOUT_ACTIONS ("TYPE", "VALUE")
-VALUES
-    ('browser', 'morph'),
-    ('settings', '');
 
 INSERT INTO LAYOUT_COMPONENTS ("KEY", "TYPE", "TITLE", "BADGE", "SUBTITLE", "IS_ENABLED", "IS_ACTIVE", "IS_ON", "ICON_ID", "ACTION_ID", "RENDER_ID", "WIDGET_ID", "SORT_ORDER")
 VALUES

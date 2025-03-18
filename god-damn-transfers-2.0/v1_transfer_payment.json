@@ -1,0 +1,67 @@
+{
+    "data": { // Объект TransferResource
+        "state": "complete",
+        "id": 79936170,
+        "additional": {
+            "header": {
+                "title": "Перевод на карту",
+                "icon": {
+                    "id": null,
+                    "name": null,
+                    "type": null,
+                    "links": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1661f68528c6fb.png", // transfer_to_card
+                        "dark": null
+                    }
+                }
+            },
+            "footer": {
+                "title": "Итого",
+                "value": "205 500 UZS"
+            },
+            "items": [
+                {
+                    "key": "Дата",
+                    "value": "21.01.2025",
+                    "icon": ""
+                },
+                {
+                    "key": "С карты",
+                    "value": "**** 7495",
+                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                },
+                {
+                    "key": "На карту",
+                    "value": "**** 6616",
+                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                },
+                {
+                    "key": "Получатель",
+                    "value": "XASAN SHADIYAROV",
+                    "icon": ""
+                },
+                {
+                    "key": "Сумма к получению",
+                    "value": "1 000 UZS",
+                    "icon": ""
+                },
+                {
+                    "key": "Комиссия с собственных средств",
+                    "value": "500 UZS",
+                    "icon": ""
+                },
+                {
+                    "key": "Комиссия с кредитных средств",
+                    "value": "5 000 UZS",
+                    "icon": ""
+                }
+            ]
+        },
+        "gni": null,
+        // "self": null,
+        // "commission": null
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

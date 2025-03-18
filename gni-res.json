@@ -1,0 +1,502 @@
+[
+    {
+      "key": "abs_id",
+      "value": 76695570
+    },
+    {
+      "key": 0,
+      "value": {
+        "key": "agent_inn",
+        "labelRu": "ИНН",
+        "labelUz": "STIR",
+        "value": "200542744"
+      }
+    },
+    {
+      "key": 1,
+      "value": {
+        "key": "provider_name",
+        "labelRu": "Оператор",
+        "labelUz": "Operator",
+        "value": "Газ г. Ташкент"
+      }
+    },
+    {
+      "key": 2,
+      "value": {
+        "key": "service_name",
+        "labelRu": "Услуга",
+        "labelUz": "Xizmat turi",
+        "value": "Оплата за ГАЗ"
+      }
+    },
+    {
+      "key": 3,
+      "value": {
+        "key": "legal_name",
+        "labelRu": "Официальное название",
+        "labelUz": "Rasmiy nomi",
+        "value": "Филиал газоснабжения \"HUDUDGAZ POYTAXT\""
+      }
+    },
+    {
+      "key": 4,
+      "value": {
+        "key": "time",
+        "labelRu": "Время",
+        "labelUz": "To'lov vaqti",
+        "value": "10.02.2025 23:58:23"
+      }
+    },
+    {
+      "key": 5,
+      "value": {
+        "key": "agent_name",
+        "labelRu": "Агент",
+        "labelUz": "Agent",
+        "value": "АИКБ \"Ипак Йули\" (E-POS терминал).."
+      }
+    },
+    {
+      "key": 6,
+      "value": {
+        "key": "terminal_id",
+        "labelRu": "Номер терминала",
+        "labelUz": "Terminal raqami",
+        "value": "4139094"
+      }
+    },
+    {
+      "key": 7,
+      "value": {
+        "key": "transaction_id",
+        "labelRu": "Номер чека",
+        "labelUz": "Chek raqami",
+        "value": "18513633820"
+      }
+    },
+    {
+      "key": 8,
+      "value": {
+        "key": "fio_abonent",
+        "labelRu": "ФИО абонента",
+        "labelUz": "Abonent FISh",
+        "value": "А*********** ."
+      }
+    },
+    {
+      "key": 9,
+      "value": {
+        "key": "licshet",
+        "labelRu": "Лицевой счет",
+        "labelUz": "Hisob raqami",
+        "value": "1003010568"
+      }
+    },
+    {
+      "key": 10,
+      "value": {
+        "key": "adres",
+        "labelRu": "Адрес",
+        "labelUz": "Manzil",
+        "value": ""
+      }
+    },
+    {
+      "key": 11,
+      "value": {
+        "key": "paynetid",
+        "labelRu": "Paynet ID",
+        "labelUz": "Paynet ID",
+        "value": null
+      }
+    },
+    {
+      "key": 12,
+      "value": {
+        "key": "period",
+        "labelRu": "Период",
+        "labelUz": "Davr",
+        "value": ""
+      }
+    },
+    {
+      "key": 13,
+      "value": {
+        "key": "saldo_k",
+        "labelRu": "Сальдо на конец",
+        "labelUz": "Oxiriga saldo",
+        "value": "-336276.63"
+      }
+    },
+    {
+      "key": 14,
+      "value": {
+        "key": "amount",
+        "labelRu": "Оплачено",
+        "labelUz": "To`landi",
+        "value": "200000"
+      }
+    },
+    {
+      "key": 15,
+      "value": {
+        "key": "telefon",
+        "labelRu": "Телефон",
+        "labelUz": "Telefon",
+        "value": "998935881264"
+      }
+    },
+    {
+      "key": 16,
+      "value": {
+        "key": "code",
+        "labelRu": "Район/Город",
+        "labelUz": "Tuman/Shaxar",
+        "value": "12"
+      }
+    },
+    {
+      "key": 17,
+      "value": {
+        "key": "filial_name",
+        "labelRu": "Наименование филиала",
+        "labelUz": "Filial nomi",
+        "value": "Шайхантохурский р-н"
+      }
+    },
+    {
+      "key": 18,
+      "value": {
+        "key": "filial_inn",
+        "labelRu": "ИНН филиала",
+        "labelUz": "Filial INN",
+        "value": "306605769"
+      }
+    },
+    {
+      "key": 19,
+      "value": {
+        "key": "mfo",
+        "labelRu": "МФО",
+        "labelUz": "MFO",
+        "value": "00435"
+      }
+    },
+    {
+      "key": 20,
+      "value": {
+        "key": "rs",
+        "labelRu": "Р/С",
+        "labelUz": "H/R",
+        "value": "22634000905113960203"
+      }
+    },
+    {
+      "key": 21,
+      "value": {
+        "key": "bank_name",
+        "labelRu": "Наименование банка",
+        "labelUz": "Bank nomi",
+        "value": "ТОШКЕНТ Ш., \"УЗСАНОАТКУРИЛИШБАНКИ\" АТБ РАКАТ ФИЛИАЛИ"
+      }
+    },
+    {
+      "key": 22,
+      "value": {
+        "key": "cheque_html",
+        "labelRu": "cheque_html",
+        "labelUz": "cheque_html",
+        "value": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+CjxodG1sPgo8aGVhZD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgojanF1ZXJ5X21pbi5qcyMKPC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KI3FyY29kZV9taW4uanMjCjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5Pgo8dGFibGUgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMiIgY2VsbHNwYWNpbmc9IjAiIHN0eWxlPSJib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO3RhYmxlLWxheW91dDpmaXhlZDt3aWR0aDo3MjBwdCI+CiA8Y29sZ3JvdXA+CiA8Y29sIHdpZHRoPSI4NSIgc3R5bGU9ImJvcmRlci1sZWZ0OiAycHggc29saWQgYmxhY2s7Ij4KIDxjb2wgd2lkdGg9IjIxMCI+CiA8Y29sIHdpZHRoPSIxMzAiIHN0eWxlPSJib3JkZXItbGVmdDogMnB4IHNvbGlkIGJsYWNrOyI+CiA8Y29sIHN0eWxlPSJib3JkZXItcmlnaHQ6IDJweCBzb2xpZCBibGFjazsiPgogPC9jb2xncm91cD4KIDx0Ym9keT4KIDx0ciBzdHlsZT0iYm9yZGVyLXRvcDogMnB4IHNvbGlkIGJsYWNrOyI+CiAgPHRkIGNvbHNwYW49IjQiPjxjZW50ZXI+PGI+VE8nTE9WIFBBWU5FVCDihJYgMTg1MTM2MzM4MjA8L2I+PC9jZW50ZXI+PC90ZD4KIDwvdHI+CiA8dHIgc3R5bGU9ImJvcmRlci10b3A6IDFweCBzb2xpZCBibGFjazsiPgogIDx0ZD4mbmJzcDsgQWdlbnQ6PC90ZD4KICA8dGQ+0JDQmNCa0JEgItCY0L/QsNC6INCZ0YPQu9C4IiAoRS1QT1Mg0YLQtdGA0LzQuNC90LDQuykuLjwvdGQ+CiAgPHRkPiZuYnNwOyBLb3J4b25hOjwvdGQ+CiAgPHRkPtCk0LjQu9C40LDQuyDQs9Cw0LfQvtGB0L3QsNCx0LbQtdC90LjRjyAiSFVEVURHQVogUE9ZVEFYVCI8L3RkPgogPC90cj4KIDx0cj4KICA8dGQ+Jm5ic3A7IFNUSVI6PC90ZD4KICA8dGQ+MjAwNTQyNzQ0PC90ZD4KICA8dGQ+Jm5ic3A7IEZpbGlhbDo8L3RkPgogIDx0ZD7QqNCw0LnRhdCw0L3RgtC+0YXRg9GA0YHQutC40Lkg0YAt0L08L3RkPgogPC90cj4KICA8dHI+CiAgPHRkPiZuYnNwOyBUZXJtaW5hbDo8L3RkPgogIDx0ZD40MTM5MDk0PC90ZD4KICA8dGQ+Jm5ic3A7IEZpbGlhbCBTVElSOjwvdGQ+CiAgPHRkPjMwNjYwNTc2OTwvdGQ+CiA8L3RyPgogPHRyPgogIDx0ZD4mbmJzcDsgU2FuYTo8L3RkPgogIDx0ZD4xMC4wMi4yMDI1IDIzOjU4OjIzPC90ZD4KICA8dGQ+Jm5ic3A7IEZpbGlhbCBNRk86PC90ZD4KICA8dGQ+MDA0MzUgICZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyBGaWxpYWwgeC9yOiZuYnNwOyAyMjYzNDAwMDkwNTExMzk2MDIwMzwvdGQ+CiA8L3RyPiAgCiA8dHI+CiA8dGQgY29sc3Bhbj0iMiIgcm93c3Bhbj0iOSIgc3R5bGU9ImJvcmRlci1ib3R0b206IDJweCBzb2xpZCBibGFjazsiPjxjZW50ZXI+PGRpdiBpZD0icXJjb2RlIiBzdHlsZT0id2lkdGg6MjAwcHg7IGhlaWdodDoyMDBweDsgbWFyZ2luLXRvcDo1cHg7Ij48L2Rpdj48L2NlbnRlcj48L3RkPgogIDx0ZD4mbmJzcDsgPC90ZD4KICA8dGQ+PC90ZD4KIDwvdHI+ICAKIDx0cj4KICA8dGQgc3R5bGU9ImJvcmRlci10b3A6IDFweCBzb2xpZCBibGFjazsiPiZuYnNwOyBTaGF4c2l5IHJhcWFtOjwvdGQ+CiAgPHRkIHN0eWxlPSJib3JkZXItdG9wOiAxcHggc29saWQgYmxhY2s7Ij4xMDAzMDEwNTY4PC90ZD4KIDwvdHI+CiA8dHI+CiAgPHRkPiZuYnNwOyBGLkkuU2guOjwvdGQ+CiAgPHRkPtCQKioqKioqKioqKiogLjwvdGQ+CiA8L3RyPgogPHRyPgogIDx0ZD4mbmJzcDsgTWFuemlsOjwvdGQ+CiAgPHRkPjwvdGQ+CiA8L3RyPgogPHRyPgogIDx0ZD4mbmJzcDsgVGVsOjwvdGQ+CiAgPHRkPjk5ODkzNTg4MTI2NDwvdGQ+CiA8L3RyPgogPHRyPgogIDx0ZD4mbmJzcDsgVG8nbG92IHR1cmk6PC90ZD4KICA8dGQ+PGI+VGFiaWl5IGdheiB1Y2h1bjwvYj48L3RkPgogPC90cj4KIDx0cj4KICA8dGQ+Jm5ic3A7IFN1bW1hOjwvdGQ+CiAgPHRkIHN0eWxlPSJmb250OiAyNXB4IGJvbGQ7Ij48Yj4yMDAwMDAgc3VtPC9iPjwvdGQ+CiA8L3RyPgogPHRyIHN0eWxlPSJib3JkZXItYm90dG9tOiAycHggc29saWQgYmxhY2s7Ij4KICA8dGQ+PC90ZD4KICA8dGQ+PC90ZD4KIDwvdHI+CiA8L3Rib2R5PjwvdGFibGU+Cgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CnZhciBxcmNvZGU9bmV3IFFSQ29kZShkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicXJjb2RlIikse3dpZHRoIDogMjAwLGhlaWdodCA6IDIwMAp9KTsKcXJjb2RlLm1ha2VDb2RlKCcjcXJfY29kZV92YWx1ZSMnKTsKPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPg=="
+      }
+    },
+    {
+      "key": 23,
+      "value": {
+        "key": "cheque_html_width",
+        "labelRu": "cheque_html_width",
+        "labelUz": "cheque_html_width",
+        "value": "800"
+      }
+    },
+    {
+      "key": 24,
+      "value": {
+        "key": "cheque_html_height",
+        "labelRu": "cheque_html_height",
+        "labelUz": "cheque_html_height",
+        "value": "495"
+      }
+    },
+    {
+      "key": 25,
+      "value": {
+        "key": "cheque_barcode",
+        "labelRu": "cheque_barcode",
+        "labelUz": "cheque_barcode",
+        "value": "Data: 10.02.2025 23:58:23\r\n\nID: 18513633820\r\n\nSOATO: #soato#\r\n\nLicevoy schet: #customer_code#\r\n\nSumma: #purchased_amount# sum"
+      }
+    },
+    {
+      "key": 26,
+      "value": {
+        "key": "ofd_receivedCash",
+        "labelRu": "Наличные",
+        "labelUz": "Naqd",
+        "value": "200000"
+      }
+    },
+    {
+      "key": 27,
+      "value": {
+        "key": "ofd_receivedCard",
+        "labelRu": "Банковские карты",
+        "labelUz": "Bank kartalari",
+        "value": null
+      }
+    },
+    {
+      "key": 28,
+      "value": {
+        "key": "ofd_time",
+        "labelRu": "Время",
+        "labelUz": "Vaqt",
+        "value": null
+      }
+    },
+    {
+      "key": 29,
+      "value": {
+        "key": "ofd_totalVAT",
+        "labelRu": "Общая сумма НДС",
+        "labelUz": "Umummiy QQS qiymati",
+        "value": "21428"
+      }
+    },
+    {
+      "key": 30,
+      "value": {
+        "key": "ofd_isRefund",
+        "labelRu": "Информация об отозванном чеке",
+        "labelUz": "Qaytarilgan chek ma`lumoti",
+        "value": null
+      }
+    },
+    {
+      "key": 31,
+      "value": {
+        "key": "ofd_receiptType",
+        "labelRu": "Тип транзакци",
+        "labelUz": "Tranzaksia turi",
+        "value": "Продажа"
+      }
+    },
+    {
+      "key": 32,
+      "value": {
+        "key": "ofd_name0",
+        "labelRu": "Название",
+        "labelUz": "Nomi",
+        "value": null
+      }
+    },
+    {
+      "key": 33,
+      "value": {
+        "key": "ofd_price0",
+        "labelRu": "Цена",
+        "labelUz": "Miqdori",
+        "value": "200000"
+      }
+    },
+    {
+      "key": 34,
+      "value": {
+        "key": "ofd_vat_amount0",
+        "labelRu": "Сумма НДС",
+        "labelUz": "QQS summasi",
+        "value": "21428 (12%)"
+      }
+    },
+    {
+      "key": 35,
+      "value": {
+        "key": "ofd_vatPercent0",
+        "labelRu": "НДС в процентах",
+        "labelUz": "QQS foizda",
+        "value": null
+      }
+    },
+    {
+      "key": 36,
+      "value": {
+        "key": "ofd_name1",
+        "labelRu": "Название",
+        "labelUz": "Nomi",
+        "value": null
+      }
+    },
+    {
+      "key": 37,
+      "value": {
+        "key": "ofd_productCode0",
+        "labelRu": "ИКПУ код",
+        "labelUz": "MXIK kodi",
+        "value": "09903001001000000"
+      }
+    },
+    {
+      "key": 38,
+      "value": {
+        "key": "ofd_productCode1",
+        "labelRu": "ИКПУ код",
+        "labelUz": "MXIK kodi",
+        "value": null
+      }
+    },
+    {
+      "key": 39,
+      "value": {
+        "key": "ofd_productName0",
+        "labelRu": "ИКПУ название",
+        "labelUz": "MXIK nomi",
+        "value": "Услуги по газоснабжению"
+      }
+    },
+    {
+      "key": 40,
+      "value": {
+        "key": "ofd_productName1",
+        "labelRu": "ИКПУ название",
+        "labelUz": "MXIK nomi",
+        "value": null
+      }
+    },
+    {
+      "key": 41,
+      "value": {
+        "key": "ofd_price1",
+        "labelRu": "Цена",
+        "labelUz": "Narx",
+        "value": null
+      }
+    },
+    {
+      "key": 42,
+      "value": {
+        "key": "ofd_amount1",
+        "labelRu": "Количество",
+        "labelUz": "Miqdori",
+        "value": null
+      }
+    },
+    {
+      "key": 43,
+      "value": {
+        "key": "ofd_vat_amount1",
+        "labelRu": "Сумма НДС",
+        "labelUz": "QQS summasi",
+        "value": null
+      }
+    },
+    {
+      "key": 44,
+      "value": {
+        "key": "ofd_amount0",
+        "labelRu": "Количество",
+        "labelUz": "Miqdori",
+        "value": "1000"
+      }
+    },
+    {
+      "key": 45,
+      "value": {
+        "key": "ofd_vatPercent1",
+        "labelRu": "Процент НДС",
+        "labelUz": "QQS foizi",
+        "value": null
+      }
+    },
+    {
+      "key": 46,
+      "value": {
+        "key": "ofd_commisionInfo_tin0",
+        "labelRu": "ИНН комитента",
+        "labelUz": "Komitent STIRi",
+        "value": "306605769"
+      }
+    },
+    {
+      "key": 47,
+      "value": {
+        "key": "ofd_commisionInfo_tin1",
+        "labelRu": "ИНН комитента",
+        "labelUz": "Komitent STIRi",
+        "value": null
+      }
+    },
+    {
+      "key": 48,
+      "value": {
+        "key": "ofd_terminal_id",
+        "labelRu": "ФМ номер",
+        "labelUz": "FM nomer",
+        "value": "EP000000000364"
+      }
+    },
+    {
+      "key": 49,
+      "value": {
+        "key": "ofd_cheque_id",
+        "labelRu": "Номер чека ОФД",
+        "labelUz": "OFD chek raqami",
+        "value": "1122240345"
+      }
+    },
+    {
+      "key": 50,
+      "value": {
+        "key": "ofd_fiscal_sign",
+        "labelRu": "Фискальный признак",
+        "labelUz": "Fiskal belgi",
+        "value": "396333840546"
+      }
+    },
+    {
+      "key": 51,
+      "value": {
+        "key": "ofd_date_time",
+        "labelRu": "Время транзакции ОФД",
+        "labelUz": "FMO tranzaksiya vaqti",
+        "value": null
+      }
+    },
+    {
+      "key": 52,
+      "value": {
+        "key": "ofdqrcode",
+        "labelRu": "QR код",
+        "labelUz": "QR kod",
+        "value": "https://ofd.soliq.uz/epi?t=EP000000000364&r=1122240345&c=20250210235824&s=396333840546"
+      }
+    },
+    {
+      "key": 53,
+      "value": {
+        "key": "agent_commission",
+        "labelRu": "Комиссия агента",
+        "labelUz": "Agent komissiyasi",
+        "value": "2000"
+      }
+    },
+    {
+      "key": "gni",
+      "value": {
+        "terminal_id": "EP000000000364",
+        "message": "1122240345",
+        "fiscal_sign": "396333840546",
+        "date_time": null,
+        "qr_link": "https://ofd.soliq.uz/epi?t=EP000000000364&r=1122240345&c=20250210235824&s=396333840546"
+      }
+    }
+  ]

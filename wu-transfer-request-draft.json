@@ -84,3 +84,14 @@
     "id": "745286",
     "type": "transfer"
 }
+
+// account
+{
+    "id": "142957315",
+    "type": "account"
+},
+// bank
+{
+    "id": "00444:20206000962789683400",
+    "type": "bank"
+}
