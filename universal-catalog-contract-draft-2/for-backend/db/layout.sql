@@ -118,11 +118,14 @@ VALUES
 
 -- Success page
 
-INSERT INTO LAYOUT_RENDERS ("KEY", "STYLE", "PRIORITY", "ELEMENT_SIZE", "COLOR", "BACKGROUND_COLOR")
+ALTER TABLE LAYOUT_RENDERS
+    ADD position VARCHAR2(255) NULL;
+
+INSERT INTO LAYOUT_RENDERS ("KEY", "STYLE", "PRIORITY", "ELEMENT_SIZE", "COLOR", "BACKGROUND_COLOR", "POSITION")
 VALUES
-    ('text_h2_white_100', 'H-2', NULL, NULL, 'White 100', NULL),
-    ('text_b1_white_100', 'B-1', NULL, NULL, 'White 100', NULL),
-    ('button_accent_tritery_standard', 'Accent', 'Tritery', 'Standard', NULL, NULL);
+    ('text_h2_center_white_100', 'H-2', NULL, NULL, 'White 100', NULL, 'Center'),
+    ('text_b1_center_white_100', 'B-1', NULL, NULL, 'White 100', NULL, 'Center'),
+    ('button_accent_tritery_standard', 'Accent', 'Tritery', 'Standard', NULL, NULL, NULL);
 
 INSERT INTO LAYOUT_ACTIONS ("TYPE", "VALUE")
 VALUES

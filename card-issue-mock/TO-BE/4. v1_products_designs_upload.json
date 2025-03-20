@@ -28,7 +28,7 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_h2",
+                                    "key": "text_h2_center_white_100",
                                     "style": "H-2",
                                     "priority": null,
                                     "size": null,
@@ -46,7 +46,7 @@
                                 "is_enabled": true,
                                 "is_on": true,
                                 "rendering": {
-                                    "key": "text_b1",
+                                    "key": "text_b1_center_white_100",
                                     "style": "B-1",
                                     "priority": null,
                                     "size": null,

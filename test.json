@@ -1,3 +1,14 @@
-[
-    []
-]
+{
+    "source": {
+        "id": "4488411",
+        "type": "card" // card, account, wallet
+    },
+    "destination": {
+        "id": "8600123456780000",
+        "type": "pan" // card, account, wallet, pan
+    },
+    "amount": 100000,
+    "include_fee": false,
+    "comment": "some-comment"
+    // STOPPED HERE - TODO compensate memorial order
+}
