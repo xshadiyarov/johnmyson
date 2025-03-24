@@ -9,15 +9,13 @@
         "map_url": "https://storage.googleapis.com/iyb-mobile-app-front/api-test2/sample_map.kmz",
         "branches": [
             {
-                "id": "1",
+                "id": 1,
                 "business_id": "00421",
-                "tieto_emboss_id": "103",
-                "humo_emboss_id": "00421",
-                "uzcard_emboss_id": "80420",
                 "longitude": "41.314719",
                 "latitude": "69.293920",
                 "meta": {
                     "opening_hours": "09:00 - 17:00",
+                    "lunch_hours": "09:00 - 17:00",
                     "title": "Мирзо-Улугбек",
                     "description": {
                         "minibusses": [
@@ -65,19 +63,19 @@
                             "is_working": false
                         }
                     ],
-                    "address": "100000, г. Taшкент, М.Улугбек, ул. Xамид Олимжон, 5"
+                    "address": "100000, г. Taшкент, М.Улугбек, ул. Xамид Олимжон, 5",
+                    "short_address": "М.Улугбек, ул. Xамид Олимжон, 5",
+                    "delivery": true
                 }
             },
             {
-                "id": "2",
+                "id": 2,
                 "business_id": "00444",
-                "tieto_emboss_id": "101",
-                "humo_emboss_id": "00444",
-                "uzcard_emboss_id": "80440",
                 "longitude": "41.322475",
                 "latitude": "69.280615",
                 "meta": {
                     "opening_hours": "09:00 - 17:00",
+                    "lunch_hours": "09:00 - 17:00",
                     "title": "ОПЕРУ",
                     "description": {
                         "minibusses": [
@@ -125,7 +123,9 @@
                             "is_working": false
                         }
                     ],
-                    "address": "100017, г. Тaшкент, Юнусобод, ул. Кодирий, 2"
+                    "address": "100017, г. Тaшкент, Юнусобод, ул. Кодирий, 2",
+                    "short_address": "М.Улугбек, ул. Xамид Олимжон, 5",
+                    "delivery": true
                 }
             }
         ]

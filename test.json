@@ -1,14 +1,84 @@
+{{setVar 'amount' (body 'amount')}}
+{{setVar 'fee' '500'}}
+
+{{setVar 'state' 'preflight'}}
+{{#if (getVar 'amount')}}
+  {{setVar 'state' (oneOf (array 'own' 'credit' 'own_credit'))}}
+{{/if}}
+
+{{#if (eq (getVar 'state') 'preflight')}}
+  {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
+{{else if (eq (getVar 'state') 'own')}}
+  {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
+{{else}}
+  {{setVar 'currency' 'UZS'}}
+{{/if}}
+
+{{#switch (body 'source.type')}}
+  {{#case 'card'}}
+    {{setVar 'left' 'p'}}
+  {{/case}}
+  {{#case 'account'}}
+    {{setVar 'left' 'a'}}
+  {{/case}}
+  {{#case 'wallet'}}
+    {{setVar 'left' 'w'}}
+  {{/case}}
+  {{#default}}
+    {{setVar 'left' 'p'}}
+  {{/default}}
+{{/switch}}
+
+{{#switch (body 'destination.type')}}
+  {{#case 'card'}}
+    {{setVar 'right' 'p'}}
+  {{/case}}
+  {{#case 'pan'}}
+    {{setVar 'right' 'p'}}
+  {{/case}}
+  {{#case 'account'}}
+    {{setVar 'right' 'a'}}
+  {{/case}}
+  {{#case 'wallet'}}
+    {{setVar 'right' 'w'}}
+  {{/case}}
+  {{#default}}
+    {{setVar 'right' 'p'}}
+  {{/default}}
+{{/switch}}
+
+{{setVar 'type' (concat (getVar 'left') 2 (getVar 'right'))}}
+
+{{#switch (getVar 'type')}}
+  {{#case 'p2p'}}
+    {{setVar 'type' (oneOf (array 'p2p' 'pcv' 'vcp' 'v2v'))}}
+  {{/case}}
+  {{#case 'p2a'}}
+    {{setVar 'type' (oneOf (array 'p2a' 'v2a'))}}
+  {{/case}}
+  {{#case 'a2p'}}
+    {{setVar 'type' (oneOf (array 'a2p' 'a2v'))}}
+  {{/case}}
+{{/switch}}
+
 {
-    "source": {
-        "id": "4488411",
-        "type": "card" // card, account, wallet
+    "data": {
+        "state": "{{getVar 'state'}}",
+        "currency": "{{getVar 'currency'}}",
+        "total":
+          {{#switch (getVar 'state')}}
+            {{#case 'preflight'}}null{{/case}}
+            {{#default}}
+              {
+                "total": 1
+              }
+            {{/default}}
+          {{/switch}}
+        // Поставить total не preflight
+          // Поставить total.fee если p2p
+          // Сумировать total.amount с total.fee если total.fee есть
     },
-    "destination": {
-        "id": "8600123456780000",
-        "type": "pan" // card, account, wallet, pan
-    },
-    "amount": 100000,
-    "include_fee": false,
-    "comment": "some-comment"
-    // STOPPED HERE - TODO compensate memorial order
+    "state": "success",
+    "error_text": "",
+    "code": 0
 }
