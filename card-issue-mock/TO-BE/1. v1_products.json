@@ -134,6 +134,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 1,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -313,6 +314,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 2,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -491,6 +493,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 3,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -651,6 +654,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 4,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -839,6 +843,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 5,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -1027,6 +1032,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 6,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -1187,6 +1193,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 7,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -1376,6 +1383,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 8,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -1565,6 +1573,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 9,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -1725,6 +1734,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 10,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -1885,6 +1895,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 11,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -2074,6 +2085,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 12,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"
@@ -2234,6 +2246,7 @@
                         "type": "catalog_item",
                         "meta": {
                             "catalog_item": {
+                                "id": 13,
                                 "header_color": [
                                     "Gradient/1/Left",
                                     "Gradient/1/Right"

@@ -1,84 +1,219 @@
-{{setVar 'amount' (body 'amount')}}
-{{setVar 'fee' '500'}}
-
-{{setVar 'state' 'preflight'}}
-{{#if (getVar 'amount')}}
-  {{setVar 'state' (oneOf (array 'own' 'credit' 'own_credit'))}}
-{{/if}}
-
-{{#if (eq (getVar 'state') 'preflight')}}
-  {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
-{{else if (eq (getVar 'state') 'own')}}
-  {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
-{{else}}
-  {{setVar 'currency' 'UZS'}}
-{{/if}}
-
-{{#switch (body 'source.type')}}
-  {{#case 'card'}}
-    {{setVar 'left' 'p'}}
-  {{/case}}
-  {{#case 'account'}}
-    {{setVar 'left' 'a'}}
-  {{/case}}
-  {{#case 'wallet'}}
-    {{setVar 'left' 'w'}}
-  {{/case}}
-  {{#default}}
-    {{setVar 'left' 'p'}}
-  {{/default}}
-{{/switch}}
-
-{{#switch (body 'destination.type')}}
-  {{#case 'card'}}
-    {{setVar 'right' 'p'}}
-  {{/case}}
-  {{#case 'pan'}}
-    {{setVar 'right' 'p'}}
-  {{/case}}
-  {{#case 'account'}}
-    {{setVar 'right' 'a'}}
-  {{/case}}
-  {{#case 'wallet'}}
-    {{setVar 'right' 'w'}}
-  {{/case}}
-  {{#default}}
-    {{setVar 'right' 'p'}}
-  {{/default}}
-{{/switch}}
-
-{{setVar 'type' (concat (getVar 'left') 2 (getVar 'right'))}}
-
-{{#switch (getVar 'type')}}
-  {{#case 'p2p'}}
-    {{setVar 'type' (oneOf (array 'p2p' 'pcv' 'vcp' 'v2v'))}}
-  {{/case}}
-  {{#case 'p2a'}}
-    {{setVar 'type' (oneOf (array 'p2a' 'v2a'))}}
-  {{/case}}
-  {{#case 'a2p'}}
-    {{setVar 'type' (oneOf (array 'a2p' 'a2v'))}}
-  {{/case}}
-{{/switch}}
-
 {
-    "data": {
-        "state": "{{getVar 'state'}}",
-        "currency": "{{getVar 'currency'}}",
-        "total":
-          {{#switch (getVar 'state')}}
-            {{#case 'preflight'}}null{{/case}}
-            {{#default}}
-              {
-                "total": 1
-              }
-            {{/default}}
-          {{/switch}}
-        // Поставить total не preflight
-          // Поставить total.fee если p2p
-          // Сумировать total.amount с total.fee если total.fee есть
-    },
-    "state": "success",
-    "error_text": "",
-    "code": 0
-}
+  "payment_id": "14439944",
+  "payment_ref": "LOYALTY_prod_78268364",
+  "details": {
+    "item": [
+      {
+        "name": "pan",
+        "value": "XXX"
+      },
+      {
+        "name": "amount",
+        "value": "1209799"
+      },
+      {
+        "name": "ccy_code",
+        "value": "860"
+      },
+      {
+        "name": "merchant_id",
+        "value": "CRDCASHB"
+      },
+      {
+        "name": "terminal_id",
+        "value": "CRD_CASH"
+      },
+      {
+        "name": "internal_pan_masked",
+        "value": "491699******9616"
+      },
+      {
+        "name": "norefund",
+        "value": "norefund"
+      },
+      {
+        "name": "point_code",
+        "value": "600010600040"
+      },
+      {
+        "name": "domestic_region",
+        "value": "860"
+      },
+      {
+        "name": "emcc",
+        "value": "y"
+      },
+      {
+        "name": "is_visa_europe",
+        "value": "0"
+      },
+      {
+        "name": "mc_brands",
+        "value": "MC,MCC,CIR,DMC,MSI"
+      },
+      {
+        "name": "nocredit",
+        "value": "nocredit"
+      },
+      {
+        "name": "merchant_address",
+        "value": "Abdulla Kadiri 2a"
+      },
+      {
+        "name": "payout_merchant_id",
+        "value": "PAYOUT01"
+      },
+      {
+        "name": "visa_brands",
+        "value": "VC,VE,VA"
+      },
+      {
+        "name": "netsw_proc_code",
+        "value": "280000"
+      },
+      {
+        "name": "netsw_acquirer_id",
+        "value": "761,146"
+      },
+      {
+        "name": "netsw_svcbrand",
+        "value": "VC"
+      },
+      {
+        "name": "netsw_issnetref",
+        "value": "860"
+      },
+      {
+        "name": "netsw_issprodflags",
+        "value": "001  0Y P  AAA    AAAN "
+      },
+      {
+        "name": "mcc",
+        "value": "6012"
+      },
+      {
+        "name": "check_sender_data",
+        "value": "1"
+      },
+      {
+        "name": "visa_sender_data",
+        "value": "XXX"
+      },
+      {
+        "name": "sender_data_generate",
+        "value": "1"
+      },
+      {
+        "name": "fld_126_PSVT",
+        "value": "VPP"
+      },
+      {
+        "name": "payee",
+        "value": "0000000014439944 VPP"
+      },
+      {
+        "name": "merchant_country_code",
+        "value": "860"
+      },
+      {
+        "name": "merchant_city",
+        "value": "TASHKENT"
+      },
+      {
+        "name": "merchant_postal_code",
+        "value": "100017"
+      },
+      {
+        "name": "merchant_name",
+        "value": "CASHBACK OCT IPAK YULI>TASHKENT       UZ"
+      },
+      {
+        "name": "merchant_data_generate",
+        "value": "1"
+      },
+      {
+        "name": "receiver_data_check",
+        "value": "1"
+      },
+      {
+        "name": "receiver_data_generate",
+        "value": "1"
+      },
+      {
+        "name": "biller",
+        "value": "YULI, CASHBACK OCT IPAK       Abdulla Kadiri 2a                  TASHKENT                 860"
+      },
+      {
+        "name": "auth_msg_ref1",
+        "value": ""
+      },
+      {
+        "name": "transaction_amount",
+        "value": "1209799"
+      },
+      {
+        "name": "cardholder_amount",
+        "value": "1209799"
+      },
+      {
+        "name": "cardholder_ccy_code",
+        "value": "860"
+      },
+      {
+        "name": "conversion_rate",
+        "value": "1.000000000000000"
+      },
+      {
+        "name": "fld_046_resp",
+        "value": "00860D0000000010000010D00000000860"
+      },
+      {
+        "name": "auth_row_numb1",
+        "value": "613318099"
+      },
+      {
+        "name": "auth_action_code",
+        "value": "000"
+      },
+      {
+        "name": "auth_action_code_final",
+        "value": "000"
+      },
+      {
+        "name": "auth_appr_code",
+        "value": "866532"
+      },
+      {
+        "name": "auth_ref_number",
+        "value": "502205318099"
+      },
+      {
+        "name": "auth_stan",
+        "value": "318099"
+      },
+      {
+        "name": "auth_time",
+        "value": "20250122105134"
+      },
+      {
+        "name": "stip_client_id",
+        "value": "00788127"
+      },
+      {
+        "name": "card_type",
+        "value": "05"
+      },
+      {
+        "name": "acq_inst",
+        "value": "402306"
+      },
+      {
+        "name": "reconcile_info",
+        "value": "202501220000000"
+      },
+      {
+        "name": "iss_ref_data",
+        "value": "XXX"
+      }
+    ]
+  }

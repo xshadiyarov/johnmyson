@@ -1,5 +1,10 @@
+// REQUEST - v1/transfer/payment
 {
-    "data": { // Объект TransferResource
+    "code": "123456"
+}
+// RESPONSE
+{
+    "data": {
         "state": "complete",
         "id": 79936170,
         "additional": {
@@ -10,7 +15,7 @@
                     "name": null,
                     "type": null,
                     "links": {
-                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1661f68528c6fb.png", // transfer_to_card
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1661f68528c6fb.png",
                         "dark": null
                     }
                 }
@@ -28,12 +33,18 @@
                 {
                     "key": "С карты",
                     "value": "**** 7495",
-                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                    "icon": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+                        "dark": null
+                    }
                 },
                 {
                     "key": "На карту",
                     "value": "**** 6616",
-                    "icon": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png" // все типа "card"
+                    "icon": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+                        "dark": null
+                    }
                 },
                 {
                     "key": "Получатель",
@@ -57,9 +68,13 @@
                 }
             ]
         },
-        "gni": null,
-        // "self": null,
-        // "commission": null
+        "gni": {
+            "terminal_id": "EP000000000001",
+            "message": "1000000000",
+            "fiscal_sign": "175000000000",
+            "date_time": null,
+            "qr_link": "https://ofd.soliq.uz/epi?t=EP000000000001&r=1000000000&c=20250313131155&s=175000000000"
+        }
     },
     "state": "success",
     "error_text": "",

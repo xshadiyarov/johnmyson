@@ -1,0 +1,84 @@
+// p2p p2a v2a a2a w2a w2p a2p a2w p2w w2w pcv vcp v2v a2v
+// 1. Определить state
+// 2. Определить type
+[
+    { // Общий
+        "key": "Дата",
+        "value": "21.01.2025", // Текущий день
+        "icon": null
+    },
+    { // p2p p2a v2a p2w pcv vcp v2v
+        "key": "С карты",
+        "value": "**** 7495", // Статика
+        "icon": {
+            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+            "dark": null
+        }
+    },
+    { // p2p w2p a2p pcv vcp v2v a2v
+        "key": "На карту",
+        "value": "**** 6616", // Статика
+        "icon": {
+            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+            "dark": null
+        }
+    },
+    { // a2a a2p a2w a2v
+        "key": "Со счета",
+        "value": "20206000********7400", // Статика
+        "icon": null
+    },
+    { // p2a v2a a2a w2a
+        "key": "На счет",
+        "value": "20206000********7400", // Статика
+        "icon": null
+    },
+    { // w2a w2p w2w
+        "key": "С кошелька",
+        "value": "20206000********7400", // Статика
+        "icon": null
+    },
+    { // a2w p2w w2w
+        "key": "На кошелек",
+        "value": "20206000********7400", // Статика
+        "icon": null
+    },
+    { // Общий
+        "key": "Получатель",
+        "value": "XASAN SHADIYAROV", // Статика
+        "icon": null
+    },
+    { // p2p w2p a2p pcv vcp v2v a2v И есть comment
+        "key": "Комментарий",
+        "value": "some-comment", // Из comment
+        "icon": null
+    },
+    { // Общий
+        "key": "Сумма к получению",
+        "value": "1 000 UZS", // amount / 100 + "currency"
+        // currency
+            // UZS - p2p p2a w2p a2p a2w p2w w2w vcp
+            // USD - v2v pcv
+            // RANDOM(UZS USD) - a2a w2a v2a a2v
+        "icon": null
+    },
+    { // если state не own_credit
+        "key": "Комиссия",
+        "value": "500 UZS", // "fee" + "currency"
+        // fee
+            // 2.5% от amount если credit
+            // 0.5% от amount если own и p2p
+            // 0 default
+        "icon": null
+    },
+    { // p2p - если state own_credit
+        "key": "Комиссия с собственных средств",
+        "value": "500 UZS", // "own_fee" + "currency"
+        "icon": null
+    },
+    { // p2p - если state own_credit
+        "key": "Комиссия с кредитных средств",
+        "value": "5 000 UZS", // "credit_fee" + "currency"
+        "icon": null
+    }
+]

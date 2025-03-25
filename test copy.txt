@@ -1,0 +1,271 @@
+{{setVar 'request_id' (body 'id')}}
+
+{{#if (getVar 'request_id')}}
+  {{setVar 'id' (getVar 'request_id')}}
+{{else}}
+  {{setVar 'id' 'some#@!1.-\$hash'}}
+{{/if}}
+
+{{setVar 'is_error' (oneOf (array false false false false false false false false false true))}}
+{{#if (getVar 'is_error')}}
+  {{#if (getVar 'request_id')}}
+    {{setVar 'error' (oneOf (array 'otp_ttl_not_expired' 'otp_ttl_not_expired' 'otp_ttl_not_expired' 'transfer_state_expired'))}}
+  {{else}}
+    {{setVar 'error' 'transfer_state_expired'}}
+  {{/if}}
+{{/if}}
+{{#switch (getVar 'error')}}
+  {{#case 'otp_ttl_not_expired'}}
+    {{setVar 'error_text' 'Время на повторную отправку кода подтверждения еще не пришло.'}}
+  {{/case}}
+  {{#case 'transfer_state_expired'}}
+    {{setVar 'error_text' 'Время на совершение платежа истекло. Пожалуйста повторите платеж.'}}
+  {{/case}}
+{{/switch}}
+{{setVar 'error_text' (concat (getVar 'error_text') ' ' '(ID: 1s32wiynk)')}}
+
+{{setVar 'amount' (body 'amount')}}
+
+{{setVar 'comment' (body 'comment')}}
+
+{{#switch (body 'source.type')}}
+  {{#case 'card'}}
+    {{setVar 'left' 'p'}}
+  {{/case}}
+  {{#case 'account'}}
+    {{setVar 'left' 'a'}}
+  {{/case}}
+  {{#case 'wallet'}}
+    {{setVar 'left' 'w'}}
+  {{/case}}
+  {{#default}}
+    {{setVar 'left' 'p'}}
+  {{/default}}
+{{/switch}}
+
+{{#switch (body 'destination.type')}}
+  {{#case 'card'}}
+    {{setVar 'right' 'p'}}
+  {{/case}}
+  {{#case 'pan'}}
+    {{setVar 'right' 'p'}}
+  {{/case}}
+  {{#case 'account'}}
+    {{setVar 'right' 'a'}}
+  {{/case}}
+  {{#case 'wallet'}}
+    {{setVar 'right' 'w'}}
+  {{/case}}
+  {{#default}}
+    {{setVar 'right' 'p'}}
+  {{/default}}
+{{/switch}}
+
+{{setVar 'type' (concat (getVar 'left') 2 (getVar 'right'))}}
+
+{{#switch (getVar 'type')}}
+  {{#case 'p2p'}}
+    {{setVar 'type' (oneOf (array 'p2p' 'pcv' 'vcp' 'v2v'))}}
+  {{/case}}
+  {{#case 'p2a'}}
+    {{setVar 'type' (oneOf (array 'p2a' 'v2a'))}}
+  {{/case}}
+  {{#case 'a2p'}}
+    {{setVar 'type' (oneOf (array 'a2p' 'a2v'))}}
+  {{/case}}
+{{/switch}}
+
+{{#switch (getVar 'type')}}
+  {{#case 'p2p'}}
+    {{setVar 'state' (oneOf (array 'own' 'credit' 'own_credit'))}}
+  {{/case}}
+  {{#default}}
+    {{setVar 'state' 'own'}}
+  {{/default}}
+{{/switch}}
+
+{{#switch (getVar 'right')}}
+  {{#case 'p'}}
+    {{setVar 'additional_header_title' 'Перевод на карту'}}
+  {{/case}}
+  {{#case 'a'}}
+    {{setVar 'additional_header_title' 'Перевод на счет'}}
+  {{/case}}
+  {{#case 'w'}}
+    {{setVar 'additional_header_title' 'Перевод на кошелек'}}
+  {{/case}}
+{{/switch}}
+
+{{setVar 'additional_icon_light' 'https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/1661f68528c6fb.png'}}
+
+{{#switch (getVar 'type')}}
+  {{#case 'v2v'}}
+    {{setVar 'currency' 'USD'}}
+  {{/case}}
+  {{#case 'pcv'}}
+    {{setVar 'currency' 'USD'}}
+  {{/case}}
+  {{#case 'a2a'}}
+    {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
+  {{/case}}
+  {{#case 'w2a'}}
+    {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
+  {{/case}}
+  {{#case 'v2a'}}
+    {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
+  {{/case}}
+  {{#case 'a2v'}}
+    {{setVar 'currency' (oneOf (array 'UZS' 'USD'))}}
+  {{/case}}
+  {{#default}}
+    {{setVar 'currency' 'UZS'}}
+  {{/default}}
+{{/switch}}
+
+{{#switch (getVar 'state')}}
+  {{#case 'own_credit'}}
+    {{setVar 'own_fee' (parseInt (divide (multiply (getVar 'amount') '5') '2000'))}}
+    {{setVar 'credit_fee' (parseInt (divide (multiply (getVar 'amount') '25') '2000'))}}
+    {{setVar 'fee' (add (getVar 'own_fee') (getVar 'credit_fee'))}}
+  {{/case}}
+  {{#case 'own'}}
+    {{#if (eq (getVar 'type') 'p2p')}}
+      {{setVar 'fee' (divide (multiply (getVar 'amount') '5') '1000')}}
+    {{else}}
+      {{setVar 'fee' '0'}}
+    {{/if}}
+  {{/case}}
+  {{#case 'credit'}}
+    {{setVar 'fee' (divide (multiply (getVar 'amount') '25') '1000')}}
+  {{/case}}
+{{/switch}}
+{{setVar 'additional_footer_value' (add (getVar 'amount') (getVar 'fee'))}}
+
+{{setVar 'self_confirm_code' (oneOf (array 'null' '123456'))}}
+
+{{setData 'set' 'additional_items' '' (array)}}
+
+{{setData 'push' 'additional_items' '' (object key='Дата' value=(now 'dd.MM.yyyy'))}}
+
+{{setVar 'is_from_card' (includes 'p2p p2a v2a p2w pcv vcp v2v' (getVar 'type'))}}
+{{setVar 'item_icon_uzcard' 'https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png'}}
+{{#if (getVar 'is_from_card')}}
+  {{setData 'push' 'additional_items' '' (object key='С карты' value='**** 7495' icon=(object light=(getVar 'item_icon_uzcard') dark='null'))}}
+{{/if}}
+
+{{setVar 'is_from_account' (includes 'a2a a2p a2w a2v' (getVar 'type'))}}
+{{#if (getVar 'is_from_account')}}
+  {{setData 'push' 'additional_items' '' (object key='Со счета' value='20206000********7400')}}
+{{/if}}
+
+{{setVar 'is_from_wallet' (includes 'w2a w2p w2w' (getVar 'type'))}}
+{{#if (getVar 'is_from_wallet')}}
+  {{setData 'push' 'additional_items' '' (object key='С кошелька' value='20206000********7400')}}
+{{/if}}
+
+{{setVar 'is_to_card' (includes 'p2p w2p a2p pcv vcp v2v a2v' (getVar 'type'))}}
+{{#if (getVar 'is_to_card')}}
+  {{setData 'push' 'additional_items' '' (object key='На карту' value='**** 6616' icon=(object light=(getVar 'item_icon_uzcard') dark='null'))}}
+{{/if}}
+
+{{setVar 'is_to_account' (includes 'p2a v2a a2a w2a' (getVar 'type'))}}
+{{#if (getVar 'is_to_account')}}
+  {{setData 'push' 'additional_items' '' (object key='На счет' value='20206000********7400')}}
+{{/if}}
+
+{{setVar 'is_to_wallet' (includes 'a2w p2w w2w' (getVar 'type'))}}
+{{#if (getVar 'is_to_wallet')}}
+  {{setData 'push' 'additional_items' '' (object key='На кошелек' value='20206000********7400')}}
+{{/if}}
+
+{{setData 'push' 'additional_items' '' (object key='Получатель' value='XASAN SHADIYAROV')}}
+
+{{#if (getVar 'comment')}}
+  {{setVar 'is_comment' (includes 'p2p w2p a2p pcv vcp v2v a2v' (getVar 'type'))}}
+{{/if}}
+{{#if (getVar 'is_comment')}}
+  {{setData 'push' 'additional_items' '' (object key='Комментарий' value=(getVar 'comment'))}}
+{{/if}}
+
+{{setData 'push' 'additional_items' '' (object key='Сумма к получению' value=(concat (divide (getVar 'amount') 100) ' ' (getVar 'currency')))}}
+
+{{#switch (getVar 'state')}}
+  {{#case 'own_credit'}}
+    {{setData 'push' 'additional_items' '' (object key='Комиссия с собственных средств' value=(concat (divide (getVar 'own_fee') 100) ' ' (getVar 'currency')))}}
+    {{setData 'push' 'additional_items' '' (object key='Комиссия с кредитных средств' value=(concat (divide (getVar 'credit_fee') 100) ' ' (getVar 'currency')))}}
+  {{/case}}
+  {{#default}}
+    {{setData 'push' 'additional_items' '' (object key='Комиссия' value=(concat (divide (getVar 'fee') 100) ' ' (getVar 'currency')))}}
+  {{/default}}
+{{/switch}}
+
+{{setVar 'self_transfer' (oneOf (array true false false false false false false false false false))}}
+
+{
+  "data":
+    {{#if (getVar 'is_error')}}
+      {}
+    {{else}}
+      {
+        "id": "{{getVar 'id'}}",
+        "ttl": 300,
+        "ttl_at": {{now 't'}},
+        "additional": {
+          "header": {
+            "title": "{{getVar 'additional_header_title'}}",
+            "icon": {
+              "light": "{{getVar 'additional_icon_light'}}",
+              "dark": null
+            }
+          },
+          "footer": {
+            "title": "Итого",
+            "value": "{{divide (getVar 'additional_footer_value') 100}} {{getVar 'currency'}}"
+          },
+          "items": [
+            {{#each (dataRaw 'additional_items')}}
+              {
+                "key": "{{this.key}}",
+                "value": "{{this.value}}",
+                "icon":
+                  {{#if this.icon}}
+                    {
+                      "light": "{{this.icon.light}}",
+                      "dark": null
+                    }
+                  {{else}}
+                    null
+                  {{/if}}
+              }{{#unless @last}},{{/unless}}
+            {{/each}}
+          ],
+          "self": {
+            "confirm": {
+              "phone": "99897*****17",
+              "code": "{{getVar 'self_confirm_code'}}",
+              "ttl": 60,
+              "ttl_at": {{now 't'}}
+            },
+            "transfer": {{getVar 'self_transfer'}}
+          }
+        }
+      }
+    {{/if}},
+  "state":
+    {{#if (getVar 'is_error')}}
+      "error"
+    {{else}}
+      "success"
+    {{/if}},
+  "error_text":
+    {{#if (getVar 'is_error')}}
+      "{{getVar 'error_text'}}"
+    {{else}}
+      ""
+    {{/if}},
+  "code": 0,
+  "_mockoon": {
+    "type": "{{getVar 'type'}}",
+    "state": "{{getVar 'state'}}"
+  }
+}
