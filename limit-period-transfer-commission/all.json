@@ -1,0 +1,36 @@
+// own
+{
+    "data": { // CommissionResource
+        "state": "own", // own, credit, own_credit, preflight
+        "currency": "UZS",
+        "total": {
+            "amount": 200500,
+            "send": 200000,
+            "fee": 500
+        },
+        "funds": {
+            "own": {
+                "amount": 200000,
+                "percent": 0.5,
+                "fee": 500
+            },
+            "credit": null
+        },
+        "limit": { // См. детально дальше
+            "state": "part_used", // full, part_used, overlimit, full_used, no_limit
+            "period": "До 1 Марта 2025",
+            "type": "sum",
+            "min": null,
+            "max": 1000000000,
+            "used": 500000000
+        },
+        "amounts": [ // Рекомендуемые суммы
+            100000
+            123400
+            200000
+        ]
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
