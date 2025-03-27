@@ -1,0 +1,24 @@
+// REQUEST - card/holder
+{
+    "phone": "998974446717"
+}
+// RESPONSE
+{
+    "data": [
+        {
+            "name": "Ipak Yuli Bank",
+            "cards": [
+                {
+                    ""
+                    "destination": {
+                        "id": "612468",
+                        "type": "card"
+                    }
+                }
+            ]
+        }
+    ],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

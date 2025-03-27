@@ -1,0 +1,15 @@
+// REQUEST - card/byphone
+{
+    "phone": "998974446717"
+}
+// RESPONSE
+{
+    "data": {
+        "card_id": "4632231",
+        "pan": "************4161",
+        "holder": "XASAN S."
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
