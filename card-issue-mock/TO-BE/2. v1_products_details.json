@@ -46,7 +46,7 @@
                                     "priority": "Primary",
                                     "size": null,
                                     "color": "White 100",
-                                    "background": "Warning"
+                                    "background_color": "Warning"
                                 },
                                 "icon": null,
                                 "action": null
@@ -358,7 +358,7 @@
                                             "priority": null,
                                             "size": "4x3",
                                             "color": null,
-                                            "background": null
+                                            "background_color": null
                                         },
                                         "icon": null,
                                         "action": null
