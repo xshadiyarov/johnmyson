@@ -1,2 +1,14 @@
 // REQUEST - card/holder
+{
+    "pan": "6262470064292654"
+}
 // RESPONSE
+{
+    "data": {
+        "card_number": "6262470064292654",
+        "holder": "XASAN S."
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

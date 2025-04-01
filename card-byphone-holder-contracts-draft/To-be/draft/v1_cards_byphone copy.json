@@ -1,0 +1,86 @@
+// REQUEST - v1/cards/byphone
+{
+    "phone": "998974446717"
+}
+// RESPONSE
+{
+    "data": [
+        {
+            "id": "612468", // BANKS.ID
+            "name": "Ipak Yuli Bank", // BANKS.TITLE
+            "logo_mini": { // BANKS.LOGO_IMAGE_MINI
+                "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png",
+                "dark": null
+            },
+            "cards": [
+                {
+                    "id": "612468", // USERS_CARDS.ID, потом Токенизация карт, потом Перевод по номер 2.0, потом какой-л. токен
+                    "pan": "6116", // Последние 4 цифры из панов
+                    "cover_mini": { // BANK_CARD_PREFIXES.COVER_MINI или дефолт с бэка в зависимости от vendor
+                        "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/card_covers/a5fa993c43e7f5ccde060f0c459ebea6.png",
+                        "dark": null
+                    },
+                    "icon": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+                        "dark": null
+                    },
+                    "name": "SHADIYAROV X." // Такая же логика как с mask_fio
+                }
+            ]
+        }
+    ]
+}
+
+
+{
+    "data": { // BankCollection
+        "transfer": false,
+        "items": [
+            { // BankResource
+                "destination": { // DestinationResource
+                    "id": "612468",
+                    "type": "bank"
+                },
+                "name": "Ipak Yuli Bank",
+                "cards": {
+                    "transfer": true,
+                }
+            }
+        ]
+    }
+}
+
+
+{
+    "data": [
+        {
+            "destination": {
+                "id": "612468",
+                "type": "bank"
+            },
+            "name": "Ipak Yuli Bank",
+            "cards": {
+                "is_on": true,
+                "list": [
+                    {
+                        "destination": {
+                            "id": "612468",
+                            "type": "card"
+                        }
+                    }
+                ]
+            },
+            "cards": [
+                {
+                    "destination": {
+                        "id": "612468",
+                        "type": "card"
+                    }
+                }
+            ]
+        }
+    ],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

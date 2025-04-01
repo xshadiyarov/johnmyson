@@ -1,0 +1,48 @@
+@startuml
+actor       "Пользователь"    as User
+participant "МП IYM"          as App
+participant "IYM Backend"     as BE
+participant "MOBILEN"         as DB
+participant "Процессинг"      as Processing
+
+User -> App : Перевод на карту
+User <- App : Экран перевода
+
+==v1/card/byphone==
+
+User -> App : По номеру телефона
+User <- App : Форма ввода номера
+User -> App : 998XXXXXXXXX
+App -> BE : v1/card/byphone
+BE -> DB : Запросить user по phone
+alt user не найден
+    BE <- DB : (empty)
+    App <- BE : ERROR: user_not_found
+    User <- App : Ошибка
+    note over User
+        Пользователь увидит 
+        ошибку над полем 
+        ввода номера
+    end note
+end
+BE <- DB : Запись user
+BE -> DB : Запросить users_cards, \nгде is_main=true
+note over BE
+    Учесть в реализации 
+    что 2ой этап будет 
+    возврат всех карт
+end note
+alt Карт не найдено
+    BE <- DB : (empty)
+    App <- BE : ERROR: no_main_card
+    User <- App : Ошибка
+end
+BE <- DB : Запись users_cards
+BE -> Processing : getCardHolderByPan
+' 
+' cover_mini default logic
+' Проработай вопрос с миграцией макуна, а то ты из головы все никак не выкинешь это, работа просто встала
+
+==v1/card/holder==
+
+@enduml

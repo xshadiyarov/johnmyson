@@ -1,2 +1,252 @@
-// REQUEST - v1/card/byphone
+// REQUEST - v1/card/holder
+{
+    "id": "6262470064292654",
+    "type": "pan" // В будущем для того чтобы не хранить pan в favorites еще будет card
+}
 // RESPONSE
+{
+    "data": {
+        "id": "612468",
+        "pan": "6262470064292654",
+        "cover_mini": null,
+        "icon": {
+            "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+            "dark": null
+        },
+        "bank": {
+            "id": 1,
+            "name": "Ipak Yuli Bank",
+            "logo_mini": {
+                "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png",
+                "dark": null
+            }
+        },
+        "name": "SHADIYAROV X."
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// ERROR - invalid_pan
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Неправильный номер карты получателя (ID: 1s32z61t1)",
+    "code": 0
+}
+// ERROR - please_try_vd_2_transfer
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct во вкладке Услуги (ID: 1s32z61t1)",
+    "code": 0,
+    "action": [
+        {
+            "key": "alt_vd",
+            "type": "modal",
+            "components": [
+                {
+                    "key": "modal_text_vd",
+                    "type": "modal_text",
+                    "title": "Visa Direct",
+                    "subtitle": "Для перевода средств на карты VISA других банков, воспользуйтесь услугой VISA Direct",
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": {
+                        "id": "601",
+                        "name": "isom_particle_transfer_vd",
+                        "type": "banking_services",
+                        "links": {
+                            "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                            "dark": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png"
+                        }
+                    },
+                    "action": null
+                },
+                {
+                    "key": "button_modal_back",
+                    "type": "button",
+                    "title": "Вернуться",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_secondary_button",
+                        "style": "Regular",
+                        "priority": "Secondary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": null
+                },
+                {
+                    "key": "button_modal_go_vd",
+                    "type": "button",
+                    "title": "Перейти",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_primary_button",
+                        "style": "Accent",
+                        "priority": "Primary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": {
+                        "type": "deeplink",
+                        "value": "iym://transfers/vd"
+                    }
+                }
+            ]
+        }
+    ]
+}
+// ERROR - please_try_me_2_transfer
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Для перевода средств на карты Mastercard других банков, воспользуйтесь услугой MoneySend во вкладке Услуги (ID: 1s32z61t1)",
+    "code": 0,
+    "action": [
+        {
+            "key": "alt_ms",
+            "type": "modal",
+            "components": [
+                {
+                    "key": "modal_text_ms",
+                    "type": "modal_text",
+                    "title": "MoneySend",
+                    "subtitle": "Для перевода средств на карты Mastercard других банков, воспользуйтесь услугой MoneySend",
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": {
+                        "id": "602",
+                        "name": "isom_particle_transfer_ms",
+                        "type": "banking_services",
+                        "links": {
+                            "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                            "dark": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png"
+                        }
+                    },
+                    "action": null
+                },
+                {
+                    "key": "button_modal_back",
+                    "type": "button",
+                    "title": "Вернуться",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_secondary_button",
+                        "style": "Regular",
+                        "priority": "Secondary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": null
+                },
+                {
+                    "key": "button_modal_go_ms",
+                    "type": "button",
+                    "title": "Перейти",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_primary_button",
+                        "style": "Accent",
+                        "priority": "Primary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": {
+                        "type": "deeplink",
+                        "value": "iym://transfers/ms"
+                    }
+                }
+            ]
+        }
+    ]
+}
+// ERROR - please_try_ms_2_transfer
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Для перевода средств на карты UnionPay других банков, воспользуйтесь услугой Money Express во вкладке Услуги (ID: 1s32z61t1)",
+    "code": 0,
+    "action": [
+        {
+            "key": "alt_me",
+            "type": "modal",
+            "components": [
+                {
+                    "key": "modal_text_me",
+                    "type": "modal_text",
+                    "title": "Money Express",
+                    "subtitle": "Для перевода средств на карты UnionPay других банков, воспользуйтесь услугой Money Express",
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": {
+                        "id": "603",
+                        "name": "isom_particle_transfer_me",
+                        "type": "banking_services",
+                        "links": {
+                            "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                            "dark": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png"
+                        }
+                    },
+                    "action": null
+                },
+                {
+                    "key": "button_modal_back",
+                    "type": "button",
+                    "title": "Вернуться",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_secondary_button",
+                        "style": "Regular",
+                        "priority": "Secondary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": null
+                },
+                {
+                    "key": "button_modal_go_md",
+                    "type": "button",
+                    "title": "Перейти",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_primary_button",
+                        "style": "Accent",
+                        "priority": "Primary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": {
+                        "type": "deeplink",
+                        "value": "iym://transfers/me"
+                    }
+                }
+            ]
+        }
+    ]
+}
