@@ -1,7 +1,6 @@
 // REQUEST - v1/card/holder
 {
-    "id": "6262470064292654",
-    "type": "pan" // В будущем для того чтобы не хранить pan в favorites еще будет card
+    "pan": "6262470064292654"
 }
 // RESPONSE
 {

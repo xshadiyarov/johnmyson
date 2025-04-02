@@ -1,0 +1,74 @@
+@startuml v1/cards/holder
+actor       "Пользователь"    as User
+participant "МП IYM"          as App
+participant "IYM Backend"     as BE
+participant "DB.MOBILEN"      as DB
+participant "Процессинг"      as Processing
+
+note over BE
+IYB PAN: utils::$bins
+Тип: Cards\CardHelper::mapVendor
+end note
+
+==v1/card/holder==
+User -> App : Ввода PAN
+App -> BE : **v1/card/holder**
+BE -> BE : [Процесс: Валидация PAN]
+alt Невалидный PAN
+    BE -> BE : invalid_pan
+end
+BE -> Processing : getCardHolderByPan
+alt IYB PAN
+    BE <- Processing : Имя на карте
+    BE -> DB : Запросить BANK_CARD_PREFIXES
+    note over DB #SkyBlue
+        PREFIX=(PAN(0,6))
+    end note
+    BE <- DB : Запись BANK_CARD_PREFIXES
+    BE -> DB : Запросить BANKS
+    note over DB #SkyBlue
+        BANK_ID=(BANK_CARD_PREFIXES.BANK_ID)
+    end note
+    BE <- DB : Запись BANKS
+    BE -> DB : Запись ICONS
+    note over DB #SkyBlue
+        NAME=(Тип)_pan
+    end note
+    BE <- DB : Иконка
+    App <- BE : Resource
+    User <- App : Отображение
+else Не IYB PAN
+    alt 4
+        BE -> BE : please_try_vd_2_transfer
+    else 51-55, 2221-2720
+        BE -> BE : please_try_ms_2_transfer
+    else 62
+        BE -> BE : please_try_me_2_transfer
+    else Неверный PAN
+        BE -> BE : wrong_card_type
+    end
+end
+==Альт. действие==
+note over BE
+    Если выбросился Translatable
+end note
+BE -> DB : Связка ALT_ACTIONS
+note over DB #SkyBlue
+    TARGET=(Ошибка)
+end note
+alt Есть альт. действие
+    BE <- DB : Запись ALT_ACTIONS
+    BE -> DB : Запросить LAYOUT_WIDGETS
+    note over DB #SkyBlue
+        ID=(ALT_ACTIONS.KEY)
+    end note
+    BE <- DB : Запись LAYOUT_WIDGETS
+    App <- BE : Альт. действие
+    User <- App : Альт. действие
+else Нет альт. действия
+    BE <- DB : (empty)
+    App <- BE : Ошибка
+    User <- App : Ошибка
+end
+
+@enduml

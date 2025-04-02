@@ -1,0 +1,75 @@
+// REQUEST - v1/destinations/byphone
+{
+    "phone": "998974446717"
+}
+// RESPONSE
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Ipak Yuli Bank",
+            "logo_mini": {
+                "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png",
+                "dark": null
+            },
+            "cards": [
+                {
+                    "id": "612468",
+                    "pan": "6116",
+                    "cover_mini": {
+                        "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/card_covers/a5fa993c43e7f5ccde060f0c459ebea6.png",
+                        "dark": null
+                    },
+                    "icon": {
+                        "light": "https://storage.googleapis.com/iyb-mobile-app-front/api-live/images/icons/165e5bb4c2c3ba.png",
+                        "dark": null
+                    },
+                    "name": "SHADIYAROV X."
+                }
+            ]
+        }
+    ],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// ERROR - no_main_card
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Пользователь не указал основную карту (ID: 1s32z61t1)",
+    "code": 0
+}
+// ERROR - user_not_found
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Пользователь не найден (ID: 1s32z61t1)",
+    "code": 0
+}
+// RESPONSE - Пользователь IYM
+// Перевод на кошелек
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Ipak Yuli Bank",
+            "logo_mini": {
+                "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/banks/e750f5f57d42ca9960758c0a02770c49.png",
+                "dark": null
+            },
+            "cards": []
+        }
+    ],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
+// RESPONSE - Не пользователь IYM
+// Приглашение
+{
+    "data": [],
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}

@@ -1,0 +1,97 @@
+@startuml v1/cards/byphone - Этап 1
+actor       "Пользователь"    as User
+participant "МП IYM"          as App
+participant "IYM Backend"     as BE
+participant "Redis"           as Redis
+participant "DB.MOBILEN"      as DB
+participant "Процессинг"      as Processing
+
+User -> App : Перевод на карту
+        activate User
+        activate App
+User <- App : Экран перевода
+        deactivate User
+        deactivate App
+==v1/card/byphone==
+User -> App : По номеру телефона
+        activate User
+        activate App
+User <- App : Форма ввода номера
+User -> App : 998XXXXXXXXX
+App -> BE : **v1/card/byphone**
+        activate BE
+==Банки и префиксы==
+BE -> Redis : cards_byphone_banks
+        activate Redis
+BE -> Redis : cards_byphone_bank_card_prefixes
+alt Ключ есть
+    BE <- Redis : Банки
+    BE <- Redis : Префиксы
+        deactivate Redis
+else Ключа нет
+    BE -> DB : Записи BANKS
+            activate DB
+    BE -> DB : Записи BANK_CARD_PREFIXES
+    BE <- DB : Банки
+    BE <- DB : Префиксы
+            deactivate DB
+    BE -> Redis : cards_byphone_banks, 24ч
+        activate Redis
+    BE -> Redis : cards_byphone_bank_card_prefixes, 24ч
+        deactivate Redis
+end
+==IYB карты==
+BE -> DB : Запросить user по phone
+        activate DB
+alt user не найден
+    BE <- DB : (empty)
+    App <- BE : ERROR: user_not_found
+    User <- App : Ошибка
+end
+BE <- DB : Пользователь
+        deactivate DB
+BE -> DB : Крайний users_cards.updated_at \nэтого пользователя
+        activate DB
+BE <- DB : Последнее обновление
+        deactivate DB
+BE -> Redis : cards_byphone_iyb_{{phone}}_{{updated_at}}
+        activate Redis
+alt Ключ есть
+    BE <- Redis : Карты IYB
+        deactivate Redis
+else Ключа нет
+    BE -> DB : Карты пользователя
+        activate DB
+    note over DB #SkyBlue
+        IS_MAIN=TRUE
+        STATE=active
+        **one**
+    end note
+    alt Карты нет
+        BE <- DB : (empty)
+        App <- BE : no_main_card
+        User <- App : Ошибка
+    end
+    BE <- DB : Карты IYB
+        deactivate DB
+    loop Карты IYB
+        BE -> Processing : getCardHolderByPan
+        activate Processing
+        BE <- Processing : Имя на карте
+        deactivate Processing
+    end
+    BE -> Redis : cards_byphone_iyb_{{phone}}_* \nУдалить
+    BE -> Redis : cards_byphone_iyb_{{phone}}_{{updated_at}} \nКарты IYB
+end
+BE -> BE : Карты IYB -> Карты
+==Связка с банками==
+loop Карты
+    BE -> BE : Банк по префиксу
+end
+App <- BE : Список карт
+        deactivate BE
+User <- App : Выбор карты
+        deactivate User
+        deactivate App
+
+@enduml
