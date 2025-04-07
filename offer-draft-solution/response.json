@@ -1,0 +1,96 @@
+// REQUEST - vd/paninfo/
+{
+    "pan": "4444000044440000"
+}
+// RESPONSE
+{
+    "data": {},
+    "state": "error",
+    "error_text": "Для осуществления данной операции необходимо Ваше согласие с условиями оферты (ID: 1s32z61t1)",
+    "action": [
+        {
+            "key": "alt_offer",
+            "type": "modal",
+            "components": [
+                {
+                    "key": "modal_text_offer",
+                    "type": "modal_text",
+                    "title": "Оферта",
+                    "subtitle": "Для осуществления данной операции необходимо Ваше согласие со следующими условиями:",
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": {
+                        "id": "603",
+                        "name": "isom_accept_offer",
+                        "type": "banking_services",
+                        "links": {
+                            "light": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png",
+                            "dark": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/resources/images/2018/12/full/ebac24b9d95e80a7a102280982e1081017a0762f.png"
+                        }
+                    },
+                    "action": null
+                },
+                {
+                    "key": "link_offer",
+                    "type": "text",
+                    "title": "Офферта Visa Direct",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "rendering": {
+                        "key": "text_b2p200_accent",
+                        "style": "B-2-p200",
+                        "priority": null,
+                        "size": null,
+                        "color": "Accent",
+                        "background": null
+                    },
+                    "icon": null,
+                    "action": {
+                        "type": "browser",
+                        "value": "https://umobile.ipakyulibank.uz:5444/api-live/uploads/offers/342_microloan_offer_12_ru.pdf"
+                    }
+                }
+                {
+                    "key": "button_modal_offer_decline",
+                    "type": "button",
+                    "title": "Отмена",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_secondary_button",
+                        "style": "Regular",
+                        "priority": "Secondary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": null
+                },
+                {
+                    "key": "button_modal_offer_accept",
+                    "type": "button",
+                    "title": "Принять",
+                    "subtitle": null,
+                    "is_enabled": true,
+                    "is_on": true,
+                    "icon": null,
+                    "rendering": {
+                        "key": "modal_primary_button",
+                        "style": "Accent",
+                        "priority": "Primary",
+                        "size": "Standard",
+                        "color": null,
+                        "background_color": null
+                    },
+                    "actions": {
+                        "type": "method",
+                        "value": "offer_accept"
+                    }
+                }
+            ]
+        }
+    ]
+}
