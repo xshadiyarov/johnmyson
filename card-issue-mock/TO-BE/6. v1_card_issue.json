@@ -12,6 +12,7 @@
 // RESPONSE
 {
     "data": {
+        "is_send_otp": true,
         "card_issue_id": 30102024,
         "header": {
             "key": "Называние карты",

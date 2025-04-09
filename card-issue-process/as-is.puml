@@ -1,0 +1,46 @@
+@startuml Заказ карты с доставкой
+actor "Пользователь" as User
+participant "МП IYM" as App
+participant "IYM Backend" as BE
+participant "Курьерская служба" as Delivery
+participant "Админ-панель" as AP
+
+==Заказ карты==
+User -> App : Заказ карты
+User <- App : Каталог карт
+User -> App : Выбор карты
+User <- App : Способ получения
+User -> App : Доставка
+User <- App : Форма доставки
+User -> App : Заполнить детали
+App -> BE : applications/cardissue/
+note over BE #SkyBlue
+    Создание заявки
+    users_applications
+    [draft]
+end note
+App <- BE : Успех, детали
+User <- App : Подтвердите оферту
+User -> App : Подтверждает
+User <- App : Подтвердите СМС код
+User -> App : Подтверждает
+App -> BE : applications/cardissue/confirm/
+note over BE #Pink
+    Вызов АБС на создание заявки
+    Зависит от типа карты
+end note
+note over BE #SkyBlue
+    Обновление заявки
+    users_applications
+    [accept]
+end note
+' Подтягивание карты в МП
+==Обработка заявки и печать==
+' Отправка на печать
+' Установка ПИН
+==Доставка карты==
+' Выгрузка реестра
+' Передача курьеру реестра и карт
+' Доставка пользователю
+
+@enduml

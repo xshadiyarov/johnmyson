@@ -1,7 +1,7 @@
 // REQUEST - v1/card/issue/confirm
 {
     "id": 30102024,
-    "code": "123456",
+    "code": "123456", // Опциональный
     "notifications": false
 }
 // RESPONSE

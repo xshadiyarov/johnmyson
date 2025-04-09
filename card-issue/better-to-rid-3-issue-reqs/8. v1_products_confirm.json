@@ -1,0 +1,31 @@
+// REQUEST - v1/products/confirm
+{
+    "id": 3001,
+    "product": {
+        "type": "card"
+    },
+    "source": {
+        "id": "4488411",
+        "type": "card"
+    },
+    "code": "258153"
+}
+// RESPONSE - v1/products/confirm
+{
+    "data": {
+        "id": 3001,
+        "product": null,
+        "offers": [],
+        "self": null,
+        "gni": {
+            "terminal_id": "EP000000000001",
+            "message": "1000000000",
+            "fiscal_sign": "175000000000",
+            "date_time": null,
+            "qr_link": "https://ofd.soliq.uz/epi?t=EP000000000001&r=1000000000&c=20250313131155&s=175000000000"
+        }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+}
