@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0tocbct" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.30.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
+  <bpmn:collaboration id="Collaboration_1xnjh9y">
+    <bpmn:participant id="Participant_1ekxvd4" name="Заказ карты с доставкой" processRef="Process_0kge6lg" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0kge6lg" isExecutable="true">
+    <bpmn:laneSet id="LaneSet_1oq1qsf">
+      <bpmn:lane id="Lane_01mo133" name="Приложение IYM" />
+      <bpmn:lane id="Lane_0to61pj" name="Сервер IYM" />
+      <bpmn:lane id="Lane_065fv9s" name="Отдел печати IYB" />
+      <bpmn:lane id="Lane_031svyi" name="Курьерская служба" />
+    </bpmn:laneSet>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1xnjh9y">
+      <bpmndi:BPMNShape id="Participant_1ekxvd4_di" bpmnElement="Participant_1ekxvd4" isHorizontal="true">
+        <dc:Bounds x="160" y="100" width="1010" height="840" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_01mo133_di" bpmnElement="Lane_01mo133" isHorizontal="true">
+        <dc:Bounds x="190" y="100" width="980" height="217" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0to61pj_di" bpmnElement="Lane_0to61pj" isHorizontal="true">
+        <dc:Bounds x="190" y="317" width="980" height="217" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_065fv9s_di" bpmnElement="Lane_065fv9s" isHorizontal="true">
+        <dc:Bounds x="190" y="534" width="980" height="216" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_031svyi_di" bpmnElement="Lane_031svyi" isHorizontal="true">
+        <dc:Bounds x="190" y="750" width="980" height="190" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
