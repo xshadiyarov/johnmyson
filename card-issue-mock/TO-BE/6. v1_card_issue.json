@@ -14,6 +14,7 @@
     "data": {
         "is_send_otp": true,
         "card_issue_id": 30102024,
+        "total_amount": 3750000,
         "header": {
             "key": "Называние карты",
             "value": "Uzcard",
@@ -40,20 +41,23 @@
                 },
                 {
                     "key": "Цена",
-                    "value": "37 000 сум",
-                    "is_amount": true
+                    "value": "37 000 сум"
                 },
                 {
                     "key": "Индив. дизайн",
-                    "value": "Бесплатно",
-                    "is_amount": false
+                    "value": "Бесплатно"
                 }
             ],
-            "card_issue_additional": {
-                "key": "Филиал и адрес",
-                "value": "Мирзо-Улугбек 100000, г. Taшкент, М.Улугбек, ул. Xамид Олимжон, 5",
-              "description": "stribng of data"
-            },
+            "card_issue_additional": [
+                {
+                    "key": "Branch (self carry)",
+                    "value": "OPERU"
+                },
+                {
+                    "key": "Branch address",
+                    "value": "100017, Toshkent sh., Yunus obod, Abdulla qodiriy 2"
+                }
+            ],
             "offer": [
                 {
                     "id": 123,

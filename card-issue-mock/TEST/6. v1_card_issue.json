@@ -1,0 +1,63 @@
+{
+    "data": {
+      "card_issue_id": 173905042025,
+      "total_amount": 3750000,
+      "is_send_otp": true,
+      "header": {
+        "key": "Card name",
+        "value": "VISA Platinum",
+        "card_image": "https:\\/\\/storage.googleapis.com\\/iyb-mobile-app-front\\/images\\/032_card_image.png"
+      },
+      "body": {
+        "custom_design": [],
+        "card_issue": [
+          {
+            "key": "Pay.system",
+            "value": "VISA"
+          },
+          {
+            "key": "Currency",
+            "value": "USD"
+          },
+          {
+            "key": "Card issue",
+            "value": "37 500 sum"
+          },
+          {
+            "key": "Ind. design",
+            "value": "187 500 sum"
+          }
+        ],
+        "card_issue_additional": [
+          {
+            "key": "Branch (self carry)",
+            "value": "OPERU"
+          },
+          {
+            "key": "Branch address",
+            "value": "100017, Toshkent sh., Yunus obod, Abdulla qodiriy 2"
+          }
+        ],
+        "offer": [
+          {
+            "id": 61,
+            "code": "visa_issue_platinum",
+            "name": null,
+            "description": null,
+            "file": {
+              "code": "visa_issue_platinum",
+              "offer_id": 61,
+              "lang": "ru",
+              "type": "current",
+              "file_name": null,
+              "url_full_path": "https:\\/\\/storage.googleapis.com\\/iyb-mobile-app-front\\/api-live\\/cache\\/offers\\/visa_issue_platinum.pdf",
+              "file_type": null
+            }
+          }
+        ]
+      }
+    },
+    "state": "success",
+    "error_text": "",
+    "code": 0
+  }
