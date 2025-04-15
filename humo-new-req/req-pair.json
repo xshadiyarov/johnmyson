@@ -1,0 +1,30 @@
+// getLimitsRefData [V]
+{
+    "id": "80dcaad2-8348-434a-ba54-ddba2c6fd42e",
+    "result": {
+        "owner": "09", // code_owner
+        "data": [
+            {
+                "limitType": "LIM_P2P_DAY", // ref_code
+                "limitName": "Limit p2p for 1 day" // ref_name
+            },
+            {
+                "limitType": "LIM_CRD_CSH_1OPER",
+                "limitName": "Limit Card Cash Withdrawal for 1 operation"
+            },
+            {
+                "limitType": "LIM_CRD_PURCH_1OPER",
+                "limitName": "Limit Card Purchase for 1 operation"
+            },
+            {
+                "limitType": "LIM_MCC1",
+                "limitName": "Limit for MCC group 1"
+            }
+        ]
+    }
+}
+// getLimit
+// setLimits
+// editLimits
+// getLimitsBySubjectValue
+// getLimitsBalance

@@ -1,0 +1,172 @@
+// REQUEST - /v2/get-limit-balance
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "codeOwner": "CMS",
+        "limitType": "LIM_CRD_CSH_1OPER",
+        "limitKeyType": "CARD",
+        "limitKeyValue": "98600901****6655"
+    }
+}
+// RESPONSE - /v2/get-limit-balance
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "owner": "09",
+        "codeOwner": "CMS",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitKeyType": "CARD",
+        "limitKeyValue": "9860090101206655",
+        "data": [
+            {
+                "card_number": "9860090101206655"
+            }
+        ]
+    }
+}
+// REQUEST - /v2/get-ref-data
+// -/-
+// RESPONSE - /v2/get-ref-data
+{
+    "id": "80dcaad2-8348-434a-ba54-ddba2c6fd42e",
+    "result": {
+        "owner": "09",
+        "data": [
+            {
+                "limitType": "LIM_P2P_DAY",
+                "limitName": "Limit p2p for 1 day"
+            },
+            {
+                "limitType": "LIM_CRD_CSH_1OPER",
+                "limitName": "Limit Card Cash Withdrawal for 1 operation"
+            },
+            {
+                "limitType": "LIM_CRD_PURCH_1OPER",
+                "limitName": "Limit Card Purchase for 1 operation"
+            },
+            {
+                "limitType": "LIM_MCC1",
+                "limitName": "Limit for MCC group 1"
+            }
+        ]
+    }
+}
+// REQUEST - /v2/set-any-limit
+{
+    "params": {
+        "cardNumber": "9860090101206655",
+        "amount": "1000",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitName": "LIM_CRD_PURCH_1DAY TEST",
+        "dateFrom": "2025-03-19T16:25:33",
+        "dateTo": "2025-03-19T16:38:43"
+    }
+}
+// RESPONSE - /v2/set-any-limit
+{
+    "id": "ff7ac882-d735-4a38-b617-fa0cee0af401",
+    "result": {
+        "name": "LIM_CRD_PURCH_1DAY",
+        "owner": "09",
+        "data": [
+            {
+                "card_number": "9860090101206655",
+                "date_to": "2025-03-19 16:38:43",
+                "update_date": "2025-03-19 16:25:33",
+                "limitValue": 1000,
+                "limitName": "LIM_CRD_PURCH_1DAY"
+            }
+        ]
+    }
+}
+// REQUEST - /v2/edit-any-limit
+{
+    "params": {
+        "cardNumber": "9860090101206655",
+        "amount": "1000",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitName": "LIM_CRD_PURCH_1DAY TEST",
+        "dateFrom": "2025-03-19T16:25:33",
+        "dateTo": "2025-03-19T16:38:43"
+    }
+}
+// RESPONSE - /v2/edit-any-limit
+{
+    "id": "ff7ac882-d735-4a38-b617-fa0cee0af401",
+    "result": {
+        "name": "LIM_CRD_PURCH_1DAY",
+        "owner": "09",
+        "data": [
+            {
+                "card_number": "9860090101206655",
+                "date_to": "2025-03-19 16:38:43",
+                "update_date": "2025-03-19 16:25:33",
+                "limitValue": 1000,
+                "limitName": "LIM_CRD_PURCH_1DAY"
+            }
+        ]
+    }
+}
+// REQUEST - /v2/get-subject-value
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860090101206655"
+    }
+}
+// RESPONSE - /v2/get-subject-value
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "owner": "09",
+        "codeOwner": "CMS",
+        "limitKeyType": "CARD",
+        "subjectValue": "9860090101206655",
+        "data": [
+            {
+                "card_number": "9860090101206655",
+                "date_to": "2025-03-20 18:38:43",
+                "update_date": "2025-03-19 16:25:33",
+                "limitValue": 24000,
+                "limitName": "Limit Card Purchase in 1 day",
+                "keyType": "CARD",
+                "limitType": "LIM_CRD_PURCH_1DAY"
+            }
+        ]
+    }
+}
+// REQUEST - /v2/delete-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860090101206655",
+        "limitName": "LIM_CRD_PURCH_1DAY"
+    }
+}
+// RESPONSE - /v2/delete-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "name": "LIM_CRD_PURCH_1DAY",
+        "owner": "09",
+        "data": [
+            {
+                "card_number": "9860090101206655"
+            }
+        ]
+    }
+}
+// REQUEST - /v2/delete-all-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860090101206655"
+    }
+}
+// RESPONSE - /v2/delete-all-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "message": "All spending limits successfully deleted!"
+    }
+}

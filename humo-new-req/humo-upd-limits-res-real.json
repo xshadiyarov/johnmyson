@@ -1,0 +1,246 @@
+// REQUEST - /v2/get-limit-balance
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "codeOwner": "CMS",
+        "limitType": "LIM_CRD_CSH_1OPER",
+        "limitKeyType": "CARD",
+        "limitKeyValue": "9860********616" // Сам замаскировал
+    }
+}
+// RESPONSE - /v2/get-limit-balance
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "owner": "17",
+        "codeOwner": "CMS",
+        "limitType": "LIM_CRD_CSH_1OPER",
+        "limitKeyType": "CARD",
+        "limitKeyValue": "9860********616",
+        "data": [
+            {}
+        ]
+    }
+}
+
+
+
+
+
+
+// REQUEST - /v2/get-ref-data
+// -/-
+// RESPONSE - /v2/get-ref-data
+{
+    "id": "e9090ecd-f4f9-415f-ac2b-5622ffde17a4",
+    "result": {
+        "owner": "17",
+        "data": [
+            {
+                "limitType": "LIM_P2P_DAY",
+                "limitName": "Limit p2p for 1 day"
+            },
+            {
+                "limitType": "LIM_CRD_CSH_1OPER",
+                "limitName": "Limit Card Cash Withdrawal for 1 operation"
+            },
+            {
+                "limitType": "LIM_CRD_PURCH_1OPER",
+                "limitName": "Limit Card Purchase for 1 operation"
+            },
+            {
+                "limitType": "LIM_MCC1",
+                "limitName": "Limit for MCC group 1"
+            },
+            {
+                "limitType": "LIM_MCC2",
+                "limitName": "Limit for MCC group 2"
+            },
+            {
+                "limitType": "LIM_CSH_1DAY_CNT",
+                "limitName": "Limit Card Cash Withdrawal number in 1 day"
+            },
+            {
+                "limitType": "LIM_CSH_1MON_CNT",
+                "limitName": "Limit Card Cash Withdrawal number in 1 month"
+            },
+            {
+                "limitType": "LIM_PUR_1DAY_CNT",
+                "limitName": "Limit Card Purchase number in 1 day"
+            },
+            {
+                "limitType": "LIM_PUR_1MON_CNT",
+                "limitName": "Limit Card Purchase number in 1 month"
+            },
+            {
+                "limitType": "LIM_CRD_CSH_1DAY",
+                "limitName": "Limit Card Cash Withdrawal in 1 day"
+            },
+            {
+                "limitType": "LIM_CRD_CSH_1MON",
+                "limitName": "Limit Card Cash Withdrawal in 1 month"
+            },
+            {
+                "limitType": "LIM_CRD_EXTRA_LIMIT",
+                "limitName": "Extra limit for any operation in defined period"
+            },
+            {
+                "limitType": "LIM_CRD_PURCH_1DAY",
+                "limitName": "Limit Card Purchase in 1 day"
+            },
+            {
+                "limitType": "LIM_CRD_PURCH_1MON",
+                "limitName": "Limit Card Purchase in 1 month"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+// REQUEST - /v2/set-any-limit
+{
+    "params": {
+        "cardNumber": "9860********616",
+        "amount": "1000",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitName": "LIM_CRD_PURCH_1DAY TEST",
+        "dateFrom": "2025-03-19T16:25:33",
+        "dateTo": "2025-03-19T16:38:43"
+    }
+}
+// RESPONSE - /v2/set-any-limit
+{
+    "id": "059b674b-5f20-4b48-8e98-1d45f0fe743b",
+    "result": {
+        "owner": "17",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "data": [
+            {
+                "card_number": "9860********616",
+                "date_to": "2025-05-19 16:38:43",
+                "update_date": "2025-03-19 16:25:33",
+                "limitValue": 1000,
+                "limitName": "LIM_CRD_PURCH_1DAY TEST"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+// REQUEST - /v2/edit-any-limit
+{
+    "params": {
+        "cardNumber": "9860********616",
+        "amount": "1000",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitName": "LIM_CRD_PURCH_1DAY TEST",
+        "dateFrom": "2025-03-19T16:25:33",
+        "dateTo": "2025-03-19T16:38:43"
+    }
+}
+// RESPONSE - /v2/edit-any-limit
+{
+    "id": "b9ab8d03-dbfb-4246-906d-ae4c4170d445",
+    "result": {
+        "name": "LIM_CRD_PURCH_1DAY TEST",
+        "owner": "17",
+        "data": [
+            {
+                "card_number": "9860********616",
+                "date_to": "2025-05-19 16:38:43",
+                "update_date": "2025-03-19 16:25:33",
+                "limitValue": 1000,
+                "limitName": "LIM_CRD_PURCH_1DAY TEST"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+// REQUEST - /v2/get-subject-value
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860********616"
+    }
+}
+// RESPONSE - /v2/get-subject-value
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "owner": "17",
+        "codeOwner": "CMS",
+        "limitKeyType": "CARD",
+        "subjectValue": "9860********616",
+        "data": [
+            {
+                "card_number": "9860********616",
+                "date_to": "2025-05-19 16:38:43",
+                "update_date": "2025-03-19 16:25:33",
+                "limitValue": 1000,
+                "limitName": "Limit Card Purchase in 1 day",
+                "keyType": "CARD",
+                "limitType": "LIM_CRD_PURCH_1DAY"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+// REQUEST - /v2/delete-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860********616",
+        "limitName": "LIM_CRD_PURCH_1DAY"
+    }
+}
+// RESPONSE - /v2/delete-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "name": "LIM_CRD_PURCH_1DAY",
+        "owner": "17",
+        "data": [
+            {
+                "card_number": "9860********616"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+// REQUEST - /v2/delete-all-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860********616"
+    }
+}
+// RESPONSE - /v2/delete-all-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "result": {
+        "message": "All spending limits successfully deleted!"
+    }
+}

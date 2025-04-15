@@ -1,0 +1,56 @@
+// REQUEST - /v2/get-limit-balance
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "codeOwner": "CMS",
+        "limitType": "LIM_CRD_CSH_1OPER",
+        "limitKeyType": "CARD",
+        "limitKeyValue": "9860170121736616"
+    }
+}
+// REQUEST - /v2/get-ref-data
+// -/-
+// REQUEST - /v2/set-any-limit
+{
+    "params": {
+        "cardNumber": "9860170121736616",
+        "amount": "1000",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitName": "LIM_CRD_PURCH_1DAY TEST",
+        "dateFrom": "2025-03-19T16:25:33",
+        "dateTo": "2025-03-19T16:38:43"
+    }
+}
+// REQUEST - /v2/edit-any-limit
+{
+    "params": {
+        "cardNumber": "9860170121736616",
+        "amount": "1000",
+        "limitType": "LIM_CRD_PURCH_1DAY",
+        "limitName": "LIM_CRD_PURCH_1DAY TEST",
+        "dateFrom": "2025-03-19T16:25:33",
+        "dateTo": "2025-03-19T16:38:43"
+    }
+}
+// REQUEST - /v2/get-subject-value
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860170121736616"
+    }
+}
+// REQUEST - /v2/delete-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860170121736616",
+        "limitName": "LIM_CRD_PURCH_1DAY"
+    }
+}
+// REQUEST - /v2/delete-all-limit
+{
+    "id": "7d06a8a0-09cf-4904-9f45-4fdd65ac30d4",
+    "params": {
+        "cardNumber": "9860170121736616"
+    }
+}
