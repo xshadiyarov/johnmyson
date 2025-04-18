@@ -1,0 +1,146 @@
+@startuml
+actor "Пользователь" as User
+participant "МП IYM" as App
+participant "Backend IYM" as BE
+participant "Процессинг" as Processing
+participant "Админ-панель" as Admin
+participant "Розница IYB" as Retail
+participant "Курьерская служба" as Delivery
+
+' TODO: Добавить все СМС о статусе
+
+==Подача заявки==
+User -> App : Заказать карту
+activate User
+activate App
+User <- App : Каталог карт
+User -> App : Карта с доставкой
+User -> App : Детали достав. и филиал
+App -> BE : applications/cardissue/
+activate BE
+alt Свой дизайн - ДА
+    note over BE #SkyBlue
+        Создание заявки
+        users_applications
+        [draft]
+    end note
+    App <- BE : Заявка принята
+    User <- App : Незавершенная заявка
+else НЕТ
+    User <- BE : СМС с кодом
+    deactivate BE
+    User -> App : Согласие с офертой
+    User -> App : СМС подтверждение
+    App -> BE : applications/cardissue/confirm/
+    activate BE
+    BE -> Processing : Запрос на выпуск
+    activate Processing
+    BE <- Processing : Запрос принят
+    deactivate Processing
+    alt Виртуальная - ДА
+        note over BE #SkyBlue
+            Обновление заявки
+            users_applications
+            [proceed|complete]
+        end note
+        App <- BE : ID Заявки
+        User <- App : Заявка принята
+    else НЕТ
+        note over BE #SkyBlue
+            Обновление заявки
+            users_applications
+            [accept]
+        end note
+        App <- BE : ID Заявки и детали перевода
+        deactivate BE
+        deactivate App
+        User <- App : Заявка принята
+        deactivate User
+    end
+end
+==Обработка заявки==
+alt Свой дизайн - ДА
+    Retail -> Admin : Стр. Индивидуальный дизайн
+    activate Admin
+    activate Retail
+    Retail <- Admin : Список заявок
+    note over Retail #Pink
+        Валидация загруженного
+        изображения
+    end note
+    alt Удовлетворительно - ДА
+        Retail -> Admin : Подтвердить
+        note over Admin #SkyBlue
+            Обновление заявки
+            users_applications
+            [approve]
+        end note
+        Retail <- Admin : Заявка подтверждена
+        note over Retail #LightGreen
+            Печать карты
+        end note
+    else НЕТ
+        Retail -> Admin : Отклонить
+        note over Admin #SkyBlue
+            Обновление заявки
+            users_applications
+            [decline]
+        end note
+        Retail <- Admin : Заявка отклонена
+        deactivate Retail
+        User <- Admin : Уведомление об отказе \nСМС, Email, Push
+        deactivate Admin
+    end
+else
+    note over Retail #LightGreen
+        Печать карты
+    end note
+end
+==Доставка==
+Retail <- Processing : Напечатанные карты
+activate Retail
+Retail -> Delivery : Передача реестра и карт
+activate Delivery
+note over Retail #Pink
+    Сотрудник филиала вручную
+    разделяет карты на доставку
+    и самовывоз
+end note
+deactivate Retail
+User <- Delivery : Доставляет карту
+deactivate Delivery
+' Retail ставит статус complete и уведомление пользователю что скоро доставят - ПРОВЕРИТЬ
+alt Свой дизайн - НЕТ
+    Retail -> Admin : Стр. Заявки на БП
+    activate Retail
+    activate Admin
+    note over Admin
+        Также известный как
+        Tune Track Admin
+    end note
+    Retail <- Admin : Список заявок
+    deactivate Admin
+    Retail -> Admin : Взятие заявки в работу
+    activate Admin
+    note over Admin #SkyBlue
+        Обновление заявки
+        users_applications
+        [proceed]
+    end note
+    User <- Admin : Уведомление о принятии \nСМС, Email, Push
+    Retail <- Admin : Заявка в работе
+    deactivate Admin
+    Retail -> Admin : Закрытие заявки
+    activate Admin
+    note over Admin #SkyBlue
+        Обновление заявки
+        users_applications
+        [complete]
+    end note
+    User <- Admin : Уведомление о доставке \nСМС, Email, Push
+    Retail <- Admin : Заявка закрыта
+    deactivate Admin
+    deactivate Retail
+end
+
+@enduml

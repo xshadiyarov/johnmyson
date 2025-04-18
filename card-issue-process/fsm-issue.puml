@@ -1,0 +1,13 @@
+@startuml
+hide empty description 
+
+' TODO: Добавь комменты на описание статуса
+
+state CARD_ISSUES.STATE #Pink {
+    [*] -down-> draft
+    draft -down-> accept
+    accept -down-> proceed
+    proceed -down-> complete
+    complete -down-> [*]
+}
+@enduml

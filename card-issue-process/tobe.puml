@@ -1,0 +1,23 @@
+@startuml
+actor "Пользователь" as User
+participant "МП IYM" as App
+participant "Backend IYM" as BE
+participant "Процессинг" as Processing
+participant "Курьерская служба" as Delivery
+participant "Розница IYB" as Retail
+participant "Админ-панель" as Admin
+
+==Подача заявки==
+User -> App : Заказать карту
+User <- App : Каталог карт
+User -> App : Карта с доставкой
+User -> App : Детали доставки
+App -> BE : v1/card/issue/
+' Создается заявка
+' 
+==Обработка заявки==
+==Доставка==
+
+' STOPPED HERE, todo to leave -> Описать шапку статьи
+
+@enduml

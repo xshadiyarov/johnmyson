@@ -1,0 +1,37 @@
+@startuml
+hide empty description 
+
+' TODO: Добавь комменты на описание статуса
+    ' pending - Продукт готовиться
+    ' awaiting - Продукт ожидает доставщика
+    ' failed - Отмена доставки поставщиком/доставщиком
+    ' picked_up - Продукт передан доставщику
+    ' rescheduled - Доставка перенесена получателем
+    ' delivered - Продукт доставлен получателю
+    ' canceled - Отмена доставки получателем
+    ' returned - Поставщик получил продукт обратно
+    ' Может нужно добавить lost?
+    ' А failed если самовывоз, то как определить
+
+state CARD_ISSUE_DELIVERY.STATE #SkyBlue {
+    [*] -down-> pending
+    pending -down-> awaiting
+    pending -right[dotted,#Gray]-> failed
+    pending -left[dotted,#Gray]-> canceled
+    awaiting -down-> picked_up
+    awaiting -up[dotted,#Gray]-> failed
+    awaiting -up[dotted,#Gray]-> canceled
+    failed -down[#Red]-> returned
+    canceled -down[#Red]-> returned
+    picked_up -down-> rescheduled
+    picked_up -down-> delivered
+    picked_up -up[dotted,#Gray]-> failed
+    picked_up -up[dotted,#Gray]-> canceled
+    rescheduled -down-> delivered
+    rescheduled -up[dotted,#Gray]-> failed
+    rescheduled -up[dotted,#Gray]-> canceled
+    delivered -up-> [*]
+    returned -down-> [*]
+}
+
+@enduml
